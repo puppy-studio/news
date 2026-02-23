@@ -107,6 +107,15 @@ function uniqueByLink(items) {
   return out;
 }
 
+function tightenReactionTone(text = '') {
+  return String(text)
+    .replace(/可能性があります/g, '傾向が見られます')
+    .replace(/可能性がある/g, '傾向がある')
+    .replace(/かもしれません/g, 'です')
+    .replace(/兆候が見られるかもしれません/g, '兆候が見られます')
+    .trim();
+}
+
 async function verifyXStatusUrl(url) {
   try {
     if (!/x\.com\/.+\/status\/\d+/.test(url)) return false;
@@ -213,7 +222,7 @@ async function generate() {
 
       const summary = await xaiChat(
         'You are a concise Japanese tech editor. Return strict JSON only.',
-        `次のトピックを要約してください。\nトピック: ${topic.title}\n注目理由: ${topic.why_hot}\nソース: ${JSON.stringify(sources, null, 2)}\nXデータ: ${JSON.stringify(xEvidence, null, 2)}\n\nJSON: {"summary":"3-4文","impact":"業務影響を1-2文","social_reaction":"X上の反応傾向を1-2文（断定しない）"}`
+        `次のトピックを要約してください。\nトピック: ${topic.title}\n注目理由: ${topic.why_hot}\nソース: ${JSON.stringify(sources, null, 2)}\nXデータ: ${JSON.stringify(xEvidence, null, 2)}\n\n制約:\n- 「可能性があります」「かもしれません」などの曖昧表現は禁止\n- 観測情報ベースで簡潔に断定調で書く\n\nJSON: {"summary":"3-4文","impact":"業務影響を1-2文","social_reaction":"X上の反応傾向を1-2文（曖昧表現なし）"}`
       );
 
       topicBlocks.push({
@@ -222,7 +231,7 @@ async function generate() {
         query: topic.search_query,
         summary: summary.summary,
         impact: summary.impact,
-        socialReaction: summary.social_reaction,
+        socialReaction: tightenReactionTone(summary.social_reaction),
         sources,
         xEvidence,
       });
