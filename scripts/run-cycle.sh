@@ -31,4 +31,4 @@ if ! git diff --cached --quiet; then
   git push
 fi
 
-"$OPENCLAW_BIN" system event --text "news更新: ${URL}" --mode now
+"$OPENCLAW_BIN" message send --channel telegram --target @it_news_puppy --message "news更新: ${URL}"
