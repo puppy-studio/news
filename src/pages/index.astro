@@ -38,6 +38,9 @@ const sections = latest.sections ?? [];
                 <p class="summary">{topic.summary}</p>
                 <p><strong>業務影響:</strong> {topic.impact}</p>
                 <p><strong>X反応:</strong> {topic.socialReaction}</p>
+                <p class="mini">
+                  <strong>X根拠:</strong> 取得件数 {topic.xEvidence?.sampleSize ?? 0} / 推定24h {topic.xEvidence?.estimatedPosts24h ?? 'N/A'}
+                </p>
                 <details>
                   <summary>ソース一覧</summary>
                   <ul>
@@ -45,12 +48,44 @@ const sections = latest.sections ?? [];
                       <li><a href={src.link} target="_blank" rel="noreferrer">{src.title}</a></li>
                     ))}
                   </ul>
-                  <p class="subhead">X反応ソースURL</p>
+
+                  <p class="subhead">Xホット投稿URL</p>
                   <ul>
-                    {topic.xReactionSources?.map((src: any) => (
-                      <li><a href={src.link} target="_blank" rel="noreferrer">{src.title}</a></li>
+                    {topic.xEvidence?.hotPosts?.map((p: any) => (
+                      <li>
+                        <a href={p.url} target="_blank" rel="noreferrer">@{p.author} / ♥{p.metrics?.like_count ?? 0} RT{p.metrics?.retweet_count ?? 0}</a>
+                      </li>
                     ))}
                   </ul>
+
+                  {topic.hotPostJaSummaries?.length > 0 && (
+                    <>
+                      <p class="subhead">英語圏ポストの日本語要約</p>
+                      <ul>
+                        {topic.hotPostJaSummaries.map((it: any) => (
+                          <li>{it.ja}</li>
+                        ))}
+                      </ul>
+                    </>
+                  )}
+
+                  {topic.xEvidence?.axisBuckets?.length > 0 && (
+                    <>
+                      <p class="subhead">対立軸ごとの投稿</p>
+                      {topic.xEvidence.axisBuckets.map((ax: any) => (
+                        <div>
+                          <p class="mini"><strong>{ax.name}</strong></p>
+                          <ul>
+                            {ax.posts?.map((p: any) => (
+                              <li>
+                                <a href={p.url} target="_blank" rel="noreferrer">@{p.author} / ♥{p.metrics?.like_count ?? 0} RT{p.metrics?.retweet_count ?? 0}</a>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                    </>
+                  )}
                 </details>
               </article>
             ))}
@@ -156,6 +191,11 @@ const sections = latest.sections ?? [];
     font-size: 0.9rem;
     color: #334155;
     font-weight: 600;
+  }
+
+  .mini {
+    font-size: 0.85rem;
+    color: #334155;
   }
 
   ul {
