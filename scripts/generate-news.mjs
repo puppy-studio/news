@@ -8,47 +8,17 @@ const BLOG_DIR = path.join(ROOT, 'src/content/blog');
 const DATA_DIR = path.join(ROOT, 'src/data');
 
 const CATEGORIES = [
-  {
-    key: 'security-jp',
-    label: '情報セキュリティ（日本語圏）',
-    locale: { hl: 'ja', gl: 'JP', ceid: 'JP:ja' },
-    querySeeds: ['情報セキュリティ', '脆弱性', 'ランサムウェア', 'JPCERT', 'IPA']
-  },
-  {
-    key: 'security-en',
-    label: '情報セキュリティ（英語圏）',
-    locale: { hl: 'en', gl: 'US', ceid: 'US:en' },
-    querySeeds: ['cybersecurity', 'vulnerability', 'ransomware', 'zero-day', 'CISA']
-  },
-  {
-    key: 'enterprise-jp',
-    label: 'エンタープライズ情報システム（日本語圏）',
-    locale: { hl: 'ja', gl: 'JP', ceid: 'JP:ja' },
-    querySeeds: ['情シス', 'ERP', 'SaaS', 'DX', '基幹システム']
-  },
-  {
-    key: 'enterprise-en',
-    label: 'エンタープライズ情報システム（英語圏）',
-    locale: { hl: 'en', gl: 'US', ceid: 'US:en' },
-    querySeeds: ['enterprise IT', 'CIO', 'ERP', 'SaaS', 'digital transformation']
-  },
-  {
-    key: 'ai',
-    label: 'AI（日本語/英語ミックス）',
-    locale: { hl: 'ja', gl: 'JP', ceid: 'JP:ja' },
-    querySeeds: ['generative AI', 'LLM', 'AI regulation', 'foundation model', 'AIエージェント']
-  },
+  { key: 'security-jp', label: '情報セキュリティ（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['情報セキュリティ', '脆弱性', 'ランサムウェア', 'JPCERT', 'IPA'] },
+  { key: 'security-en', label: '情報セキュリティ（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['cybersecurity', 'vulnerability', 'ransomware', 'zero-day', 'CISA'] },
+  { key: 'enterprise-jp', label: 'エンタープライズ情報システム（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['情シス', 'ERP', 'SaaS', 'DX', '基幹システム'] },
+  { key: 'enterprise-en', label: 'エンタープライズ情報システム（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['enterprise IT', 'CIO', 'ERP', 'SaaS', 'digital transformation'] },
+  { key: 'ai', label: 'AI（日本語/英語ミックス）', locale: { mkt: 'en-US' }, querySeeds: ['generative AI', 'LLM', 'AI regulation', 'foundation model', 'AIエージェント'] },
 ];
 
+const parser = new XMLParser({ ignoreAttributes: false });
+
 function slugify(s) {
-  return s
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/[^a-z0-9\s-]/g, '')
-    .trim()
-    .replace(/\s+/g, '-')
-    .replace(/-+/g, '-')
-    .slice(0, 80) || `topic-${Date.now()}`;
+  return s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-+/g, '-').slice(0, 80) || `topic-${Date.now()}`;
 }
 
 function parseEnv(file) {
@@ -65,9 +35,7 @@ function parseEnv(file) {
 async function loadEnv() {
   const envFile = await readFile(path.join(ROOT, '.env'), 'utf8');
   const parsed = parseEnv(envFile);
-  for (const [k, v] of Object.entries(parsed)) {
-    if (!process.env[k]) process.env[k] = v;
-  }
+  for (const [k, v] of Object.entries(parsed)) if (!process.env[k]) process.env[k] = v;
 }
 
 async function xaiChat(system, user) {
@@ -76,17 +44,11 @@ async function xaiChat(system, user) {
 
   const res = await fetch('https://api.x.ai/v1/chat/completions', {
     method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-    },
+    headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       model: 'grok-3-mini',
       temperature: 0.2,
-      messages: [
-        { role: 'system', content: system },
-        { role: 'user', content: user },
-      ],
+      messages: [{ role: 'system', content: system }, { role: 'user', content: user }],
       response_format: { type: 'json_object' },
     }),
   });
@@ -98,61 +60,44 @@ async function xaiChat(system, user) {
   return JSON.parse(content);
 }
 
-async function resolveGoogleNewsLink(url) {
-  if (!url?.includes('news.google.com')) return url;
-
-  let current = url;
-  for (let i = 0; i < 6; i += 1) {
-    const res = await fetch(current, {
-      method: 'GET',
-      redirect: 'manual',
-      headers: { 'User-Agent': 'news-bot/1.0' },
-    });
-
-    const loc = res.headers.get('location');
-    if (!loc) return current;
-
-    const next = new URL(loc, current).toString();
-    if (!next.includes('news.google.com')) return next;
-    current = next;
+function decodeBingRedirect(raw) {
+  try {
+    const fixed = raw.replace(/&amp;/g, '&');
+    const u = new URL(fixed);
+    const direct = u.searchParams.get('url');
+    return direct || fixed;
+  } catch {
+    return raw;
   }
-  return current;
 }
 
-async function fetchGoogleNewsRss(query, locale) {
-  const { hl, gl, ceid } = locale;
-  const url = `https://news.google.com/rss/search?q=${encodeURIComponent(query)}&hl=${hl}&gl=${gl}&ceid=${ceid}`;
+async function fetchNewsRss(query, locale) {
+  const mkt = locale?.mkt || 'en-US';
+  const url = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&mkt=${encodeURIComponent(mkt)}`;
   const res = await fetch(url, { headers: { 'User-Agent': 'news-bot/1.0' } });
   if (!res.ok) throw new Error(`RSS fetch failed: ${res.status}`);
 
   const xml = await res.text();
-  const parser = new XMLParser({ ignoreAttributes: false });
   const parsed = parser.parse(xml);
   const items = parsed?.rss?.channel?.item ?? [];
   const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
 
-  const mapped = [];
-  for (const item of arr.slice(0, 12)) {
-    const googleLink = item.link;
-    const resolved = await resolveGoogleNewsLink(googleLink);
-    mapped.push({
-      title: item.title,
-      link: resolved,
-      viaGoogleNews: googleLink,
-      pubDate: item.pubDate,
-      source: typeof item.source === 'string' ? item.source : item.source?.['#text'],
-    });
-  }
-  return mapped;
+  return arr.slice(0, 14).map((item) => ({
+    title: item.title,
+    link: decodeBingRedirect(item.link),
+    viaAggregator: item.link,
+    pubDate: item.pubDate,
+    source: item?.['News:Source'] || item.source || '',
+  }));
 }
 
 function uniqueByLink(items) {
   const seen = new Set();
   const out = [];
   for (const item of items) {
-    const key = item?.link || item?.viaGoogleNews;
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
+    const k = item?.link || item?.viaAggregator;
+    if (!k || seen.has(k)) continue;
+    seen.add(k);
     out.push(item);
   }
   return out;
@@ -188,7 +133,7 @@ async function generate() {
     const topicBlocks = [];
 
     for (const topic of topics) {
-      const candidates = await fetchGoogleNewsRss(topic.search_query || topic.title, cat.locale);
+      const candidates = await fetchNewsRss(topic.search_query || topic.title, cat.locale);
       const sources = uniqueByLink(candidates).slice(0, 4);
       const xReactionSources = buildXReactionSources(topic.title);
 
@@ -235,13 +180,9 @@ async function generate() {
       mdLines.push(`- 業務影響: ${topic.impact}`);
       mdLines.push(`- Xの反応（参考）: ${topic.socialReaction}`);
       mdLines.push('- 参照URL:');
-      for (const src of topic.sources) {
-        mdLines.push(`  - [${src.title}](${src.link})`);
-      }
+      for (const src of topic.sources) mdLines.push(`  - [${src.title}](${src.link})`);
       mdLines.push('- X反応ソースURL:');
-      for (const src of topic.xReactionSources) {
-        mdLines.push(`  - [${src.title}](${src.link})`);
-      }
+      for (const src of topic.xReactionSources) mdLines.push(`  - [${src.title}](${src.link})`);
       mdLines.push('');
     }
   }
