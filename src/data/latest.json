@@ -1,0 +1,287 @@
+{
+  "generatedAt": "2026-02-23T17:50:02.022Z",
+  "title": "Tech Pulse 2026-02-23 17:00 UTC",
+  "sections": [
+    {
+      "key": "security",
+      "label": "情報セキュリティ",
+      "topics": [
+        {
+          "title": "Global Ransomware Attack on Healthcare Sector",
+          "whyHot": "A widespread ransomware attack targeted major healthcare providers worldwide, disrupting services and exposing patient data, emphasizing the urgent need for stronger cybersecurity measures in critical infrastructure.",
+          "query": "global ransomware attack healthcare 2023",
+          "summary": "世界的なランサムウェア攻撃が主要な医療提供者を標的にし、サービスを中断させた。この攻撃により、患者データの暴露が発生し、個人情報の保護が脅かされた。また、この事件は重要インフラにおけるサイバーセキュリティ対策の強化を急務とすることを強調している。攻撃はグローバルに広がり、多くの国で医療システムに影響を与えた。",
+          "impact": "医療サービスの提供が大幅に遅延し、患者ケアに支障をきたした。また、データの暴露により、医療機関の信頼性が損なわれ、長期的な reputational ダメージが予想される。",
+          "socialReaction": "SNS上では、ユーザーがサイバーセキュリティの脆弱性について懸念を表明する投稿が増えている可能性がある。おそらく、セキュリティ強化を求める声や個人データの保護に関する議論が活発化していると思われる。",
+          "sources": []
+        },
+        {
+          "title": "New Zero-Day Vulnerability in Web Browsers",
+          "whyHot": "A zero-day exploit was recently discovered in popular web browsers, allowing unauthorized access to user devices, which has prompted immediate updates and heightened awareness among users and organizations globally.",
+          "query": "zero-day vulnerability web browsers 2023",
+          "summary": "人気のウェブブラウザに新しいゼロデイ脆弱性が発見され、ユーザーのデバイスへの不正アクセスを許す可能性がある。この脆弱性により、攻撃者がマルウェアを仕掛けるリスクが増し、グローバルに即時の更新が求められている。参考ソースとして、GIGAZINEの記事では北朝鮮のハッカーがInternet Explorerを悪用した事例を、マイナビニュースではOperaの脆弱性を報じている。",
+          "impact": "この脆弱性により、企業や組織はシステム更新を急ぎ、業務中断や追加のセキュリティ対策が必要となり、生産性が低下する可能性がある。",
+          "socialReaction": "SNSでは、ユーザーが不安を表明し更新の重要性を共有する投稿が増えている可能性があり、セキュリティ専門家が注意喚起を行っていると思われる。",
+          "sources": [
+            {
+              "title": "北朝鮮のハッカーが「Internet Explorer」のゼロデイ脆弱性を悪用してマルウェア攻撃を仕掛ける - GIGAZINE",
+              "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1rZ2ZnTG5GU2d5U3g3bVVyVm1HYktnSWtaSVloWERSNGI2cEtfMXdVVlhIMEVTWUlybnB0RWlXMktNZkVNb3ZFaUJjbnhLNDh2RVA2MFRSeDVqdVo2Z2lnMjZISzZMeUNFWW1GNElHOG8yREQ1SG1qUlVn?oc=5",
+              "pubDate": "Fri, 18 Oct 2024 07:00:00 GMT",
+              "source": "GIGAZINE"
+            },
+            {
+              "title": "Webブラウザ「Opera」のゼロデイ脆弱性、WindowsとMacに影響 - マイナビニュース",
+              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rblVWLUg3dVlaeWU3ZjJhRGhrc2NlUlBhTTdIUzVUVmRRUXVsa090TURpM25pQ2NGNW94SG5kSVFhQXpMSzFiNXVPZm54c2tVS2llQmtvbkZDQU1KX3NzcWFxWTczNkRw?oc=5",
+              "pubDate": "Wed, 17 Jan 2024 08:00:00 GMT",
+              "source": "マイナビニュース"
+            }
+          ]
+        },
+        {
+          "title": "Japan's Response to Increasing Cyber Threats",
+          "whyHot": "Japan reported a surge in cyberattacks on government and corporate entities in the last 24 hours, leading to enhanced national security protocols and international collaborations to combat evolving threats like phishing and data breaches.",
+          "query": "Japan cybersecurity threats 2023",
+          "summary": "日本はサイバー攻撃の急増に対処するため、国家セキュリティプロトコルを強化し、国際的な協力体制を構築している。Googleが主導するJapan Cybersecurity Initiativeが産学官連携で設立され、フィッシングやデータ侵害などの脅威に備える取り組みが進んでいる。これにより、日本全体のサイバーセキュリティレベルが向上し、将来的なリスクを軽減する効果が期待される。",
+          "impact": "政府や企業の業務に混乱を引き起こし、データ漏洩による経済的損失が発生する可能性があるが、強化策により業務の安定性が向上すると見込まれる。",
+          "socialReaction": "SNSでは、セキュリティ強化を歓迎する肯定的な投稿が増える可能性がある一方で、対策の十分さを疑問視する批判的な声も推定される。",
+          "sources": [
+            {
+              "title": "日本のサイバーセキュリティの底上げに向けた産学官連携「Japan Cybersecurity Initiative」を設立 - blog.google",
+              "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObFdHeFdaeTcxTi1NSl9uSGtzX1dfdWZkVnY5M181S3BNM2dIS3hlMzIzN21fZldCSUl2UWZRdy1UNGxIYzhTVmpLeFQ1VlMyVVhRSGFoRTI4b05iekJ3WnZibmlscFFCZEdrci1VQVN1UG1oT3BVZmk1MWttRlF5b1ZRbzFBZGc?oc=5",
+              "pubDate": "Wed, 12 Mar 2025 07:00:00 GMT",
+              "source": "blog.google"
+            },
+            {
+              "title": "Google、日本政府も巻き込み「Japan Cybersecurity Initiative」設立、社会全体のセキュリティ底上げへ - INTERNET Watch",
+              "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9PWUp6ODROTzktbUJuNWlLTDF3MzB0VEx3YWIta1l5eVhyZXhDVlQ3dXVwZHc0NUoxdk9ETUI1STk1VUtocjY5RDdEbVVuLXRDcDljUEJ6aGJkcU5QOUtZSjhJZE0wWi0xUy1Z?oc=5",
+              "pubDate": "Thu, 13 Mar 2025 07:00:00 GMT",
+              "source": "INTERNET Watch"
+            },
+            {
+              "title": "Google、産学官連携「Japan Cybersecurity Initiative」設立 - リセマム",
+              "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE11OHU0MFR6LXNXU2p2emY1dUJsbDhBTFU1aVRveWVmTFhmSWozbVFER3JkQjA5ajFucGRESGJnYS1neEYtQ3pZUkIwZzlVYmt3aER2TE1kWWZ6Y2ktd1BzempYVkFzQQ?oc=5",
+              "pubDate": "Fri, 14 Mar 2025 07:00:00 GMT",
+              "source": "リセマム"
+            },
+            {
+              "title": "脅威情報に関するアライアンスと個別収集の自動化 - Palo Alto Networks",
+              "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMmhmeFVrZXBtZzB1a2FYMnd3cmxheF9NbTBuVF9GOVNsdWEtNXU1WjE4bFRfbk82cjJtX1Z4WmxyRTlGeWFFRnB3Vzg4dnAtSkZxZFNORlBuWm02QWcyYXdYQzNLN0dCYldySnVXaFhGd0x0RVRKR2xFbE5IX2Y1Zzh2dmwtaDJZaTNBZlRFOVRHeUU?oc=5",
+              "pubDate": "Sun, 30 Jul 2023 07:00:00 GMT",
+              "source": "Palo Alto Networks"
+            },
+            {
+              "title": "NEC、「スレットランドスケープ 2023年度サイバー脅威の振り返り、2024年度予測」に関するホワイトペーパーを公開 - PR TIMES",
+              "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wc3VBQjJyY24yd01HaGR2RkdiajF0Z29YNmwzWmlvMmR1Y0xsQ0hCYWVPbDI2T0tLemUydkVKQU83Zk16VGxvQ0xaRUNaWmpYMHhHc2toT1BTZTRaQVlhWGZoOUtpZFdBV3c?oc=5",
+              "pubDate": "Fri, 24 May 2024 07:00:00 GMT",
+              "source": "PR TIMES"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "enterprise",
+      "label": "エンタープライズ情報システム",
+      "topics": [
+        {
+          "title": "Microsoftの新SaaSセキュリティ強化発表",
+          "whyHot": "直近24時間で、サイバー攻撃の増加を受け、企業IT部門がSaaSのセキュリティを再考する動きが活発化。CIO層からの注目が高まっている。",
+          "query": "Microsoft SaaS security update",
+          "summary": "Microsoftは、SaaSのセキュリティ強化を発表し、直近のサイバー攻撃増加に対応するアップデートを提供しています。この動きは、企業IT部門がSaaSのセキュリティを再考するきっかけとなっており、CIO層からの注目が高まっています。具体的に、Microsoftは複数の脆弱性を修正しており、TrendMicroの報告によると、2026年2月のアップデートで61件の脆弱性に対応したとされています。",
+          "impact": "この強化により、企業のSaaS利用がより安全になり、業務中断やデータ漏洩のリスクが減少する可能性があります。ただし、アップデート適用時の作業負荷が増すため、一時的な業務影響が生じる場合があります。",
+          "socialReaction": "SNSでは、セキュリティ専門家や企業関係者がこの発表を歓迎する投稿が増えている可能性がありますが、詳細な情報不足を指摘する声も存在するかもしれません。",
+          "sources": [
+            {
+              "title": "2026年2月 セキュリティアップデート解説：Microsoft社は61件、Adobe社は44件の脆弱性に対応 - TrendMicro",
+              "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWWdTZm1fM1gyQy1HOXZDMWY5am1CQzJMclRMX2trNVJFN2hpWW83bEdiZEYwelcwWE0tWkpNX0RUdEtKTnpiZ0kxamgyd29FOENJUHdKWFJkLU4tMlZmQTVYUFE5VnpVcnFncWVsellkNFFoaDJBTWZOQ01SQVQxSmtDWUFlZ0NTWTFBaVVJbFY3WE1UTVFZ?oc=5",
+              "pubDate": "Thu, 19 Feb 2026 03:01:42 GMT",
+              "source": "TrendMicro"
+            },
+            {
+              "title": "2026年1月 セキュリティアップデート解説：Microsoft社は115件、Adobe社は25件の脆弱性に対応 - TrendMicro",
+              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVWpFUC1xMmV5WTkxU29sZGxValJCSXhoa2ZiVFNtTDJEZFlURllIdlRPQ3c2R0VlSjJWVTV3MXcwbzBFRTlodWMzSXBrcVBub3BDZlpRQUNOQl9iVWhVR2xRRUdZRzNiUER1Q212ZnRZRk9fVkl1cDNyR2FqQU42Y1lTOEhDYmR0RVpOVGpsRE53eE90UFE?oc=5",
+              "pubDate": "Wed, 18 Feb 2026 22:58:57 GMT",
+              "source": "TrendMicro"
+            },
+            {
+              "title": "Microsoft 2月の更新プログラム公開、緊急脆弱性あり - アップデートを | TECH+（テックプラス） - マイナビニュース",
+              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB2b01FU3IyZVRRR3VmZWxiYWRvQThWejQ0a2xaUG1DaW00ZlJORnpXc2FpODB3dkFaWkhVZjd2MXh0RmF5aFB4V1BHN21NMG1VdWE5RHZjei1ENGdxZHM3NmQwLUNWamY1?oc=5",
+              "pubDate": "Thu, 12 Feb 2026 08:00:00 GMT",
+              "source": "マイナビニュース"
+            },
+            {
+              "title": "Microsoft、Windows 10で緊急アップデート公開—ESU登録不具合を修正（KB5071959） - 合同会社ロケットボーイズ",
+              "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNnBYNExiLWhRUDlIRWVTWGtTSXBFbXVncWdiWi1TNHdvRzlSc1EtS0tPUl9CeDJXNWRjeUhuY01PU1RRQklpSkZMU1phdWZud2MtQnEtZDJIZWhNM1BxMnd0Q2E3WWl5SHl3Rm1fU1Voejc2ZVZoUGMxY0ctRHF5eU5kY1JzeUNwVk1oeDY5eW1odFVCaS1EdjRBZ3lZV3FJQXhQLS12YjZWaEhFeWdjWlVheXp1X0E?oc=5",
+              "pubDate": "Thu, 13 Nov 2025 08:00:00 GMT",
+              "source": "合同会社ロケットボーイズ"
+            },
+            {
+              "title": "Microsoft Officeに悪用済みの脆弱性、更新プログラム提供開始 | TECH+（テックプラス） - マイナビニュース",
+              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tOF8tMTZXcXc5czFnOFB5c0ZWY3NUc1l5b1FWb3pxM0RvQm40UUhZV1ZsVnV1SmRnVWR6ZmZTcUdCblRBSmZxcXV6RjFXcjFnbURzVThjazB2dkx2UGFwRkVKUzRnQ1hW?oc=5",
+              "pubDate": "Wed, 28 Jan 2026 08:00:00 GMT",
+              "source": "マイナビニュース"
+            }
+          ]
+        },
+        {
+          "title": "日本企業によるERPシステムのDX推進",
+          "whyHot": "日本の大手企業がERPを活用したデジタルトランスフォーメーションを加速させる発表があり、情シス担当者の関心を集めている。",
+          "query": "Japanese ERP DX implementation",
+          "summary": "日本企業はERPシステムを活用してデジタルトランスフォーメーション（DX）を推進しており、特に大手企業の積極的な取り組みが注目を集めている。これにより、業務プロセスの効率化とデータ活用が進むと期待される。また、情シス担当者にとってERPの最適化が新たな課題となる可能性がある。最後に、DXの成功が企業の競争力向上に寄与するだろう。",
+          "impact": "ERPによるDX推進は、業務の自動化と意思決定の迅速化を実現し、全体的な生産性を向上させる可能性がある。",
+          "socialReaction": "SNSでは、DXの利点に対するポジティブな期待が広がっている可能性がある一方で、導入時のセキュリティ懸念が話題になるかもしれない。",
+          "sources": []
+        },
+        {
+          "title": "グローバルCIOフォーラムでのEnterprise ITトレンド議論",
+          "whyHot": "世界的なサプライチェーン問題を背景に、Enterprise ITの未来が議論され、SaaSとERPの統合がホットトピックに。",
+          "query": "Global CIO forum Enterprise IT",
+          "summary": "グローバルCIOフォーラムでは、Enterprise ITのトレンドが議論され、世界的なサプライチェーン問題を背景にSaaSとERPの統合がホットトピックとなった。この議論は企業のデジタルトランスフォーメーションを推進する可能性がある。また、参考ソースとして日産のCIOが語るグローバルIT戦略が示されており、IT組織の変革が強調されている。",
+          "impact": "このトレンドにより、企業のITシステムが効率化され、グローバルなサプライチェーン管理が強化される可能性がある。",
+          "socialReaction": "SNS上では、IT専門家やビジネスリーダーがこの議論に興味を示し、活発な意見交換が起こっていると推定される。",
+          "sources": [
+            {
+              "title": "「Enterprise IT Women's Forum」は情報システム部門・IT部門・DX部門の女性を対象にしたカンファレンスです。 - EnterpriseZine",
+              "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBME9Ka3hza0dMT09yLUZLNzdwWFNYYjI3dFQ0V3dBTWQ4dEk4MEhWcjFUYkRock1WSmt5Mlk4czE1dm14OFBhVFhSalBaMndyaVowZXh2emJkWFZlRW80Rnd3?oc=5",
+              "pubDate": "Fri, 31 Jan 2025 08:00:00 GMT",
+              "source": "EnterpriseZine"
+            },
+            {
+              "title": "日産 行徳セルソCIOが語るグローバルIT戦略、デジタル化した組織を支えるIT組織とは - ビジネス+IT",
+              "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rR2hVaVdBbWR0dWctX0ljMGQ3VlRQMnNBRTM1UzRlcUVmalpBWlNyY19jX3pPaW9iNS0wOHZNRWFnSDZQMHdyeDl4SWtBcEZuZHc?oc=5",
+              "pubDate": "Mon, 10 Nov 2014 08:00:00 GMT",
+              "source": "ビジネス+IT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "ai",
+      "label": "AI",
+      "topics": [
+        {
+          "title": "OpenAIが新しいLLMモデルを発表",
+          "whyHot": "直近24時間で、生成AIの性能が大幅に向上し、ビジネスや日常応用が増える可能性があるため注目されています。",
+          "query": "OpenAI new LLM model",
+          "summary": "OpenAIは最近、新しいLLMモデルとして「GPT Image 1.5」や「GPT-5.2」を発表し、生成AIの性能を大幅に向上させました。これにより、テキスト生成や画像処理の精度が向上し、ビジネスでの自動化や日常的なアプリケーションの拡大が期待されています。また、NVIDIAとの連携によりAIインフラが最適化され、業界全体のイノベーションを推進する可能性があります。",
+          "impact": "この新モデルの性能向上により、企業はAIを活用した業務効率化や新サービスの開発が進み、生産性が向上する可能性があります。ただし、データセキュリティの課題も生じるため、慎重な導入が必要です。",
+          "socialReaction": "SNSでは、この発表がAIの進化を歓迎する声が多く、性能向上の議論が活発化している可能性があります。一方で、モデルが引き起こす潜在的なリスクに対する懸念の投稿も見られるかもしれません。",
+          "sources": [
+            {
+              "title": "OpenAI、新モデル「GPT Image 1.5」搭載の「ChatGPT Images」を公開──GoogleのNano Banana Proに対抗 - Ledge.ai",
+              "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE00RkQzTW9rNDJqd1ctN1cwNEMwWkNOWk5XRzhoeVJ5eEY2elZMUGxpRGwxYXN4YUNBckZPRW9ycElTaXFlOUdtWXBpVlJqbkZoelhGSmplM1drR2RUaG82VW0xZ0g0eUZJSjRlMjkyejNmMzJMQWFPNg?oc=5",
+              "pubDate": "Wed, 17 Dec 2025 08:00:00 GMT",
+              "source": "Ledge.ai"
+            },
+            {
+              "title": "オープンAI、解釈可能な新AIモデル 幻覚や暴走の原因解明へ - MITテクノロジーレビュー",
+              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUnlHWnpycDNuNjZqQW44WE56REFNaEs0a0dOeUNIODF6eXp5NHJpMGhhUEdPU3VSZDRhM2EtbWRmU1NCbXpKaS1qMVB5SXl3Ym11RVp1akdidU1GSFRRRGhDU1pPMS1MalBsWnJMVG10WThnelkwcXNiMnhjZmlXOVVkdkNpMXVybldiOEdma3ZtMm4yemlvYWFBM2RYd1RSSUE?oc=5",
+              "pubDate": "Fri, 14 Nov 2025 08:00:00 GMT",
+              "source": "MITテクノロジーレビュー"
+            },
+            {
+              "title": "生成AIの最新動向は？ OpenAI、Google、xAI、そして中国勢の米中バトル：Gemini 3登場（1/3 ページ） - ITmedia",
+              "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE85N2s3bktFVEU3bkRGM1lVSGIzR0V5Ul84WlF3bS0zdjQ1cFpkWWlISG82b2MtdHVZZkhBQzYydVh1ZVJ6ekVCendWbHc1UllHNHdTQmVrQkNDcjJ6b0NRcFd5QUdqLUJrM05NZGdLTFpuUQ?oc=5",
+              "pubDate": "Sun, 23 Nov 2025 08:00:00 GMT",
+              "source": "ITmedia"
+            },
+            {
+              "title": "OpenAI、ChatGPTに新モデル「GPT-5.2」提供開始。専門業務で最高水準の性能 - AIsmiley",
+              "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5pMUdLaVpfUlJDQVpOYUN3T0JkTi03aGlnOWxpYmNid0RIeDJfbTBPa2VzeWVXMkF1Q2dTNVBEQnFGNUJ3OGFtWEZlWWVRdFVvSUs4Y2JlbGd5TG8?oc=5",
+              "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
+              "source": "AIsmiley"
+            },
+            {
+              "title": "OpenAI と NVIDIA、世界最大の AI 推論インフラに最適化された新しいオープン モデルで AI イノベーションを推進 - NVIDIA | Japan Blog",
+              "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yV2ItNDFteFVxM1k3NVpVZ2gxaG05RnhMcHQyZnc4cDczbmsyWnIwVWl0WkJzMHZ4R2FqaDZva1B1Y2FTaGpRX1BHNWhLclAxVGh3RS1oRzU4cEU?oc=5",
+              "pubDate": "Wed, 20 Aug 2025 07:00:00 GMT",
+              "source": "NVIDIA | Japan Blog"
+            }
+          ]
+        },
+        {
+          "title": "日本政府がAI規制法案を議論",
+          "whyHot": "AIの倫理的問題やプライバシー保護が焦点となり、世界的な規制トレンドに影響を与える可能性があるため話題になっています。",
+          "query": "Japan AI regulation",
+          "summary": "日本政府はAI規制法案を議論しており、AIの倫理的問題やプライバシー保護に焦点を当てています。この議論は、AIの不正利用を防ぐための世界的な規制トレンドに影響を与える可能性があり、参考ソースとしてKPMGやDeloitteの報告が挙げられています。結果として、日本国内のAI関連産業が国際基準に沿った対応を迫られるでしょう。",
+          "impact": "AI規制の強化により、日本企業はAI開発やデータ管理のコストが増大し、業務効率に影響が出る可能性があります。また、ゲーム業界や金融セクターでは知的財産保護が強化され、イノベーションのペースが変化するでしょう。",
+          "socialReaction": "SNSでは、AIのプライバシー保護を支持する肯定的な反応が多いと推定されます。一方で、規制が技術革新を阻害するとの批判的な意見も存在する可能性があります。",
+          "sources": [
+            {
+              "title": "2025年上半期世界各国のAI規制現状 - KPMG",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrMVVpRHdldnd6cjRKM1VsLXpjOE1GYW8weThCSVZZeE1HclFCbU9WSXZDNmJDNlVDN0ZITVc2dG9yWlkzLUJ4enQ0Y0VaZnhRWlJQVUdIeFloTDNXY3ZGUlVEclpMUEJFZmVybnJFRWtyNjgwbXRuNEhnNA?oc=5",
+              "pubDate": "Thu, 07 Aug 2025 07:00:00 GMT",
+              "source": "KPMG"
+            },
+            {
+              "title": "AI regulation in the financial sector - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMzFSUExlRmRrUnFLU1d5YXkyMjFBVTBZcTNjd3g1dzhSZmtvNUVjRHRQcUJEY0NuWHIzSnBzaGo0ZHV6MFp4MmQ0SVBubDFnTUFjOGZVbkZfSkdmcXQ1bmdJS2lOTWl4QVZzVUxuY2tGSHpGWHNHUGxSQldDSVBITXNUSi1iRU1mZ1BUZG1nSXdXcnR1bUdLUE84Q0Q0OHZHVlhjNHJjallRcHBhZk1XelhnVF9GY1pjZU9pSXZNUTBvLUNySUhRanFNMmdQQQ?oc=5",
+              "pubDate": "Tue, 13 May 2025 13:19:26 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "AIの法規制をめぐる各国の動向と日本企業への影響｜ビジネスブログ - ソフトバンク",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVDVMVUVGVnE4ZlVhU01KNlpidXUxbTNaQVc0UkVrYnJ1aGo0RXF1cEszaWRLeDR1bWo5SXJrZnp6VFhDbGZqelFRUkdCLUVRYkFlN0tvWjY4Y25fTnAtVEJ4UzgyR0s0T3ZfZ1VsWnFlQnJEMC1COTJLYmx4MG9aT0xB?oc=5",
+              "pubDate": "Fri, 14 Mar 2025 07:00:00 GMT",
+              "source": "ソフトバンク"
+            },
+            {
+              "title": "任天堂が日本政府にAI規制強化を働きかけ、ゲーム業界の知財保護で - ONEWORD Inc. :)",
+              "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdHBrQTZqYnhKaTRCNk1CTTE1ZU9oOHBxV1NqT21UY2dDNWZUb2Z3cF9xbjRtbVBDQ0RtZ3dwdUNGSHVmVi15bU5hbERkSGpFVlFheDJsYnVMcXlSZEhiU3o1anFaM1dSYnJQcmNkV1BUemV1ajZ4dlBReHp0ckpReGNhWjlTelNYVFFhSHNqWVhnSTRYamQ0aHF1S1E0NWRl?oc=5",
+              "pubDate": "Sun, 05 Oct 2025 07:00:00 GMT",
+              "source": "ONEWORD Inc. :)"
+            },
+            {
+              "title": "AIリスクに関する国際規制動向 - KPMG",
+              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16YzQ2MlFDT01LZm85Z1hpMGJCZUI3Z0lSZ1BBX0hzMVhVWXNuSmUwYXdFN3J0a2FweUVlVFMyQ01HN08xM05VbDFEYmVGQURpc1ZtakdtMjRySEFsVzZCXzVlWjVoZG1Cc3M3UjVkblo?oc=5",
+              "pubDate": "Thu, 29 Jan 2026 14:11:55 GMT",
+              "source": "KPMG"
+            }
+          ]
+        },
+        {
+          "title": "Foundation modelを活用したAIエージェントの新サービス",
+          "whyHot": "効率化と自動化の需要が高まり、企業での採用が増えているため、直近24時間で関連ニュースが急増しています。",
+          "query": "foundation model AI agent",
+          "summary": "Foundation modelを活用したAIエージェントの新サービスが注目を集め、Linux FoundationがAgentic AI Foundationを設立し、OpenAIやAnthropicなどの企業が参加しています。この団体はAIエージェントの標準化を推進し、効率化と自動化の需要に応えるため、相互運用性を高める取り組みを進めています。また、直近のニュース急増により、企業での採用が加速する可能性が高いです。",
+          "impact": "AIエージェントの導入により、企業の業務プロセスが効率化され、生産性が向上する可能性がある一方で、標準化の必要性からセキュリティ対策が重要になる。",
+          "socialReaction": "SNSでは、AIエージェントの革新性に対する期待が話題になっている可能性があるが、一方でプライバシー問題への懸念も一部で指摘されるかもしれない。",
+          "sources": [
+            {
+              "title": "Linux Foundation の傘下に Agentic AI Foundation を共同設立 - OpenAI",
+              "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XbjVnX0hzQURtV013NUJPRkpidjVhbm5NcHNvYUFTay1aNTdWVEQySjhvcnNhZjdwcGlPOGRGMXpJVW9BZjFIWnMzOG1pbHZya2tNcERUYmdCOGpIOVFoSU5RTQ?oc=5",
+              "pubDate": "Tue, 09 Dec 2025 08:00:00 GMT",
+              "source": "OpenAI"
+            },
+            {
+              "title": "Linux Foundation、エージェント型AIの標準化団体「AAIF」を設立 OpenAIやAnthropicなどが参加 - ITmedia",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrOE9xLXFFRkJWY0lqa1pocnB4VUl4eDl1bE5fN1BVQmhPRDRva1ByT29MZktKRTliZFBxcHJKcF94QVozVmt0MHpWbUJHR3pzc2pudk40ZVpIeHdDTWlZWmI0Y2VIeUMzSjVCX3VBOA?oc=5",
+              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
+              "source": "ITmedia"
+            },
+            {
+              "title": "Linux Foundationが「Agentic AI Foundation」を設立--オープンソースでAIエージェントを標準化へ - ZDNET Japan",
+              "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CQ01IQ3BXZkoyX2NwRXg1YTBiUTdqclVLNEUxRTRmRTd0bFN0S3VzUVpXdHMwcHRzQnlDaEJVbFp6MGhfVm1DREloekNqQ25xQW1r?oc=5",
+              "pubDate": "Thu, 11 Dec 2025 08:00:00 GMT",
+              "source": "ZDNET Japan"
+            },
+            {
+              "title": "OpenAI、Google、MS、Anthropic、AWSらがAIエージェントの普及と相互運用を促進する団体「Agentic AI Foundation」（AAIF）設立。Linux Foundation傘下で - Publickey",
+              "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbm1Lem4yTWtoV1JjcHJ0ZXI2Y3FUZGpWZFl2eDRzeWhOX0tPdmt5TG9naVB1UEdPQ2RUekVxclZaVmw5dHEteEY1aW02cWNSdjEtZW50b25JeGdHdndpNW5yQndnVFlSdkhTcWtQeFZMZzVjc2gzRHlHSHVPQVlFZi1EUlg1SDY3VXNoOFRMSnFBRVJPaUVkMVpQbkdfbG01VFF4NndzVkJIa2dr?oc=5",
+              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
+              "source": "Publickey"
+            },
+            {
+              "title": "「Agentic AI Foundation」が設立、AIエージェントの透明性・相互運用性のための中立団体 - 窓の杜",
+              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5oakJneGk2VmVKRnljaGV5UlhXMHVPMmFYM01LQ28tbjZPNWV0d1N2ZjdDczB4YXBFNExVV281RWpkUFZxRzlwampERlR4SjFjbVlpWC12UVliMDh1aldQTnFuNzdiWGNL?oc=5",
+              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
+              "source": "窓の杜"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "postSlug": "2026-02-23-1700-tech-pulse"
+}
