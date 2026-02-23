@@ -17,7 +17,7 @@ npm run build
 DEPLOY_OUTPUT=$(npx wrangler pages deploy dist --project-name news --commit-dirty=true)
 printf '%s\n' "$DEPLOY_OUTPUT" >> "$LOG_DIR/news-deploy.log"
 
-URL="https://news.puppy.studio"
+URL="https://it-news.puppy.studio"
 if [[ "$DEPLOY_OUTPUT" =~ https://[a-z0-9.-]+\.pages\.dev ]]; then
   URL="${BASH_REMATCH[0]}"
 fi
