@@ -8,12 +8,12 @@ const BLOG_DIR = path.join(ROOT, 'src/content/blog');
 const DATA_DIR = path.join(ROOT, 'src/data');
 
 const CATEGORIES = [
-  { key: 'security-jp', label: '情報セキュリティ（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['情報セキュリティ', '脆弱性', 'ランサムウェア', 'JPCERT', 'IPA'], lang: 'ja' },
-  { key: 'security-en', label: '情報セキュリティ（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['cybersecurity', 'vulnerability', 'ransomware', 'zero-day', 'CISA'], lang: 'en' },
-  { key: 'enterprise-jp', label: 'エンタープライズ情報システム（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['情シス', 'ERP', 'SaaS', 'DX', '基幹システム'], lang: 'ja' },
-  { key: 'enterprise-en', label: 'エンタープライズ情報システム（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['enterprise IT', 'CIO', 'ERP', 'SaaS', 'digital transformation'], lang: 'en' },
-  { key: 'ai-jp', label: 'AI（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['生成AI', 'LLM', 'AIエージェント', 'AI規制', 'AI導入'], lang: 'ja' },
-  { key: 'ai-en', label: 'AI（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['generative AI', 'LLM', 'AI regulation', 'foundation model', 'AI agent'], lang: 'en' },
+  { key: 'security-jp', label: '情報セキュリティ（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['JPCERT 注意喚起', 'IPA 脆弱性', 'CVE 影響', '不正アクセス 公表'], lang: 'ja' },
+  { key: 'security-en', label: '情報セキュリティ（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['CVE critical', 'CISA advisory', 'zero-day exploit', 'data breach disclosed'], lang: 'en' },
+  { key: 'enterprise-jp', label: 'エンタープライズ情報システム（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['Microsoft 365 障害', 'AWS 障害', '基幹システム 移行', '情シス 障害'], lang: 'ja' },
+  { key: 'enterprise-en', label: 'エンタープライズ情報システム（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['enterprise SaaS outage', 'Microsoft 365 incident', 'cloud migration enterprise', 'CIO strategy'], lang: 'en' },
+  { key: 'ai-jp', label: 'AI（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['GPT リリース', 'Claude update', 'Gemini 発表', 'AI規制 法案'], lang: 'ja' },
+  { key: 'ai-en', label: 'AI（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['GPT release', 'Claude update', 'Gemini announcement', 'foundation model release'], lang: 'en' },
 ];
 
 const parser = new XMLParser({ ignoreAttributes: false });
@@ -254,8 +254,7 @@ async function generate() {
       mdLines.push(`- Xの反応: ${topic.socialReaction}`);
       mdLines.push('- 参照URL:');
       for (const src of topic.sources) mdLines.push(`  - [${src.title}](${src.link})`);
-      mdLines.push('- X選定根拠:');
-      mdLines.push(`  - ${topic.xEvidence.rationale}`);
+      // X選定根拠は非表示
       mdLines.push('- Xホット投稿URL:');
       for (const p of topic.xEvidence.hotPosts || []) {
         mdLines.push(`  - [${p.label}](${p.url})`);
