@@ -96,65 +96,29 @@ function uniqueByLink(items) {
   return out;
 }
 
-function metricScore(metrics = {}) {
-  return (metrics.like_count || 0) + (metrics.retweet_count || 0) * 2 + (metrics.reply_count || 0) * 1.5 + (metrics.quote_count || 0) * 2;
-}
-
-async function fetchXEvidence(query) {
-  const token = process.env.X_BEARER_TOKEN;
-  if (!token) return { available: false, reason: 'X_BEARER_TOKEN missing', sampleSize: 0, estimatedPosts24h: null, hotPosts: [], axisBuckets: [] };
-
-  const q = `${query} -is:retweet lang:ja OR lang:en`;
-  const endpoint = new URL('https://api.x.com/2/tweets/search/recent');
-  endpoint.searchParams.set('query', q);
-  endpoint.searchParams.set('max_results', '50');
-  endpoint.searchParams.set('tweet.fields', 'created_at,public_metrics,lang,author_id');
-  endpoint.searchParams.set('expansions', 'author_id');
-  endpoint.searchParams.set('user.fields', 'username,name');
-
-  const res = await fetch(endpoint, { headers: { Authorization: `Bearer ${token}` } });
-  if (!res.ok) return { available: false, reason: `x api error ${res.status}`, sampleSize: 0, estimatedPosts24h: null, hotPosts: [], axisBuckets: [] };
-
-  const json = await res.json();
-  const tweets = json.data || [];
-  const users = new Map((json.includes?.users || []).map((u) => [u.id, u]));
-
-  const enriched = tweets.map((t) => {
-    const user = users.get(t.author_id);
-    return {
-      id: t.id,
-      text: t.text,
-      lang: t.lang,
-      metrics: t.public_metrics || {},
-      score: metricScore(t.public_metrics || {}),
-      author: user?.username || 'unknown',
-      url: `https://x.com/${user?.username || 'i'}/status/${t.id}`,
-    };
-  }).sort((a, b) => b.score - a.score);
-
-  const hotPosts = enriched.slice(0, 3);
-
-  const axis = await xaiChat(
-    'You classify debate axes from social posts. Return strict JSON only.',
-    `次のX投稿サンプルから対立軸を抽出し、軸ごとに該当投稿IDを返してください。\n投稿: ${JSON.stringify(enriched.slice(0, 20), null, 2)}\nJSON: {"axes":[{"name":"...","post_ids":["id1","id2"]}]}`
-  );
-
-  const axisBuckets = (axis.axes || []).slice(0, 2).map((a) => ({
-    name: a.name,
-    posts: (a.post_ids || []).map((id) => enriched.find((e) => e.id === id)).filter(Boolean).slice(0, 3),
-  })).filter((a) => a.posts.length > 0);
-
-  const estimatedPosts24h = tweets.length ? Math.round((tweets.length / 7) * 24) : 0;
-  return { available: true, reason: null, sampleSize: tweets.length, estimatedPosts24h, hotPosts, axisBuckets };
-}
-
-async function jaSummariesForEnglishPosts(posts) {
-  if (!posts.length) return [];
+async function fetchXEvidence(topicTitle, topicQuery, langHint) {
   const payload = await xaiChat(
-    'You are a translator. Return strict JSON only.',
-    `次の英語ポストを日本語で1行ずつ要約してください。\n${JSON.stringify(posts, null, 2)}\nJSON: {"items":[{"id":"...","ja":"..."}]}`
+    'You are a social signal curator. Return strict JSON only. Only include plausible X post URLs with /status/.',
+    `対象トピック: ${topicTitle}\n検索ヒント: ${topicQuery}\n言語ヒント: ${langHint}\n\n次をJSONで返してください。\n1) トピック採用の根拠（短文）\n2) ホット投稿URLを2〜3件\n3) 対立軸がある場合は軸ごとに2〜3件\n4) 英語投稿には日本語1行要約\n\nJSON schema:\n{\n  "rationale": "...",\n  "hotPosts": [{"url":"https://x.com/.../status/...","label":"...","ja_summary":"..."}],\n  "axisBuckets": [{"name":"...","posts":[{"url":"https://x.com/.../status/...","label":"...","ja_summary":"..."}]}]\n}`
   );
-  return payload.items || [];
+
+  const valid = (arr = []) => arr
+    .filter((x) => typeof x?.url === 'string' && /x\.com\/.+\/status\/\d+/.test(x.url))
+    .slice(0, 3)
+    .map((x) => ({ url: x.url, label: x.label || '投稿', ja_summary: x.ja_summary || '' }));
+
+  const hotPosts = valid(payload.hotPosts || []);
+  const axisBuckets = (payload.axisBuckets || [])
+    .slice(0, 2)
+    .map((a) => ({ name: a.name || '論点', posts: valid(a.posts || []) }))
+    .filter((a) => a.posts.length > 0);
+
+  return {
+    method: 'grok-curated',
+    rationale: payload.rationale || 'X上での話題性が高い投稿を抽出',
+    hotPosts,
+    axisBuckets,
+  };
 }
 
 async function generate() {
@@ -179,17 +143,12 @@ async function generate() {
 
     for (const topic of topics) {
       const sources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
-      const xEvidence = await fetchXEvidence(topic.search_query || topic.title);
+      const xEvidence = await fetchXEvidence(topic.title, topic.search_query || topic.title, cat.lang);
 
       const summary = await xaiChat(
         'You are a concise Japanese tech editor. Return strict JSON only.',
         `次のトピックを要約してください。\nトピック: ${topic.title}\n注目理由: ${topic.why_hot}\nソース: ${JSON.stringify(sources, null, 2)}\nXデータ: ${JSON.stringify(xEvidence, null, 2)}\n\nJSON: {"summary":"3-4文","impact":"業務影響を1-2文","social_reaction":"X上の反応傾向を1-2文（断定しない）"}`
       );
-
-      let hotPostJaSummaries = [];
-      if (cat.lang === 'en' || cat.lang === 'mix') {
-        hotPostJaSummaries = await jaSummariesForEnglishPosts(xEvidence.hotPosts.map((p) => ({ id: p.id, text: p.text })));
-      }
 
       topicBlocks.push({
         title: topic.title,
@@ -200,7 +159,6 @@ async function generate() {
         socialReaction: summary.social_reaction,
         sources,
         xEvidence,
-        hotPostJaSummaries,
       });
     }
     allSections.push({ key: cat.key, label: cat.label, topics: topicBlocks });
@@ -231,22 +189,20 @@ async function generate() {
       mdLines.push('- 参照URL:');
       for (const src of topic.sources) mdLines.push(`  - [${src.title}](${src.link})`);
       mdLines.push('- X選定根拠:');
-      mdLines.push(`  - 取得件数(サンプル): ${topic.xEvidence.sampleSize}`);
-      mdLines.push(`  - 推定24h投稿数: ${topic.xEvidence.estimatedPosts24h ?? 'N/A'}`);
-      if (!topic.xEvidence.available) mdLines.push(`  - 備考: ${topic.xEvidence.reason}`);
+      mdLines.push(`  - ${topic.xEvidence.rationale}`);
       mdLines.push('- Xホット投稿URL:');
       for (const p of topic.xEvidence.hotPosts || []) {
-        mdLines.push(`  - [@${p.author} / ♥${p.metrics.like_count ?? 0} RT${p.metrics.retweet_count ?? 0}](${p.url})`);
-      }
-      if ((topic.hotPostJaSummaries || []).length) {
-        mdLines.push('- 英語圏ポストの日本語要約:');
-        for (const it of topic.hotPostJaSummaries) mdLines.push(`  - ${it.ja}`);
+        mdLines.push(`  - [${p.label}](${p.url})`);
+        if (p.ja_summary) mdLines.push(`    - 日本語要約: ${p.ja_summary}`);
       }
       if ((topic.xEvidence.axisBuckets || []).length) {
         mdLines.push('- 対立軸ごとのホット投稿:');
         for (const ax of topic.xEvidence.axisBuckets) {
           mdLines.push(`  - ${ax.name}`);
-          for (const p of ax.posts) mdLines.push(`    - [@${p.author} / ♥${p.metrics.like_count ?? 0} RT${p.metrics.retweet_count ?? 0}](${p.url})`);
+          for (const p of ax.posts) {
+            mdLines.push(`    - [${p.label}](${p.url})`);
+            if (p.ja_summary) mdLines.push(`      - 日本語要約: ${p.ja_summary}`);
+          }
         }
       }
       mdLines.push('');
