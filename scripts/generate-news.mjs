@@ -12,7 +12,8 @@ const CATEGORIES = [
   { key: 'security-en', label: '情報セキュリティ（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['cybersecurity', 'vulnerability', 'ransomware', 'zero-day', 'CISA'], lang: 'en' },
   { key: 'enterprise-jp', label: 'エンタープライズ情報システム（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['情シス', 'ERP', 'SaaS', 'DX', '基幹システム'], lang: 'ja' },
   { key: 'enterprise-en', label: 'エンタープライズ情報システム（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['enterprise IT', 'CIO', 'ERP', 'SaaS', 'digital transformation'], lang: 'en' },
-  { key: 'ai', label: 'AI（日本語/英語ミックス）', locale: { mkt: 'en-US' }, querySeeds: ['generative AI', 'LLM', 'AI regulation', 'foundation model', 'AIエージェント'], lang: 'mix' },
+  { key: 'ai-jp', label: 'AI（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['生成AI', 'LLM', 'AIエージェント', 'AI規制', 'AI導入'], lang: 'ja' },
+  { key: 'ai-en', label: 'AI（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['generative AI', 'LLM', 'AI regulation', 'foundation model', 'AI agent'], lang: 'en' },
 ];
 
 const parser = new XMLParser({ ignoreAttributes: false });
@@ -200,7 +201,7 @@ async function generate() {
   for (const cat of CATEGORIES) {
     const topicPayload = await xaiChat(
       'You are an editor. Return strict JSON only.',
-      `次のカテゴリで直近24時間のホットトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\nJSON形式: {"topics":[{"title":"...","why_hot":"...","search_query":"..."}]}`
+      `次のカテゴリで直近6時間のホットトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\nJSON形式: {"topics":[{"title":"...","why_hot":"...","search_query":"..."}]}`
     );
 
     const topics = (topicPayload.topics || []).slice(0, 2);
