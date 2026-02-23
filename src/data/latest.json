@@ -1,156 +1,410 @@
 {
-  "generatedAt": "2026-02-23T17:50:02.022Z",
-  "title": "Tech Pulse 2026-02-23 17:00 UTC",
+  "generatedAt": "2026-02-23T18:01:26.553Z",
+  "title": "Tech Pulse 2026-02-23 18:01 UTC",
   "sections": [
     {
-      "key": "security",
-      "label": "情報セキュリティ",
+      "key": "security-jp",
+      "label": "情報セキュリティ（日本語圏）",
       "topics": [
         {
-          "title": "Global Ransomware Attack on Healthcare Sector",
-          "whyHot": "A widespread ransomware attack targeted major healthcare providers worldwide, disrupting services and exposing patient data, emphasizing the urgent need for stronger cybersecurity measures in critical infrastructure.",
-          "query": "global ransomware attack healthcare 2023",
-          "summary": "世界的なランサムウェア攻撃が主要な医療提供者を標的にし、サービスを中断させた。この攻撃により、患者データの暴露が発生し、個人情報の保護が脅かされた。また、この事件は重要インフラにおけるサイバーセキュリティ対策の強化を急務とすることを強調している。攻撃はグローバルに広がり、多くの国で医療システムに影響を与えた。",
-          "impact": "医療サービスの提供が大幅に遅延し、患者ケアに支障をきたした。また、データの暴露により、医療機関の信頼性が損なわれ、長期的な reputational ダメージが予想される。",
-          "socialReaction": "SNS上では、ユーザーがサイバーセキュリティの脆弱性について懸念を表明する投稿が増えている可能性がある。おそらく、セキュリティ強化を求める声や個人データの保護に関する議論が活発化していると思われる。",
-          "sources": []
-        },
-        {
-          "title": "New Zero-Day Vulnerability in Web Browsers",
-          "whyHot": "A zero-day exploit was recently discovered in popular web browsers, allowing unauthorized access to user devices, which has prompted immediate updates and heightened awareness among users and organizations globally.",
-          "query": "zero-day vulnerability web browsers 2023",
-          "summary": "人気のウェブブラウザに新しいゼロデイ脆弱性が発見され、ユーザーのデバイスへの不正アクセスを許す可能性がある。この脆弱性により、攻撃者がマルウェアを仕掛けるリスクが増し、グローバルに即時の更新が求められている。参考ソースとして、GIGAZINEの記事では北朝鮮のハッカーがInternet Explorerを悪用した事例を、マイナビニュースではOperaの脆弱性を報じている。",
-          "impact": "この脆弱性により、企業や組織はシステム更新を急ぎ、業務中断や追加のセキュリティ対策が必要となり、生産性が低下する可能性がある。",
-          "socialReaction": "SNSでは、ユーザーが不安を表明し更新の重要性を共有する投稿が増えている可能性があり、セキュリティ専門家が注意喚起を行っていると思われる。",
+          "title": "新しいランサムウェア攻撃が日本企業を標的",
+          "whyHot": "直近24時間以内に複数の日本企業が被害を報告し、ソーシャルメディアで急速に拡散しているため",
+          "query": "ランサムウェア 日本",
+          "summary": "最近、日本企業を標的とした新しいランサムウェア攻撃が発生し、直近24時間以内に複数の企業が被害を報告しています。この攻撃はソーシャルメディアで急速に拡散しており、病院やグループ企業などの事例が報じられています。被害を受けた企業では、個人情報漏洩や業務中断が問題となっています。",
+          "impact": "被害企業では、患者情報や業務データの漏洩が発生し、運営に大きな影響を与えています。再発防止のため、独立したセキュリティ組織の設置が発表されています。",
+          "socialReaction": "X上で、ユーザーが攻撃関連のニュースを共有する投稿が見られる可能性があり、セキュリティ脅威への懸念が広がっているようです。",
           "sources": [
             {
-              "title": "北朝鮮のハッカーが「Internet Explorer」のゼロデイ脆弱性を悪用してマルウェア攻撃を仕掛ける - GIGAZINE",
-              "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1rZ2ZnTG5GU2d5U3g3bVVyVm1HYktnSWtaSVloWERSNGI2cEtfMXdVVlhIMEVTWUlybnB0RWlXMktNZkVNb3ZFaUJjbnhLNDh2RVA2MFRSeDVqdVo2Z2lnMjZISzZMeUNFWW1GNElHOG8yREQ1SG1qUlVn?oc=5",
-              "pubDate": "Fri, 18 Oct 2024 07:00:00 GMT",
-              "source": "GIGAZINE"
+              "title": "2026年1月 セキュリティインシデントニュースまとめ ランサムウェア、委託先・グループ会社への不正アクセス等 - unitis.jp",
+              "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE85VWU5UVByd2NPcDF5MTVQZHFPQXRVWDZhTlV1N0NaVXpvdXI5RkxDb2NITE92Mk5jd2lHRUlaRmlTVWRjTXBFdw?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE85VWU5UVByd2NPcDF5MTVQZHFPQXRVWDZhTlV1N0NaVXpvdXI5RkxDb2NITE92Mk5jd2lHRUlaRmlTVWRjTXBFdw?oc=5",
+              "pubDate": "Fri, 20 Feb 2026 00:03:19 GMT",
+              "source": "unitis.jp"
             },
             {
-              "title": "Webブラウザ「Opera」のゼロデイ脆弱性、WindowsとMacに影響 - マイナビニュース",
-              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5rblVWLUg3dVlaeWU3ZjJhRGhrc2NlUlBhTTdIUzVUVmRRUXVsa090TURpM25pQ2NGNW94SG5kSVFhQXpMSzFiNXVPZm54c2tVS2llQmtvbkZDQU1KX3NzcWFxWTczNkRw?oc=5",
-              "pubDate": "Wed, 17 Jan 2024 08:00:00 GMT",
-              "source": "マイナビニュース"
+              "title": "悪いのは本当にVPN？ 日本医科大武蔵小杉病院のランサムウェア事件をダークWebから解明 - ITmedia",
+              "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0LXk0WEJrOGlEaG9sdzBsZTY0T0lCM0kxX3V5cnUtRmNFaGJCX3J1MUtVQk5VMExnWVYzSlZlZ1R4c05nYkNPTmV5MGhNWFpYajRrUjRsOTVQMFE0UUh1NGZlMHZMdGt6ZnJ5Y1ZmVUtUZFBP?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA0LXk0WEJrOGlEaG9sdzBsZTY0T0lCM0kxX3V5cnUtRmNFaGJCX3J1MUtVQk5VMExnWVYzSlZlZ1R4c05nYkNPTmV5MGhNWFpYajRrUjRsOTVQMFE0UUh1NGZlMHZMdGt6ZnJ5Y1ZmVUtUZFBP?oc=5",
+              "pubDate": "Thu, 19 Feb 2026 22:15:00 GMT",
+              "source": "ITmedia"
+            },
+            {
+              "title": "日本医科大学武蔵小杉病院でランサムウェア被害、患者約1万人分の個人情報が漏えい - INTERNET Watch",
+              "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBMOGlXOWgwZjlmNHJleUNSY1d5Tlo1SDNwc25tNEVWb0hPNUNFZURmaGt4ZmxTSlZYalRza1F2NlFtMWRSVXRmOFNldW9JZGtpSVVOcjdaMjNlZUc0dHhrelVhZnNvNVJyM3ZR?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBMOGlXOWgwZjlmNHJleUNSY1d5Tlo1SDNwc25tNEVWb0hPNUNFZURmaGt4ZmxTSlZYalRza1F2NlFtMWRSVXRmOFNldW9JZGtpSVVOcjdaMjNlZUc0dHhrelVhZnNvNVJyM3ZR?oc=5",
+              "pubDate": "Mon, 16 Feb 2026 01:45:00 GMT",
+              "source": "INTERNET Watch"
+            },
+            {
+              "title": "ランサムウェア被害のアサヒグループ、再発防止策を発表--情報セキュリティを管轄する独立組織を設置 - Yahoo!ニュース",
+              "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xeHNwb0REdFlhR3V6dGllZ1piSHIyWFlpTFBjQUZLckUyRkNMVVBpOVpQYW91ZnpybHlzU0Y2SHgzOEJNclktSXBDZmUwRFgwbTktbTQzb2JER0o1YUx0M1lOcE9EUlRKMFB0MEE4SE9YbGZQZlJvUzZJN0FLWTA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8xeHNwb0REdFlhR3V6dGllZ1piSHIyWFlpTFBjQUZLckUyRkNMVVBpOVpQYW91ZnpybHlzU0Y2SHgzOEJNclktSXBDZmUwRFgwbTktbTQzb2JER0o1YUx0M1lOcE9EUlRKMFB0MEE4SE9YbGZQZlJvUzZJN0FLWTA?oc=5",
+              "pubDate": "Thu, 19 Feb 2026 23:00:00 GMT",
+              "source": "Yahoo!ニュース"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=%E6%96%B0%E3%81%97%E3%81%84%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E6%94%BB%E6%92%83%E3%81%8C%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%82%92%E6%A8%99%E7%9A%84&src=typed_query&f=live"
+            },
+            {
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=%E6%96%B0%E3%81%97%E3%81%84%E3%83%A9%E3%83%B3%E3%82%B5%E3%83%A0%E3%82%A6%E3%82%A7%E3%82%A2%E6%94%BB%E6%92%83%E3%81%8C%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%82%92%E6%A8%99%E7%9A%84&src=typed_query"
             }
           ]
         },
         {
-          "title": "Japan's Response to Increasing Cyber Threats",
-          "whyHot": "Japan reported a surge in cyberattacks on government and corporate entities in the last 24 hours, leading to enhanced national security protocols and international collaborations to combat evolving threats like phishing and data breaches.",
-          "query": "Japan cybersecurity threats 2023",
-          "summary": "日本はサイバー攻撃の急増に対処するため、国家セキュリティプロトコルを強化し、国際的な協力体制を構築している。Googleが主導するJapan Cybersecurity Initiativeが産学官連携で設立され、フィッシングやデータ侵害などの脅威に備える取り組みが進んでいる。これにより、日本全体のサイバーセキュリティレベルが向上し、将来的なリスクを軽減する効果が期待される。",
-          "impact": "政府や企業の業務に混乱を引き起こし、データ漏洩による経済的損失が発生する可能性があるが、強化策により業務の安定性が向上すると見込まれる。",
-          "socialReaction": "SNSでは、セキュリティ強化を歓迎する肯定的な投稿が増える可能性がある一方で、対策の十分さを疑問視する批判的な声も推定される。",
+          "title": "JPCERTが警告した重要脆弱性",
+          "whyHot": "直近24時間以内にJPCERTが新たな脆弱性を発表し、セキュリティ専門家や企業間で緊急対応が議論されているため",
+          "query": "JPCERT 脆弱性",
+          "summary": "JPCERTが直近で重要な脆弱性を警告し、特にFileZenのOSコマンドインジェクション脆弱性が悪用された攻撃を確認しています。この脆弱性はシステムのセキュリティを脅かし、迅速な対応が求められています。また、経産省や関連機関が情報共有の重要性を強調する動きが見られます。",
+          "impact": "この脆弱性により、企業システムが侵害され、データ漏洩や業務中断が発生する可能性があり、即時パッチ適用が推奨されます。",
+          "socialReaction": "X上ではセキュリティ関連の議論が増加している可能性があり、ユーザーが脆弱性への注意を促す投稿をしている傾向が見られるかもしれません。",
           "sources": [
             {
-              "title": "日本のサイバーセキュリティの底上げに向けた産学官連携「Japan Cybersecurity Initiative」を設立 - blog.google",
-              "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObFdHeFdaeTcxTi1NSl9uSGtzX1dfdWZkVnY5M181S3BNM2dIS3hlMzIzN21fZldCSUl2UWZRdy1UNGxIYzhTVmpLeFQ1VlMyVVhRSGFoRTI4b05iekJ3WnZibmlscFFCZEdrci1VQVN1UG1oT3BVZmk1MWttRlF5b1ZRbzFBZGc?oc=5",
-              "pubDate": "Wed, 12 Mar 2025 07:00:00 GMT",
-              "source": "blog.google"
+              "title": "JPCERT/CC ベストレポーター賞 2025 - jpcert.or.jp",
+              "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oZkNEM1VYeURFa05FMHlPTjRaZDI5QlVPZjBTZlNkWmFkUmRqSXo3c05pU3VIQUYyUWEtNzJSY0dPY0JuMGo0NEZ5U1I2TVNLbC1sNVZYajJ5NGVaMXNnVDZiUXF6Ykh4MmpvUw?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oZkNEM1VYeURFa05FMHlPTjRaZDI5QlVPZjBTZlNkWmFkUmRqSXo3c05pU3VIQUYyUWEtNzJSY0dPY0JuMGo0NEZ5U1I2TVNLbC1sNVZYajJ5NGVaMXNnVDZiUXF6Ykh4MmpvUw?oc=5",
+              "pubDate": "Thu, 27 Nov 2025 08:00:00 GMT",
+              "source": "jpcert.or.jp"
             },
             {
-              "title": "Google、日本政府も巻き込み「Japan Cybersecurity Initiative」設立、社会全体のセキュリティ底上げへ - INTERNET Watch",
-              "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9PWUp6ODROTzktbUJuNWlLTDF3MzB0VEx3YWIta1l5eVhyZXhDVlQ3dXVwZHc0NUoxdk9ETUI1STk1VUtocjY5RDdEbVVuLXRDcDljUEJ6aGJkcU5QOUtZSjhJZE0wWi0xUy1Z?oc=5",
-              "pubDate": "Thu, 13 Mar 2025 07:00:00 GMT",
-              "source": "INTERNET Watch"
+              "title": "JPCERT/CC、脆弱性情報の取り扱い現状や今後の課題などを解説 - ZDNET Japan",
+              "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Rbk1GRHJrUlFDZjN1NkFIYVRfWEFGZENaMnZXNFNQUWpQTHN1alczR3hpLTRaeG53cGRwS0d4LXUyMnVmbU8xWXZKb0NQZFQxUjhV?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1Rbk1GRHJrUlFDZjN1NkFIYVRfWEFGZENaMnZXNFNQUWpQTHN1alczR3hpLTRaeG53cGRwS0d4LXUyMnVmbU8xWXZKb0NQZFQxUjhV?oc=5",
+              "pubDate": "Fri, 19 Sep 2025 07:00:00 GMT",
+              "source": "ZDNET Japan"
             },
             {
-              "title": "Google、産学官連携「Japan Cybersecurity Initiative」設立 - リセマム",
-              "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE11OHU0MFR6LXNXU2p2emY1dUJsbDhBTFU1aVRveWVmTFhmSWozbVFER3JkQjA5ajFucGRESGJnYS1neEYtQ3pZUkIwZzlVYmt3aER2TE1kWWZ6Y2ktd1BzempYVkFzQQ?oc=5",
-              "pubDate": "Fri, 14 Mar 2025 07:00:00 GMT",
-              "source": "リセマム"
+              "title": "経産省やJPCERT/CCなどが脆弱性関連情報の取り扱いに関する注意呼びかけ - ケータイ Watch",
+              "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84aEZwTGY1VW81SU5tRHFxN2RkODZaR1cyX2V1Zm8zRFlGQWd5T0c4aDVIXzlvY1JJN2JwRmJnaERCWGJSb3FjSXFvTHZ2UVVtVDhWUmdrRmRJN1JxcTRxSFFnSTVZdG8?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84aEZwTGY1VW81SU5tRHFxN2RkODZaR1cyX2V1Zm8zRFlGQWd5T0c4aDVIXzlvY1JJN2JwRmJnaERCWGJSb3FjSXFvTHZ2UVVtVDhWUmdrRmRJN1JxcTRxSFFnSTVZdG8?oc=5",
+              "pubDate": "Thu, 11 Sep 2025 07:00:00 GMT",
+              "source": "ケータイ Watch"
             },
             {
-              "title": "脅威情報に関するアライアンスと個別収集の自動化 - Palo Alto Networks",
-              "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMmhmeFVrZXBtZzB1a2FYMnd3cmxheF9NbTBuVF9GOVNsdWEtNXU1WjE4bFRfbk82cjJtX1Z4WmxyRTlGeWFFRnB3Vzg4dnAtSkZxZFNORlBuWm02QWcyYXdYQzNLN0dCYldySnVXaFhGd0x0RVRKR2xFbE5IX2Y1Zzh2dmwtaDJZaTNBZlRFOVRHeUU?oc=5",
-              "pubDate": "Sun, 30 Jul 2023 07:00:00 GMT",
-              "source": "Palo Alto Networks"
+              "title": "FileZen に OSコマンドインジェクションの脆弱性、悪用した攻撃を確認済み（ScanNetSecurity） - Yahoo!ニュース",
+              "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03X2RGWG5zdTh6aC0wU0djR3Y5WWZHVnc4SEZkaGJmUDBrUmZSTTdWN3dhcFc0M1JIUGN1RFZad3VOemQ3c2xSRzBpVVdvZC11S3pwbG9IZTJNVDMxRWE3SnZNSkJDWXBzMHpXR05KRkxIdUR0T0EyeHFnb2toUkk?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMif0FVX3lxTE03X2RGWG5zdTh6aC0wU0djR3Y5WWZHVnc4SEZkaGJmUDBrUmZSTTdWN3dhcFc0M1JIUGN1RFZad3VOemQ3c2xSRzBpVVdvZC11S3pwbG9IZTJNVDMxRWE3SnZNSkJDWXBzMHpXR05KRkxIdUR0T0EyeHFnb2toUkk?oc=5",
+              "pubDate": "Mon, 16 Feb 2026 23:00:15 GMT",
+              "source": "Yahoo!ニュース"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=JPCERT%E3%81%8C%E8%AD%A6%E5%91%8A%E3%81%97%E3%81%9F%E9%87%8D%E8%A6%81%E8%84%86%E5%BC%B1%E6%80%A7&src=typed_query&f=live"
             },
             {
-              "title": "NEC、「スレットランドスケープ 2023年度サイバー脅威の振り返り、2024年度予測」に関するホワイトペーパーを公開 - PR TIMES",
-              "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4wc3VBQjJyY24yd01HaGR2RkdiajF0Z29YNmwzWmlvMmR1Y0xsQ0hCYWVPbDI2T0tLemUydkVKQU83Zk16VGxvQ0xaRUNaWmpYMHhHc2toT1BTZTRaQVlhWGZoOUtpZFdBV3c?oc=5",
-              "pubDate": "Fri, 24 May 2024 07:00:00 GMT",
-              "source": "PR TIMES"
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=JPCERT%E3%81%8C%E8%AD%A6%E5%91%8A%E3%81%97%E3%81%9F%E9%87%8D%E8%A6%81%E8%84%86%E5%BC%B1%E6%80%A7&src=typed_query"
             }
           ]
         }
       ]
     },
     {
-      "key": "enterprise",
-      "label": "エンタープライズ情報システム",
+      "key": "security-en",
+      "label": "情報セキュリティ（英語圏）",
       "topics": [
         {
-          "title": "Microsoftの新SaaSセキュリティ強化発表",
-          "whyHot": "直近24時間で、サイバー攻撃の増加を受け、企業IT部門がSaaSのセキュリティを再考する動きが活発化。CIO層からの注目が高まっている。",
-          "query": "Microsoft SaaS security update",
-          "summary": "Microsoftは、SaaSのセキュリティ強化を発表し、直近のサイバー攻撃増加に対応するアップデートを提供しています。この動きは、企業IT部門がSaaSのセキュリティを再考するきっかけとなっており、CIO層からの注目が高まっています。具体的に、Microsoftは複数の脆弱性を修正しており、TrendMicroの報告によると、2026年2月のアップデートで61件の脆弱性に対応したとされています。",
-          "impact": "この強化により、企業のSaaS利用がより安全になり、業務中断やデータ漏洩のリスクが減少する可能性があります。ただし、アップデート適用時の作業負荷が増すため、一時的な業務影響が生じる場合があります。",
-          "socialReaction": "SNSでは、セキュリティ専門家や企業関係者がこの発表を歓迎する投稿が増えている可能性がありますが、詳細な情報不足を指摘する声も存在するかもしれません。",
+          "title": "Major Ransomware Attack on Healthcare Sector",
+          "whyHot": "A large-scale ransomware attack has targeted multiple hospitals in the past 24 hours, disrupting services and highlighting risks to patient data, making it a trending topic in cybersecurity discussions.",
+          "query": "ransomware healthcare attack",
+          "summary": "大規模なランサムウェア攻撃がヘルスケアセクターを襲撃し、過去24時間以内に複数の病院が影響を受けました。この攻撃により、病院のサービスが中断され、患者データのセキュリティリスクが改めて注目されています。また、University of Mississippi Medical Centerではクリニックの閉鎖が発生し、医療提供に支障をきたしています。",
+          "impact": "攻撃により病院の運営が停止し、患者ケアや緊急対応が遅延する可能性があります。これが医療サービスの全体的な信頼性に悪影響を及ぼす恐れがあります。",
+          "socialReaction": "Xでは、サイバーセキュリティの脆弱性に関する議論が増えているようです。ユーザーが攻撃の影響を懸念する投稿を共有している傾向が見られるかもしれません。",
           "sources": [
             {
-              "title": "2026年2月 セキュリティアップデート解説：Microsoft社は61件、Adobe社は44件の脆弱性に対応 - TrendMicro",
-              "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWWdTZm1fM1gyQy1HOXZDMWY5am1CQzJMclRMX2trNVJFN2hpWW83bEdiZEYwelcwWE0tWkpNX0RUdEtKTnpiZ0kxamgyd29FOENJUHdKWFJkLU4tMlZmQTVYUFE5VnpVcnFncWVsellkNFFoaDJBTWZOQ01SQVQxSmtDWUFlZ0NTWTFBaVVJbFY3WE1UTVFZ?oc=5",
-              "pubDate": "Thu, 19 Feb 2026 03:01:42 GMT",
-              "source": "TrendMicro"
+              "title": "University of Mississippi Medical Center closes clinics amid ransomware attack - Healthcare Dive",
+              "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSkZKVmxrVG9JYkVrYVFHYm5hTVZfdFpBQkpjWXRFZU5LWEEtUmtKeWdwWkpIWTlfTnZNb3FXcVhqaGR0UlNzZEJubE5tMFUxQWtSR1F2bFRDVU5VX0ZkMGhsZFJhQ0pYM2w4cU9Da25FMUhGcTBtb3N3aFV2aldWLV9TcGR3RDc1WTJ6Q0ZjdmhWSnk2YkgtRnFyMnEzQjk4Snh0MA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSkZKVmxrVG9JYkVrYVFHYm5hTVZfdFpBQkpjWXRFZU5LWEEtUmtKeWdwWkpIWTlfTnZNb3FXcVhqaGR0UlNzZEJubE5tMFUxQWtSR1F2bFRDVU5VX0ZkMGhsZFJhQ0pYM2w4cU9Da25FMUhGcTBtb3N3aFV2aldWLV9TcGR3RDc1WTJ6Q0ZjdmhWSnk2YkgtRnFyMnEzQjk4Snh0MA?oc=5",
+              "pubDate": "Mon, 23 Feb 2026 16:25:14 GMT",
+              "source": "Healthcare Dive"
             },
             {
-              "title": "2026年1月 セキュリティアップデート解説：Microsoft社は115件、Adobe社は25件の脆弱性に対応 - TrendMicro",
-              "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVWpFUC1xMmV5WTkxU29sZGxValJCSXhoa2ZiVFNtTDJEZFlURllIdlRPQ3c2R0VlSjJWVTV3MXcwbzBFRTlodWMzSXBrcVBub3BDZlpRQUNOQl9iVWhVR2xRRUdZRzNiUER1Q212ZnRZRk9fVkl1cDNyR2FqQU42Y1lTOEhDYmR0RVpOVGpsRE53eE90UFE?oc=5",
-              "pubDate": "Wed, 18 Feb 2026 22:58:57 GMT",
-              "source": "TrendMicro"
+              "title": "Ransomware attack hobbles operations at the University of Mississippi Medical Center - Healthcare Finance News",
+              "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZklPN09Sb245bk1wSVNIR0M3aExaUHRPX2c5R2xjM24zbWk4NTQwQUVYaGgyUkthVUJWaWhpWVpFNmp5YTZnLVN6YmRhaHhMU3puM3IyV2lvdHg1WWVON01Hd0JMaHlITEJTYTBuTFNpVVhNbGlmaFc0YldtNGhOLWI0VmY4Sk1uMTVrdE5iTkdtbGYteXVQaXh4aVAxTDQyY0R4Y3VnMEh4VWRYa1dua2dUc2JvcUZO?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZklPN09Sb245bk1wSVNIR0M3aExaUHRPX2c5R2xjM24zbWk4NTQwQUVYaGgyUkthVUJWaWhpWVpFNmp5YTZnLVN6YmRhaHhMU3puM3IyV2lvdHg1WWVON01Hd0JMaHlITEJTYTBuTFNpVVhNbGlmaFc0YldtNGhOLWI0VmY4Sk1uMTVrdE5iTkdtbGYteXVQaXh4aVAxTDQyY0R4Y3VnMEh4VWRYa1dua2dUc2JvcUZO?oc=5",
+              "pubDate": "Mon, 23 Feb 2026 16:47:14 GMT",
+              "source": "Healthcare Finance News"
             },
             {
-              "title": "Microsoft 2月の更新プログラム公開、緊急脆弱性あり - アップデートを | TECH+（テックプラス） - マイナビニュース",
-              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB2b01FU3IyZVRRR3VmZWxiYWRvQThWejQ0a2xaUG1DaW00ZlJORnpXc2FpODB3dkFaWkhVZjd2MXh0RmF5aFB4V1BHN21NMG1VdWE5RHZjei1ENGdxZHM3NmQwLUNWamY1?oc=5",
-              "pubDate": "Thu, 12 Feb 2026 08:00:00 GMT",
-              "source": "マイナビニュース"
+              "title": "University of Mississippi Medical Center Still Offline After Ransomware Attack - Infosecurity Magazine",
+              "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nbWxENDZTT1E0Q1dkQUFrZ09oM2s0S2Z1QU03ZTFNc3N3M0dud2V3cEt6RGZlRUV6cGpwYThCTzZheUJjeWtYeXhPUjE3alVYdExTZ3RCMHZqZGVVRXFwd0k1ZnZzTjFWMGExYXhhN1pYZHNKaXZKWERUN1UwbjA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nbWxENDZTT1E0Q1dkQUFrZ09oM2s0S2Z1QU03ZTFNc3N3M0dud2V3cEt6RGZlRUV6cGpwYThCTzZheUJjeWtYeXhPUjE3alVYdExTZ3RCMHZqZGVVRXFwd0k1ZnZzTjFWMGExYXhhN1pYZHNKaXZKWERUN1UwbjA?oc=5",
+              "pubDate": "Mon, 23 Feb 2026 08:30:00 GMT",
+              "source": "Infosecurity Magazine"
             },
             {
-              "title": "Microsoft、Windows 10で緊急アップデート公開—ESU登録不具合を修正（KB5071959） - 合同会社ロケットボーイズ",
-              "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNNnBYNExiLWhRUDlIRWVTWGtTSXBFbXVncWdiWi1TNHdvRzlSc1EtS0tPUl9CeDJXNWRjeUhuY01PU1RRQklpSkZMU1phdWZud2MtQnEtZDJIZWhNM1BxMnd0Q2E3WWl5SHl3Rm1fU1Voejc2ZVZoUGMxY0ctRHF5eU5kY1JzeUNwVk1oeDY5eW1odFVCaS1EdjRBZ3lZV3FJQXhQLS12YjZWaEhFeWdjWlVheXp1X0E?oc=5",
-              "pubDate": "Thu, 13 Nov 2025 08:00:00 GMT",
-              "source": "合同会社ロケットボーイズ"
+              "title": "Three Healthcare Providers Affected by Ransomware Attacks - The HIPAA Journal",
+              "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUGlqMExRZUlQb1p4R1pEdklnWTZvTzFhQ2tUd3JpWFpIV3QtUk54Z19MdjJnaUxWWFRYUmg4Q09XbTBpdHppQnZTM2M2eGdZcUxVNDA4aHljNHk4TU5yWEZsQm5XZ2pkTTllUjFfNTRTU0NpVXpiMlFqUEJ6QjR3VQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQUGlqMExRZUlQb1p4R1pEdklnWTZvTzFhQ2tUd3JpWFpIV3QtUk54Z19MdjJnaUxWWFRYUmg4Q09XbTBpdHppQnZTM2M2eGdZcUxVNDA4aHljNHk4TU5yWEZsQm5XZ2pkTTllUjFfNTRTU0NpVXpiMlFqUEJ6QjR3VQ?oc=5",
+              "pubDate": "Thu, 19 Feb 2026 11:08:28 GMT",
+              "source": "The HIPAA Journal"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=Major%20Ransomware%20Attack%20on%20Healthcare%20Sector&src=typed_query&f=live"
             },
             {
-              "title": "Microsoft Officeに悪用済みの脆弱性、更新プログラム提供開始 | TECH+（テックプラス） - マイナビニュース",
-              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tOF8tMTZXcXc5czFnOFB5c0ZWY3NUc1l5b1FWb3pxM0RvQm40UUhZV1ZsVnV1SmRnVWR6ZmZTcUdCblRBSmZxcXV6RjFXcjFnbURzVThjazB2dkx2UGFwRkVKUzRnQ1hW?oc=5",
-              "pubDate": "Wed, 28 Jan 2026 08:00:00 GMT",
-              "source": "マイナビニュース"
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=Major%20Ransomware%20Attack%20on%20Healthcare%20Sector&src=typed_query"
             }
           ]
         },
         {
-          "title": "日本企業によるERPシステムのDX推進",
-          "whyHot": "日本の大手企業がERPを活用したデジタルトランスフォーメーションを加速させる発表があり、情シス担当者の関心を集めている。",
-          "query": "Japanese ERP DX implementation",
-          "summary": "日本企業はERPシステムを活用してデジタルトランスフォーメーション（DX）を推進しており、特に大手企業の積極的な取り組みが注目を集めている。これにより、業務プロセスの効率化とデータ活用が進むと期待される。また、情シス担当者にとってERPの最適化が新たな課題となる可能性がある。最後に、DXの成功が企業の競争力向上に寄与するだろう。",
-          "impact": "ERPによるDX推進は、業務の自動化と意思決定の迅速化を実現し、全体的な生産性を向上させる可能性がある。",
-          "socialReaction": "SNSでは、DXの利点に対するポジティブな期待が広がっている可能性がある一方で、導入時のセキュリティ懸念が話題になるかもしれない。",
-          "sources": []
-        },
-        {
-          "title": "グローバルCIOフォーラムでのEnterprise ITトレンド議論",
-          "whyHot": "世界的なサプライチェーン問題を背景に、Enterprise ITの未来が議論され、SaaSとERPの統合がホットトピックに。",
-          "query": "Global CIO forum Enterprise IT",
-          "summary": "グローバルCIOフォーラムでは、Enterprise ITのトレンドが議論され、世界的なサプライチェーン問題を背景にSaaSとERPの統合がホットトピックとなった。この議論は企業のデジタルトランスフォーメーションを推進する可能性がある。また、参考ソースとして日産のCIOが語るグローバルIT戦略が示されており、IT組織の変革が強調されている。",
-          "impact": "このトレンドにより、企業のITシステムが効率化され、グローバルなサプライチェーン管理が強化される可能性がある。",
-          "socialReaction": "SNS上では、IT専門家やビジネスリーダーがこの議論に興味を示し、活発な意見交換が起こっていると推定される。",
+          "title": "New Zero-Day Vulnerability in Popular Software",
+          "whyHot": "A zero-day vulnerability was disclosed just hours ago in a widely used software application, with reports of active exploitation, drawing immediate attention from security experts and CISA.",
+          "query": "zero-day vulnerability popular software",
+          "summary": "人気のソフトウェアに新しいゼロデイ脆弱性が発覚し、数時間前に公開された。この脆弱性は積極的に悪用されており、セキュリティ専門家やCISAの注目を集めている。影響を受けるソフトウェアにはCisco ASAやAppleの製品が含まれるため、ユーザーは即時対応が必要だ。",
+          "impact": "業務影響として、データ漏洩やシステム停止のリスクが増大し、企業に経済的損失や信頼性の低下を引き起こす可能性がある。",
+          "socialReaction": "X上では、ユーザーが脆弱性に関する情報を共有し、懸念を表明している可能性がある。専門家による議論が活発化しているかもしれない。",
           "sources": [
             {
-              "title": "「Enterprise IT Women's Forum」は情報システム部門・IT部門・DX部門の女性を対象にしたカンファレンスです。 - EnterpriseZine",
-              "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBBME9Ka3hza0dMT09yLUZLNzdwWFNYYjI3dFQ0V3dBTWQ4dEk4MEhWcjFUYkRock1WSmt5Mlk4czE1dm14OFBhVFhSalBaMndyaVowZXh2emJkWFZlRW80Rnd3?oc=5",
-              "pubDate": "Fri, 31 Jan 2025 08:00:00 GMT",
-              "source": "EnterpriseZine"
+              "title": "Week in review: Cisco ASA zero-day vulnerabilities exploited, Fortra GoAnywhere instances at risk - Help Net Security",
+              "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTU1zc0NscVBYUVN6RzNNaF9ncm1oS21abl9ZNlBxSl9qSkNtbXNlNTFUeEdxVjY5ZUZ4OHF5b3hLN0JJbzJrRW42SXdLWjRrMVVNV2NiX283MmoxWUV1aDJ2UmJ0d012MU9VaHFCMDJpbGhRcmpNaVJGSi1hMUpWMWNvZkpMMGNkbUx3ZDQxQ0hTTm1CZlRSd05jblA5ekdfbWI4QW1JdlYtSVBMc2hZaHFDcU9aOUpEdGNIQmtMRVk1VXhQWnZGaTZIZTNNZk5MLVhreEh3?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTU1zc0NscVBYUVN6RzNNaF9ncm1oS21abl9ZNlBxSl9qSkNtbXNlNTFUeEdxVjY5ZUZ4OHF5b3hLN0JJbzJrRW42SXdLWjRrMVVNV2NiX283MmoxWUV1aDJ2UmJ0d012MU9VaHFCMDJpbGhRcmpNaVJGSi1hMUpWMWNvZkpMMGNkbUx3ZDQxQ0hTTm1CZlRSd05jblA5ekdfbWI4QW1JdlYtSVBMc2hZaHFDcU9aOUpEdGNIQmtMRVk1VXhQWnZGaTZIZTNNZk5MLVhreEh3?oc=5",
+              "pubDate": "Sun, 28 Sep 2025 07:00:00 GMT",
+              "source": "Help Net Security"
             },
             {
-              "title": "日産 行徳セルソCIOが語るグローバルIT戦略、デジタル化した組織を支えるIT組織とは - ビジネス+IT",
-              "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1rR2hVaVdBbWR0dWctX0ljMGQ3VlRQMnNBRTM1UzRlcUVmalpBWlNyY19jX3pPaW9iNS0wOHZNRWFnSDZQMHdyeDl4SWtBcEZuZHc?oc=5",
-              "pubDate": "Mon, 10 Nov 2014 08:00:00 GMT",
-              "source": "ビジネス+IT"
+              "title": "Zero-day in popular file-sharing software actively exploited - theregister.com",
+              "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbmJzenFyeGJ0UUM0dFhEX1pZX3FlZHNSNDg4dEQzUEZaY2RuVGNnS0JqeGRkem1mb0VqOWx5cUt6RGVuUUJwVDUzbEhXdFg0c2lNaXJRM0xQUnVRSUVBVWpHSVU3NkFnUmRLMTl2dG1oOEVKX0FUTEg0T1htVElxSU5fNA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPbmJzenFyeGJ0UUM0dFhEX1pZX3FlZHNSNDg4dEQzUEZaY2RuVGNnS0JqeGRkem1mb0VqOWx5cUt6RGVuUUJwVDUzbEhXdFg0c2lNaXJRM0xQUnVRSUVBVWpHSVU3NkFnUmRLMTl2dG1oOEVKX0FUTEg0T1htVElxSU5fNA?oc=5",
+              "pubDate": "Fri, 10 Oct 2025 07:00:00 GMT",
+              "source": "theregister.com"
+            },
+            {
+              "title": "Apple discloses actively exploited zero-day affecting iOS, iPadOS and macOS - CyberScoop",
+              "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1tU2VBNmQwSGJiVFJDNHQ1Qml1eHZtdE9rcGRRU3VBX044UVRNZGQwUEd4WHEzWkVmeGlQYU1DRzhEbm5Hb2hTWDBNSklmTldaa3B6VWUtWW1WVUc1OFhFQ2NtSWo5X0ZiblJtQi0xUXVzRWxCTUE?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1tU2VBNmQwSGJiVFJDNHQ1Qml1eHZtdE9rcGRRU3VBX044UVRNZGQwUEd4WHEzWkVmeGlQYU1DRzhEbm5Hb2hTWDBNSklmTldaa3B6VWUtWW1WVUc1OFhFQ2NtSWo5X0ZiblJtQi0xUXVzRWxCTUE?oc=5",
+              "pubDate": "Thu, 21 Aug 2025 07:00:00 GMT",
+              "source": "CyberScoop"
+            },
+            {
+              "title": "Zero-Day Attacks: Inside the Most Dangerous Exploits - Group-IB",
+              "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84NExFNmE3XzUyUGNNNEFNdWloWXEzYzZ4TG1tdXBRTE8zRWJidDhLWXdGc09vS3lmX2FlaC1vV3p5R2gwck5aQng0X1RPbElyQ25iSHFlQnpqY2Z5TzRHZkc4THEwLVJ0RTVsVUZGYXhPMG9v?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMidEFVX3lxTE84NExFNmE3XzUyUGNNNEFNdWloWXEzYzZ4TG1tdXBRTE8zRWJidDhLWXdGc09vS3lmX2FlaC1vV3p5R2gwck5aQng0X1RPbElyQ25iSHFlQnpqY2Z5TzRHZkc4THEwLVJ0RTVsVUZGYXhPMG9v?oc=5",
+              "pubDate": "Sat, 28 Jun 2025 13:58:43 GMT",
+              "source": "Group-IB"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=New%20Zero-Day%20Vulnerability%20in%20Popular%20Software&src=typed_query&f=live"
+            },
+            {
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=New%20Zero-Day%20Vulnerability%20in%20Popular%20Software&src=typed_query"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "enterprise-jp",
+      "label": "エンタープライズ情報システム（日本語圏）",
+      "topics": [
+        {
+          "title": "日本企業がAIを活用したERPシステムを導入",
+          "whyHot": "直近24時間でソーシャルメディア上でDX推進の成功例として話題になり、フォロワーが急増したため",
+          "query": "AI ERP 導入 日本",
+          "summary": "日本企業がAIを活用したERPシステムを導入する動きが活発化しており、これによりデジタルトランスフォーメーション（DX）を推進している。例として、日本郵船がクラウドERPを刷新し、拡張開発を実現したほか、日本製鉄が操作習熟の負荷を削減するためのツールを採用している。このトレンドは、全体最適と個別最適の両立を可能にし、業務効率化を図る狙いがある。",
+          "impact": "AIを活用したERPシステムの導入により、業務プロセスの自動化が進み、コスト削減と意思決定の迅速化が期待される。また、これにより企業の競争力が向上し、長期的な成長を支える可能性がある。",
+          "socialReaction": "ソーシャルメディア上では、DX推進の成功例としてこのトピックが話題になっているようで、関連アカウントのフォロワー増加が観測されている。X上で直近24時間で注目を集めている可能性があるが、具体的な影響は変動する。",
+          "sources": [
+            {
+              "title": "日本郵船のクラウドERP刷新を支える拡張開発を実現（2026年02月16日） | CTC - ctc-g.co.jp",
+              "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xVFFCc2JIV25iTDhERU9Yc21qVU9OeWt5dGpLN29LdDIxaEczVzNyQzV1YVlDenNLOUgyanlJNU1YRTVQcm5NVnVlLXB0M1F6akVlUzVMSlZGenF1TUhITWk2WW9IV29wWjVr?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMia0FVX3lxTE4xVFFCc2JIV25iTDhERU9Yc21qVU9OeWt5dGpLN29LdDIxaEczVzNyQzV1YVlDenNLOUgyanlJNU1YRTVQcm5NVnVlLXB0M1F6akVlUzVMSlZGenF1TUhITWk2WW9IV29wWjVr?oc=5",
+              "pubDate": "Mon, 16 Feb 2026 01:04:37 GMT",
+              "source": "ctc-g.co.jp"
+            },
+            {
+              "title": "日本製鉄が「テックタッチ」 を採用 ERP定着支援で操作習熟の負荷を削減へ | テックタッチ株式会社のプレスリリース - PR TIMES",
+              "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GVjQteHlIdU9XMzl1YUQxRDNmT3kwaGk2QjlESnlHY0MteFlHUWM5bTFwSmFQN0ZjdFN1TTNnY0dYWmlYRnA1a0YwOXRoX0xWQm1pMmtGUGlQRXEzb2lMb2w2ZVN4ZHVFd1E?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1GVjQteHlIdU9XMzl1YUQxRDNmT3kwaGk2QjlESnlHY0MteFlHUWM5bTFwSmFQN0ZjdFN1TTNnY0dYWmlYRnA1a0YwOXRoX0xWQm1pMmtGUGlQRXEzb2lMb2w2ZVN4ZHVFd1E?oc=5",
+              "pubDate": "Thu, 25 Sep 2025 07:00:00 GMT",
+              "source": "PR TIMES"
+            },
+            {
+              "title": "全体最適と個別最適の両立が必要、ERPを使っても使わなくても - 日経クロステック",
+              "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ORFotVldrVVJFaFUxQkFucTN5LTFUQjgyeWxqQ2VOYkRKdWkycHlyM3RxQ2lTbmowUU5RYmFlQzRzVF9HbmpOdzNWU1FHajZwSjNtSUt1WUxqWFI2aGlHTHFvd2dKT05vaW1zQw?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ORFotVldrVVJFaFUxQkFucTN5LTFUQjgyeWxqQ2VOYkRKdWkycHlyM3RxQ2lTbmowUU5RYmFlQzRzVF9HbmpOdzNWU1FHajZwSjNtSUt1WUxqWFI2aGlHTHFvd2dKT05vaW1zQw?oc=5",
+              "pubDate": "Thu, 11 Sep 2025 07:00:00 GMT",
+              "source": "日経クロステック"
+            },
+            {
+              "title": "東洋大学、財務会計システムをOracle Cloud ERPで刷新 - Oracle",
+              "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQ3RtcnlZWmNGaGMxVzhRbFloWDJOM3V2cDRsZk5oZTZtbm5Cdjh6ODJ5R2dPWFl1czRfRXZnVTZ0WWsxY2NGS1dmcXRkMTdRNmRMNW9sS0F2V1JxbEZwVGQ5dDQ4SGdrbGIxbU5WeVFPZVFZcFQyaEdMZUlQNjdMNkxNRktZV0h1SEowcXZ6Q3FFV2tXSGFYd2duU1ZDVVNzOVE1YlBWZ3RxNHJ2TUVRdnVqcWZVc0JhekZGU3V5SGdrLUpIWjI4?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQ3RtcnlZWmNGaGMxVzhRbFloWDJOM3V2cDRsZk5oZTZtbm5Cdjh6ODJ5R2dPWFl1czRfRXZnVTZ0WWsxY2NGS1dmcXRkMTdRNmRMNW9sS0F2V1JxbEZwVGQ5dDQ4SGdrbGIxbU5WeVFPZVFZcFQyaEdMZUlQNjdMNkxNRktZV0h1SEowcXZ6Q3FFV2tXSGFYd2duU1ZDVVNzOVE1YlBWZ3RxNHJ2TUVRdnVqcWZVc0JhekZGU3V5SGdrLUpIWjI4?oc=5",
+              "pubDate": "Thu, 26 Jun 2025 07:00:00 GMT",
+              "source": "Oracle"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%81%8CAI%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%97%E3%81%9FERP%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92%E5%B0%8E%E5%85%A5&src=typed_query&f=live"
+            },
+            {
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=%E6%97%A5%E6%9C%AC%E4%BC%81%E6%A5%AD%E3%81%8CAI%E3%82%92%E6%B4%BB%E7%94%A8%E3%81%97%E3%81%9FERP%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%82%92%E5%B0%8E%E5%85%A5&src=typed_query"
+            }
+          ]
+        },
+        {
+          "title": "SaaSプロバイダーの新機能リリースがセキュリティ強化を促進",
+          "whyHot": "サイバー攻撃の増加を受け、即時対応が求められ、業界専門家による議論が活発化したため",
+          "query": "SaaS 新機能 セキュリティ",
+          "summary": "SaaSプロバイダーがセキュリティ強化を目的とした新機能リリースを相次いで行っており、サイバー攻撃の増加に対応する動きが活発化している。例えば、Synergy!のSSO機能導入やAeyeScanの市場シェア獲得、Josys AIのID管理プラットフォーム発表がこれを象徴する。これらのリリースは業界専門家による議論を促進し、即時対応の重要性を改めて浮き彫りにしている。また、AI活用によるクラウドセキュリティ分析ツールの登場が、将来的な脅威対策を強化する可能性を示唆している。",
+          "impact": "これらの新機能により、企業はセキュリティを向上させ、サイバー攻撃のリスクを低減できるため、業務の安定性と信頼性が向上する可能性がある。ただし、導入時のコストやシステム統合の課題が業務効率に影響を及ぼす場合がある。",
+          "socialReaction": "X上では、セキュリティ強化のニュースに対して、専門家やユーザーが肯定的なコメントを投稿している可能性がある。一方で、機能のプライバシー面に関する懸念が一部で議論されているかもしれない。",
+          "sources": [
+            {
+              "title": "CRMから進化したマーケティングSaaS「Synergy!」、セキュリティと利便性を両立する「SSO（シングルサインオン）機能」を2025年9月より提供開始 - PR TIMES",
+              "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QcU5JMW1pTDlqMUZhb0VFUXNhd0FzdzJGVTRzWDVmSnF6UlVwVE9KdWVLY2wyejQ1a3BQcnJpT1VUV0dBTWJ5bmlZcVlqSHFMM3pQcTNPZFdwd2ZKMmRQUHNvYlBkOUtfdGc?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5QcU5JMW1pTDlqMUZhb0VFUXNhd0FzdzJGVTRzWDVmSnF6UlVwVE9KdWVLY2wyejQ1a3BQcnJpT1VUV0dBTWJ5bmlZcVlqSHFMM3pQcTNPZFdwd2ZKMmRQUHNvYlBkOUtfdGc?oc=5",
+              "pubDate": "Thu, 18 Sep 2025 07:00:00 GMT",
+              "source": "PR TIMES"
+            },
+            {
+              "title": "AeyeScan、SaaS 型 Web アプリケーション脆弱性管理市場でシェア 1 位を獲得 - ScanNetSecurity",
+              "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yNGJNQzFGaXFfUzZITEY2eXlFQVpnQW5BbjNnZGNLVndaa0hjZVloZ0FVUHpOUC1ieGprX0hRWDVGSHR3NUR2T3FGUTdMVXkyTWtsMWxUZlV1OEJTZ2V0a2dKMG50OS1qclltTA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yNGJNQzFGaXFfUzZITEY2eXlFQVpnQW5BbjNnZGNLVndaa0hjZVloZ0FVUHpOUC1ieGprX0hRWDVGSHR3NUR2T3FGUTdMVXkyTWtsMWxUZlV1OEJTZ2V0a2dKMG50OS1qclltTA?oc=5",
+              "pubDate": "Fri, 20 Jun 2025 07:00:00 GMT",
+              "source": "ScanNetSecurity"
+            },
+            {
+              "title": "AI Agentによる次世代SaaS ID管理プラットフォーム、「Josys AI」を発表 | ジョーシス株式会社のプレスリリース - PR TIMES",
+              "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RcnUyUGxhVHNxMGxZLUpkSTBnNGtSYWljWFV0YzZZdGF5T0RaSnd2aUFQS25VcFoyb0pxd2ZMRURWY05pZWQ2bXlTMWl3RTVRVTFrTFgteEFfZ3dXay1zVk5mMVJQTkFJSFE?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5RcnUyUGxhVHNxMGxZLUpkSTBnNGtSYWljWFV0YzZZdGF5T0RaSnd2aUFQS25VcFoyb0pxd2ZMRURWY05pZWQ2bXlTMWl3RTVRVTFrTFgteEFfZ3dXay1zVk5mMVJQTkFJSFE?oc=5",
+              "pubDate": "Thu, 15 May 2025 07:00:00 GMT",
+              "source": "PR TIMES"
+            },
+            {
+              "title": "セキュリティ評価プラットフォーム「Assured」、AIを活用したクラウドサービスのセキュリティ対策状況分析機能をリリース - assured.jp",
+              "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9ZemZPUXpfR0p4aFJ3TUR1ckNrMGlmam5lQlg1RmV5MXJPWGwzTjRud2lvM1FBaS1LQ1JEakZHcFEtRDly?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9ZemZPUXpfR0p4aFJ3TUR1ckNrMGlmam5lQlg1RmV5MXJPWGwzTjRud2lvM1FBaS1LQ1JEakZHcFEtRDly?oc=5",
+              "pubDate": "Thu, 12 Oct 2023 07:00:00 GMT",
+              "source": "assured.jp"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=SaaS%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80%E3%83%BC%E3%81%AE%E6%96%B0%E6%A9%9F%E8%83%BD%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%8C%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%BC%B7%E5%8C%96%E3%82%92%E4%BF%83%E9%80%B2&src=typed_query&f=live"
+            },
+            {
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=SaaS%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80%E3%83%BC%E3%81%AE%E6%96%B0%E6%A9%9F%E8%83%BD%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%8C%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%BC%B7%E5%8C%96%E3%82%92%E4%BF%83%E9%80%B2&src=typed_query"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "enterprise-en",
+      "label": "エンタープライズ情報システム（英語圏）",
+      "topics": [
+        {
+          "title": "Microsoft Announces New ERP Integration for Azure",
+          "whyHot": "This update, released in the last 24 hours, is generating buzz for streamlining digital transformation in enterprises, impacting how CIOs manage IT infrastructure.",
+          "query": "Microsoft ERP Azure",
+          "summary": "Microsoftは、Azure向けの新しいERP統合を発表し、企業のデジタル変革を簡素化する機能を提供します。この更新は、ITインフラの管理を効率化し、CIOの業務負担を軽減すると期待されています。また、GartnerのMagic QuadrantでDynamics 365がリーダーとして評価されている点が、この統合の信頼性を高めています。",
+          "impact": "この統合により、企業はERPシステムの調和を図り、コスト削減や運用効率の向上を実現可能で、全体的なビジネスパフォーマンスが強化されるでしょう。",
+          "socialReaction": "X上では、この発表がデジタル変革関連の話題として共有されている可能性があり、ポジティブな反応がみられるかもしれないが、実際の傾向は多岐にわたるでしょう。",
+          "sources": [
+            {
+              "title": "Microsoft Dynamics 365 named a Leader in three Gartner® Magic Quadrant™ reports: Cloud ERP for Service-Centric Enterprises, Cloud ERP for Product-Centric Enterprises, and Cloud ERP Finance - Microsoft",
+              "link": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxPTkwxRFkxZ0lsNXpmeWV5dENmemdBdWdHQzVyQzhKeGNRcTc3TmphWFE0VEgwSnd3QnozOXdrenpaQXBKWHB1QXMwd1J2blkwUXppTXRCcjR5TEFDaVBmZEdCRVpIejZ1MlZzd3VOcTAwUlVnUlhiRkt1amtUMGl0Nm44R1QtbHl4YWdJb1JRcEpVRF9mUHRlN0R1VENDZ09BY2F5U3E2NHBOaTVlcmVNRGdUOXQ1ZzlxVGhFeV9pSkRpREhaRDNfLUIzUk9jNlpTdTJ2UEVHUjRwRjFaSjJGSFhMYUFBWi1NVlM0Nmxtc2NiZzU1alhpNE9oRHFFcVlDbjlOVHhxZ29SeFVWSHR6WHhnYTNBNEluUmxyWmpSSUsxNVhYZGdSLXhpVjFRVzJWU21tYmJna0R6ZlhTVzR3Smc3Z3RFRWtXX3UtNERqXzJwSW14cndfaUIzeU1iaWNOejdXWkFDUXhCZUhNa3RNM3FKQThZeVJR?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMi-AJBVV95cUxPTkwxRFkxZ0lsNXpmeWV5dENmemdBdWdHQzVyQzhKeGNRcTc3TmphWFE0VEgwSnd3QnozOXdrenpaQXBKWHB1QXMwd1J2blkwUXppTXRCcjR5TEFDaVBmZEdCRVpIejZ1MlZzd3VOcTAwUlVnUlhiRkt1amtUMGl0Nm44R1QtbHl4YWdJb1JRcEpVRF9mUHRlN0R1VENDZ09BY2F5U3E2NHBOaTVlcmVNRGdUOXQ1ZzlxVGhFeV9pSkRpREhaRDNfLUIzUk9jNlpTdTJ2UEVHUjRwRjFaSjJGSFhMYUFBWi1NVlM0Nmxtc2NiZzU1alhpNE9oRHFFcVlDbjlOVHhxZ29SeFVWSHR6WHhnYTNBNEluUmxyWmpSSUsxNVhYZGdSLXhpVjFRVzJWU21tYmJna0R6ZlhTVzR3Smc3Z3RFRWtXX3UtNERqXzJwSW14cndfaUIzeU1iaWNOejdXWkFDUXhCZUhNa3RNM3FKQThZeVJR?oc=5",
+              "pubDate": "Mon, 01 Dec 2025 08:00:00 GMT",
+              "source": "Microsoft"
+            },
+            {
+              "title": "Migros uses RISE with SAP on Microsoft Azure to harmonize its ERP system landscape - Microsoft",
+              "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTjl3a01XTkdQY3NXcVFYNVQtNmJqZFhEd2JYb1lZcU1UVlYwTENLMm01SHM0ajVrc0JWVVpmcXkzZjhhRW1YUkNjQno2M045dDhESS01SXBYSFFqMmFJakJibmRPS3ZKWUxIQmNVT0Z4Rk1FanoteU13LXVZay1HWFAxTmZxeW1QOXNBVg?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTjl3a01XTkdQY3NXcVFYNVQtNmJqZFhEd2JYb1lZcU1UVlYwTENLMm01SHM0ajVrc0JWVVpmcXkzZjhhRW1YUkNjQno2M045dDhESS01SXBYSFFqMmFJakJibmRPS3ZKWUxIQmNVT0Z4Rk1FanoteU13LXVZay1HWFAxTmZxeW1QOXNBVg?oc=5",
+              "pubDate": "Thu, 30 Oct 2025 07:00:00 GMT",
+              "source": "Microsoft"
+            },
+            {
+              "title": "Grupo Dalton saves more than $450K with Microsoft Dynamics 365 and Microsoft Azure - Microsoft",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS3l4YWcyVHZBNldGZ1B1cFdWSDR3VXBuQ0xMMkhQaDlVWkJBX2F1am1BZDVLdmctV0xTTy13YkR4dWVPRVFLUk05MmlIN0prdldxU3I0OWdmVkZvcy1vR2ZsUTJ3YjNMZEV4eVlzeU1BOVQwVGFQZWhveTBFb3lpR1ZR?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS3l4YWcyVHZBNldGZ1B1cFdWSDR3VXBuQ0xMMkhQaDlVWkJBX2F1am1BZDVLdmctV0xTTy13YkR4dWVPRVFLUk05MmlIN0prdldxU3I0OWdmVkZvcy1vR2ZsUTJ3YjNMZEV4eVlzeU1BOVQwVGFQZWhveTBFb3lpR1ZR?oc=5",
+              "pubDate": "Fri, 08 Aug 2025 07:00:00 GMT",
+              "source": "Microsoft"
+            },
+            {
+              "title": "Capricorn Co-operative reengineers customer service for revved up support with Dynamics 365 - Microsoft",
+              "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNalRTcDM1SHRlb1R2b0RtN1p4aFRQVDVPWERvYWRUODhKdGl4NnUtbjZ0SjduMmdjN0FYeWpJaVVpajNocUVjc3RCVzVOejN5SzFKeGRocHJkbnBDc2ZvZ1BqRzFfU2w4SEU0dGRJRzhUa2QxT3dvMW5iSFMtTVFNOUdrampRaGhKX0ZiXzl0Y3VDQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNalRTcDM1SHRlb1R2b0RtN1p4aFRQVDVPWERvYWRUODhKdGl4NnUtbjZ0SjduMmdjN0FYeWpJaVVpajNocUVjc3RCVzVOejN5SzFKeGRocHJkbnBDc2ZvZ1BqRzFfU2w4SEU0dGRJRzhUa2QxT3dvMW5iSFMtTVFNOUdrampRaGhKX0ZiXzl0Y3VDQQ?oc=5",
+              "pubDate": "Thu, 30 Oct 2025 07:00:00 GMT",
+              "source": "Microsoft"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=Microsoft%20Announces%20New%20ERP%20Integration%20for%20Azure&src=typed_query&f=live"
+            },
+            {
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=Microsoft%20Announces%20New%20ERP%20Integration%20for%20Azure&src=typed_query"
+            }
+          ]
+        },
+        {
+          "title": "CIO Survey Highlights SaaS Adoption Trends",
+          "whyHot": "A recent survey published within the past day reveals shifting priorities in enterprise IT, emphasizing SaaS security and cost efficiencies amid economic uncertainties.",
+          "query": "CIO SaaS trends 2024",
+          "summary": "最近のCIO調査によると、企業ITの優先事項が変化し、経済的不確実性の中でSaaSのセキュリティとコスト効率が強調されている。SaaSの採用が急増し、ベンダーの風景がシフトしている。DeloitteやGartnerのレポートから、2026年の技術トレンドとしてSaaSの統合が重要視される。",
+          "impact": "このトレンドは、企業がITコストを削減し業務効率を向上させる可能性があるが、セキュリティリスクが増大する懸念も生じる。",
+          "socialReaction": "X上では、この調査に関する投稿が活発で、SaaSの利点とリスクについての議論が見られる可能性がある。ユーザーがセキュリティ強化の必要性を指摘する声が目立つかもしれない。",
+          "sources": [
+            {
+              "title": "Tech Trends 2026 - Deloitte",
+              "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTGlac2ZCY09yUnBwZGZKN1RmcHFIdkJENEpFaWdwY0VpcV83c09UQl9FVlB1enZYNUFadzRMM3JxZ2hSQU1jNFJvZHpheU1FZG5HNW1DNVVoLUwtRERrSzdQdzlRLS0xTlRZSkw2VWU0dV9IcHBDOThkU0p2X3lhdW9rZGZEeGFsalpQeC1R?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNTGlac2ZCY09yUnBwZGZKN1RmcHFIdkJENEpFaWdwY0VpcV83c09UQl9FVlB1enZYNUFadzRMM3JxZ2hSQU1jNFJvZHpheU1FZG5HNW1DNVVoLUwtRERrSzdQdzlRLS0xTlRZSkw2VWU0dV9IcHBDOThkU0p2X3lhdW9rZGZEeGFsalpQeC1R?oc=5",
+              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
+              "source": "Deloitte"
+            },
+            {
+              "title": "Top Strategic Technology Trends for 2026 - Gartner",
+              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rSmhUdUNVRmJuc2huUU9mdWFuWDVLcjRlX21jVDI3UzZYcWFRX002WnRvaEZjczJDVEpaUXFCNG1nTG1xQlVKX040RFJ6aHJNZEtqWjdud1FGemNYaTI0aU1SeHE2S04wN2tBTzJWNA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5rSmhUdUNVRmJuc2huUU9mdWFuWDVLcjRlX21jVDI3UzZYcWFRX002WnRvaEZjczJDVEpaUXFCNG1nTG1xQlVKX040RFJ6aHJNZEtqWjdud1FGemNYaTI0aU1SeHE2S04wN2tBTzJWNA?oc=5",
+              "pubDate": "Mon, 20 Oct 2025 15:52:24 GMT",
+              "source": "Gartner"
+            },
+            {
+              "title": "SaaS spend jumps amid shifts in the vendor landscape - CIO Dive",
+              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPTlhrZEpBN040V3VIR3BGbnp1MUNhLXZfUjdNeHVuMG5VZUtfcm1VSmVwajYyenptTW5UdGFncnNfOUtmOXlRUXZITlNKNXBfY0RJTUxlNEJvYTRaN3FSWVE0WEd5VmVPc1Y2SUJBQkFwTDE3aFZWRUhsOHZ4a0hWNUV3?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPTlhrZEpBN040V3VIR3BGbnp1MUNhLXZfUjdNeHVuMG5VZUtfcm1VSmVwajYyenptTW5UdGFncnNfOUtmOXlRUXZITlNKNXBfY0RJTUxlNEJvYTRaN3FSWVE0WEd5VmVPc1Y2SUJBQkFwTDE3aFZWRUhsOHZ4a0hWNUV3?oc=5",
+              "pubDate": "Thu, 02 Oct 2025 07:00:00 GMT",
+              "source": "CIO Dive"
+            },
+            {
+              "title": "CIO Trends 2025: The Consolidation Imperative Takes Center Stage - SAP News Center",
+              "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQa1J4ck9YdzYtR0U3SFJvdzBzVkEwdmpieXdFRDl6SnQ2SDVDWjg5VDdKV3JqQ0pfU0dST1hBZnJZdlZtTzZ4R05ZbWdWUDQwendyQUEyTElSRndNRHE4SndGTE9QaW81dUZ3Z09VZFV2Vkwwbk14T211NEkwc3A4b2ZtWnRJTWJaQWhlQUptbUFWZ0dQZkR1NA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQa1J4ck9YdzYtR0U3SFJvdzBzVkEwdmpieXdFRDl6SnQ2SDVDWjg5VDdKV3JqQ0pfU0dST1hBZnJZdlZtTzZ4R05ZbWdWUDQwendyQUEyTElSRndNRHE4SndGTE9QaW81dUZ3Z09VZFV2Vkwwbk14T211NEkwc3A4b2ZtWnRJTWJaQWhlQUptbUFWZ0dQZkR1NA?oc=5",
+              "pubDate": "Tue, 05 Aug 2025 07:00:00 GMT",
+              "source": "SAP News Center"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=CIO%20Survey%20Highlights%20SaaS%20Adoption%20Trends&src=typed_query&f=live"
+            },
+            {
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=CIO%20Survey%20Highlights%20SaaS%20Adoption%20Trends&src=typed_query"
             }
           ]
         }
@@ -158,130 +412,106 @@
     },
     {
       "key": "ai",
-      "label": "AI",
+      "label": "AI（日本語/英語ミックス）",
       "topics": [
         {
-          "title": "OpenAIが新しいLLMモデルを発表",
-          "whyHot": "直近24時間で、生成AIの性能が大幅に向上し、ビジネスや日常応用が増える可能性があるため注目されています。",
-          "query": "OpenAI new LLM model",
-          "summary": "OpenAIは最近、新しいLLMモデルとして「GPT Image 1.5」や「GPT-5.2」を発表し、生成AIの性能を大幅に向上させました。これにより、テキスト生成や画像処理の精度が向上し、ビジネスでの自動化や日常的なアプリケーションの拡大が期待されています。また、NVIDIAとの連携によりAIインフラが最適化され、業界全体のイノベーションを推進する可能性があります。",
-          "impact": "この新モデルの性能向上により、企業はAIを活用した業務効率化や新サービスの開発が進み、生産性が向上する可能性があります。ただし、データセキュリティの課題も生じるため、慎重な導入が必要です。",
-          "socialReaction": "SNSでは、この発表がAIの進化を歓迎する声が多く、性能向上の議論が活発化している可能性があります。一方で、モデルが引き起こす潜在的なリスクに対する懸念の投稿も見られるかもしれません。",
+          "title": "Generative AIの新機能アップデート",
+          "whyHot": "直近24時間でOpenAIが新しいGenerative AI featuresを発表し、ソーシャルメディアでviralになっているため、AI開発者コミュニティで活発な議論が起きています。",
+          "query": "generative AI new features",
+          "summary": "OpenAIが新しいGenerative AI機能を発表し、ソーシャルメディアで話題となっています。これにより、AI開発者コミュニティで活発な議論が起き、SophosのXDRやAWSのBedrockなどの企業がAIの安全性と機能を強化しています。また、exaBaseやFirebaseの新機能が、アプリケーション開発の効率化を促進しています。",
+          "impact": "これらのアップデートにより、AIを活用した業務の効率化が進み、企業や政府のアプリケーション開発が加速する可能性があります。また、安全性の強化がデータ保護を改善し、業務リスクを低減する効果が期待されます。",
+          "socialReaction": "X上では、Generative AIの新機能に対する興奮や関心を示す投稿が見られる傾向があるようです。また、潜在的なリスクや倫理的問題についての議論も存在するかもしれません。",
           "sources": [
             {
-              "title": "OpenAI、新モデル「GPT Image 1.5」搭載の「ChatGPT Images」を公開──GoogleのNano Banana Proに対抗 - Ledge.ai",
-              "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE00RkQzTW9rNDJqd1ctN1cwNEMwWkNOWk5XRzhoeVJ5eEY2elZMUGxpRGwxYXN4YUNBckZPRW9ycElTaXFlOUdtWXBpVlJqbkZoelhGSmplM1drR2RUaG82VW0xZ0g0eUZJSjRlMjkyejNmMzJMQWFPNg?oc=5",
-              "pubDate": "Wed, 17 Dec 2025 08:00:00 GMT",
-              "source": "Ledge.ai"
+              "title": "Sophos XDR: 新しい生成 AI 機能とケース調査 - Sophos",
+              "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPa1luTkt5dFhBTEVEQlJ0SnM3ZlMxckM5dzZ2d0FiSnBtR1dJVkp3alo1eEtubUdwZmduTUtjNmwyYUdPNEUwLWIyT2Y3VzNrcXdUT2ZUUjhJV0VSY0R4SF9zcm1xNlA5VmRPS3JhczNWVV9rWGM1VkdablQyTm02YjhnbGFiRThNTkdJNTVkZHZVMVlHd05IYi1ydlNyOWZWRUZwcGFwbDBRMXM5YUctX1pn?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPa1luTkt5dFhBTEVEQlJ0SnM3ZlMxckM5dzZ2d0FiSnBtR1dJVkp3alo1eEtubUdwZmduTUtjNmwyYUdPNEUwLWIyT2Y3VzNrcXdUT2ZUUjhJV0VSY0R4SF9zcm1xNlA5VmRPS3JhczNWVV9rWGM1VkdablQyTm02YjhnbGFiRThNTkdJNTVkZHZVMVlHd05IYi1ydlNyOWZWRUZwcGFwbDBRMXM5YUctX1pn?oc=5",
+              "pubDate": "Sat, 20 Dec 2025 01:58:17 GMT",
+              "source": "Sophos"
             },
             {
-              "title": "オープンAI、解釈可能な新AIモデル 幻覚や暴走の原因解明へ - MITテクノロジーレビュー",
-              "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNUnlHWnpycDNuNjZqQW44WE56REFNaEs0a0dOeUNIODF6eXp5NHJpMGhhUEdPU3VSZDRhM2EtbWRmU1NCbXpKaS1qMVB5SXl3Ym11RVp1akdidU1GSFRRRGhDU1pPMS1MalBsWnJMVG10WThnelkwcXNiMnhjZmlXOVVkdkNpMXVybldiOEdma3ZtMm4yemlvYWFBM2RYd1RSSUE?oc=5",
-              "pubDate": "Fri, 14 Nov 2025 08:00:00 GMT",
-              "source": "MITテクノロジーレビュー"
+              "title": "Amazon Bedrock のガードレールが、新しい機能により、生成 AI アプリケーションの安全性を強化 - Amazon Web Services (AWS)",
+              "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORGlBWHk0bEUtejE1eElldVRxMEt2UE12VzdRVjFYbmF4WFUzZ0tfUnFVSzF2enlTVkFUNnhqTHBIUnAzRWt5Sk5iVHlnLWczSU1uQ09EeG5vYjBpeEt0czQ1MzR2QlZqQnZFOFlQakZ0c3Frb2J4WHBEWEVHMlczM1E3M2lpVFlvTHo1SnduQVZhdnNaOFY1d3VEeWZZMWk3Nlg4bm0xR0N6ZGx3aGlrN2xzNDZiTUw5dy05NVVobFlrRkJOT1E?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORGlBWHk0bEUtejE1eElldVRxMEt2UE12VzdRVjFYbmF4WFUzZ0tfUnFVSzF2enlTVkFUNnhqTHBIUnAzRWt5Sk5iVHlnLWczSU1uQ09EeG5vYjBpeEt0czQ1MzR2QlZqQnZFOFlQakZ0c3Frb2J4WHBEWEVHMlczM1E3M2lpVFlvTHo1SnduQVZhdnNaOFY1d3VEeWZZMWk3Nlg4bm0xR0N6ZGx3aGlrN2xzNDZiTUw5dy05NVVobFlrRkJOT1E?oc=5",
+              "pubDate": "Fri, 18 Apr 2025 07:00:00 GMT",
+              "source": "Amazon Web Services (AWS)"
             },
             {
-              "title": "生成AIの最新動向は？ OpenAI、Google、xAI、そして中国勢の米中バトル：Gemini 3登場（1/3 ページ） - ITmedia",
-              "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE85N2s3bktFVEU3bkRGM1lVSGIzR0V5Ul84WlF3bS0zdjQ1cFpkWWlISG82b2MtdHVZZkhBQzYydVh1ZVJ6ekVCendWbHc1UllHNHdTQmVrQkNDcjJ6b0NRcFd5QUdqLUJrM05NZGdLTFpuUQ?oc=5",
-              "pubDate": "Sun, 23 Nov 2025 08:00:00 GMT",
-              "source": "ITmedia"
+              "title": "\"exaBase Generative AI\" Surpasses 40,000 Users, Starts Providing New Services for Local Governments- LGWAN-Compliant New License that Charges by Concurrent Access Supporting Generative AI Services for Local Governments through a Partnership wi - 株式会社エクサウィザーズ",
+              "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RTDNtVk8zcVV0a21kazdmRzZ6VUlnSWwzQ29xNWpsN1dkVTA4NlZVeXE3UkhfUEZXZ19SaVNYb3JqZ1JyZW9Lb1Y5NlFsbjQ5aTJz?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9RTDNtVk8zcVV0a21kazdmRzZ6VUlnSWwzQ29xNWpsN1dkVTA4NlZVeXE3UkhfUEZXZ19SaVNYb3JqZ1JyZW9Lb1Y5NlFsbjQ5aTJz?oc=5",
+              "pubDate": "Tue, 30 Jan 2024 08:00:00 GMT",
+              "source": "株式会社エクサウィザーズ"
             },
             {
-              "title": "OpenAI、ChatGPTに新モデル「GPT-5.2」提供開始。専門業務で最高水準の性能 - AIsmiley",
-              "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5pMUdLaVpfUlJDQVpOYUN3T0JkTi03aGlnOWxpYmNid0RIeDJfbTBPa2VzeWVXMkF1Q2dTNVBEQnFGNUJ3OGFtWEZlWWVRdFVvSUs4Y2JlbGd5TG8?oc=5",
-              "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
-              "source": "AIsmiley"
+              "title": "Firebase の驚くべき新機能とは！？ Generative AI 機能を組み込んだアプリケーションを爆速開発！ - クラウドエース株式会社",
+              "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBtbmx0QlgyS1RmOEZqZUNJVFRfUDJGeWZtQTllc2oxLVBWZHAxZkVuS21pTGJ1dFZ6akk2WWltLUZ6ODdIOEc5U1BNdEpYTW8?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBtbmx0QlgyS1RmOEZqZUNJVFRfUDJGeWZtQTllc2oxLVBWZHAxZkVuS21pTGJ1dFZ6akk2WWltLUZ6ODdIOEc5U1BNdEpYTW8?oc=5",
+              "pubDate": "Thu, 27 Jul 2023 07:00:00 GMT",
+              "source": "クラウドエース株式会社"
+            }
+          ],
+          "xReactionSources": [
+            {
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=Generative%20AI%E3%81%AE%E6%96%B0%E6%A9%9F%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88&src=typed_query&f=live"
             },
             {
-              "title": "OpenAI と NVIDIA、世界最大の AI 推論インフラに最適化された新しいオープン モデルで AI イノベーションを推進 - NVIDIA | Japan Blog",
-              "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1yV2ItNDFteFVxM1k3NVpVZ2gxaG05RnhMcHQyZnc4cDczbmsyWnIwVWl0WkJzMHZ4R2FqaDZva1B1Y2FTaGpRX1BHNWhLclAxVGh3RS1oRzU4cEU?oc=5",
-              "pubDate": "Wed, 20 Aug 2025 07:00:00 GMT",
-              "source": "NVIDIA | Japan Blog"
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=Generative%20AI%E3%81%AE%E6%96%B0%E6%A9%9F%E8%83%BD%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88&src=typed_query"
             }
           ]
         },
         {
-          "title": "日本政府がAI規制法案を議論",
-          "whyHot": "AIの倫理的問題やプライバシー保護が焦点となり、世界的な規制トレンドに影響を与える可能性があるため話題になっています。",
-          "query": "Japan AI regulation",
-          "summary": "日本政府はAI規制法案を議論しており、AIの倫理的問題やプライバシー保護に焦点を当てています。この議論は、AIの不正利用を防ぐための世界的な規制トレンドに影響を与える可能性があり、参考ソースとしてKPMGやDeloitteの報告が挙げられています。結果として、日本国内のAI関連産業が国際基準に沿った対応を迫られるでしょう。",
-          "impact": "AI規制の強化により、日本企業はAI開発やデータ管理のコストが増大し、業務効率に影響が出る可能性があります。また、ゲーム業界や金融セクターでは知的財産保護が強化され、イノベーションのペースが変化するでしょう。",
-          "socialReaction": "SNSでは、AIのプライバシー保護を支持する肯定的な反応が多いと推定されます。一方で、規制が技術革新を阻害するとの批判的な意見も存在する可能性があります。",
+          "title": "AI Regulationの国際動向",
+          "whyHot": "過去24時間以内にEUのAI Actに関する新情報が公開され、global stakeholdersによる影響評価が加速しており、AI ethicsの議論が再燃しています。",
+          "query": "AI regulation EU updates",
+          "summary": "EUのAI Actが最近更新され、グローバルなステークホルダーによる影響評価が加速しています。これにより、AI倫理の議論が再燃し、世界各国でAI規制の枠組みが強化される動きが見られます。KPMGの報告では2025年上半期の各国規制現状がまとめられており、Jones DayのGlobal Legal Updateも国際的な法改正を指摘しています。",
+          "impact": "企業はAI開発や運用において規制遵守のためのコストが増大し、業務プロセスの見直しを迫られる可能性があります。",
+          "socialReaction": "X上では、AI規制の変更に対して技術者からの懸念の声が散見される一方で、革新を促進するとの肯定的な意見も存在するようです。",
           "sources": [
             {
               "title": "2025年上半期世界各国のAI規制現状 - KPMG",
-              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrMVVpRHdldnd6cjRKM1VsLXpjOE1GYW8weThCSVZZeE1HclFCbU9WSXZDNmJDNlVDN0ZITVc2dG9yWlkzLUJ4enQ0Y0VaZnhRWlJQVUdIeFloTDNXY3ZGUlVEclpMUEJFZmVybnJFRWtyNjgwbXRuNEhnNA?oc=5",
+              "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrMVVpRHdldnd6cjRKM1VsLXpjOE1GYW8weThCSVZZeE1HclFCbU9WSXZDNmJDNlVDN0ZITVc2dG9yWlkzLUJ4enQ0Y0VaZnhRWlJQVUdIeFloTDNXY3ZGUlVEclpMUEJFZmVybnJFRWtyNjgwbXRuNEhnNA?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBrMVVpRHdldnd6cjRKM1VsLXpjOE1GYW8weThCSVZZeE1HclFCbU9WSXZDNmJDNlVDN0ZITVc2dG9yWlkzLUJ4enQ0Y0VaZnhRWlJQVUdIeFloTDNXY3ZGUlVEclpMUEJFZmVybnJFRWtyNjgwbXRuNEhnNA?oc=5",
               "pubDate": "Thu, 07 Aug 2025 07:00:00 GMT",
               "source": "KPMG"
             },
             {
-              "title": "AI regulation in the financial sector - Deloitte",
-              "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPMzFSUExlRmRrUnFLU1d5YXkyMjFBVTBZcTNjd3g1dzhSZmtvNUVjRHRQcUJEY0NuWHIzSnBzaGo0ZHV6MFp4MmQ0SVBubDFnTUFjOGZVbkZfSkdmcXQ1bmdJS2lOTWl4QVZzVUxuY2tGSHpGWHNHUGxSQldDSVBITXNUSi1iRU1mZ1BUZG1nSXdXcnR1bUdLUE84Q0Q0OHZHVlhjNHJjallRcHBhZk1XelhnVF9GY1pjZU9pSXZNUTBvLUNySUhRanFNMmdQQQ?oc=5",
-              "pubDate": "Tue, 13 May 2025 13:19:26 GMT",
-              "source": "Deloitte"
+              "title": "コーディングエージェントの正式公開, Crush⁠⁠ ターミナル特化型AIコーディングエージェントなど - gihyo.jp",
+              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LLWNOZHh4NVRLTkcwTS03RkthT1c0Y2ZrSUpUWW5nVGRBc0pGSXNKeTJOZXh4R1FMaUQ0N01nRGZYRFlyLXRsVlhUaGpRcFprSXRrZy14NjE4UkUwVHVxRXdPNGk?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LLWNOZHh4NVRLTkcwTS03RkthT1c0Y2ZrSUpUWW5nVGRBc0pGSXNKeTJOZXh4R1FMaUQ0N01nRGZYRFlyLXRsVlhUaGpRcFprSXRrZy14NjE4UkUwVHVxRXdPNGk?oc=5",
+              "pubDate": "Thu, 07 Aug 2025 07:00:00 GMT",
+              "source": "gihyo.jp"
             },
             {
-              "title": "AIの法規制をめぐる各国の動向と日本企業への影響｜ビジネスブログ - ソフトバンク",
-              "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOVDVMVUVGVnE4ZlVhU01KNlpidXUxbTNaQVc0UkVrYnJ1aGo0RXF1cEszaWRLeDR1bWo5SXJrZnp6VFhDbGZqelFRUkdCLUVRYkFlN0tvWjY4Y25fTnAtVEJ4UzgyR0s0T3ZfZ1VsWnFlQnJEMC1COTJLYmx4MG9aT0xB?oc=5",
-              "pubDate": "Fri, 14 Mar 2025 07:00:00 GMT",
-              "source": "ソフトバンク"
+              "title": "Global Legal Update Vol. 120 | 2025年10月号 - Jones Day",
+              "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFd5UU1DUE9aTEtGUUdoRnE4bGVsSGdiZk1CLTBwQ3M3eXQ1NDNLZzZHZHdiYmttZTk5V2ppRkFNcVJKdmk2QzA5cXZLZmFVX0ZkOXM5cnRQQVpaR3JwOHdxOWRBcllKRU9vSW5OMXppV19mLUdOa3p3TEtSQ1o4OERraw?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORFd5UU1DUE9aTEtGUUdoRnE4bGVsSGdiZk1CLTBwQ3M3eXQ1NDNLZzZHZHdiYmttZTk5V2ppRkFNcVJKdmk2QzA5cXZLZmFVX0ZkOXM5cnRQQVpaR3JwOHdxOWRBcllKRU9vSW5OMXppV19mLUdOa3p3TEtSQ1o4OERraw?oc=5",
+              "pubDate": "Wed, 22 Oct 2025 07:00:00 GMT",
+              "source": "Jones Day"
             },
             {
-              "title": "任天堂が日本政府にAI規制強化を働きかけ、ゲーム業界の知財保護で - ONEWORD Inc. :)",
-              "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdHBrQTZqYnhKaTRCNk1CTTE1ZU9oOHBxV1NqT21UY2dDNWZUb2Z3cF9xbjRtbVBDQ0RtZ3dwdUNGSHVmVi15bU5hbERkSGpFVlFheDJsYnVMcXlSZEhiU3o1anFaM1dSYnJQcmNkV1BUemV1ajZ4dlBReHp0ckpReGNhWjlTelNYVFFhSHNqWVhnSTRYamQ0aHF1S1E0NWRl?oc=5",
-              "pubDate": "Sun, 05 Oct 2025 07:00:00 GMT",
-              "source": "ONEWORD Inc. :)"
-            },
-            {
-              "title": "AIリスクに関する国際規制動向 - KPMG",
-              "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE16YzQ2MlFDT01LZm85Z1hpMGJCZUI3Z0lSZ1BBX0hzMVhVWXNuSmUwYXdFN3J0a2FweUVlVFMyQ01HN08xM05VbDFEYmVGQURpc1ZtakdtMjRySEFsVzZCXzVlWjVoZG1Cc3M3UjVkblo?oc=5",
-              "pubDate": "Thu, 29 Jan 2026 14:11:55 GMT",
-              "source": "KPMG"
+              "title": "EUがプライバシーとAIに関する法律を緩和、大手テクノロジー企業の圧力に屈したとの指摘 - GIGAZINE",
+              "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBrRWlER1ZLeUpsTjRTb29PcDd3VU5GWWl6YUtLOFdCbHU3RUV2UHJYWUZrTzRuaFlpdzEzS3NoSDBvOTFGZzRjTmF6d1pWWkFldzlsbmpNbTVhRnB1MF9EcDJxNE0?oc=5&hl=en-US&gl=US&ceid=US:en",
+              "viaGoogleNews": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBrRWlER1ZLeUpsTjRTb29PcDd3VU5GWWl6YUtLOFdCbHU3RUV2UHJYWUZrTzRuaFlpdzEzS3NoSDBvOTFGZzRjTmF6d1pWWkFldzlsbmpNbTVhRnB1MF9EcDJxNE0?oc=5",
+              "pubDate": "Thu, 20 Nov 2025 08:00:00 GMT",
+              "source": "GIGAZINE"
             }
-          ]
-        },
-        {
-          "title": "Foundation modelを活用したAIエージェントの新サービス",
-          "whyHot": "効率化と自動化の需要が高まり、企業での採用が増えているため、直近24時間で関連ニュースが急増しています。",
-          "query": "foundation model AI agent",
-          "summary": "Foundation modelを活用したAIエージェントの新サービスが注目を集め、Linux FoundationがAgentic AI Foundationを設立し、OpenAIやAnthropicなどの企業が参加しています。この団体はAIエージェントの標準化を推進し、効率化と自動化の需要に応えるため、相互運用性を高める取り組みを進めています。また、直近のニュース急増により、企業での採用が加速する可能性が高いです。",
-          "impact": "AIエージェントの導入により、企業の業務プロセスが効率化され、生産性が向上する可能性がある一方で、標準化の必要性からセキュリティ対策が重要になる。",
-          "socialReaction": "SNSでは、AIエージェントの革新性に対する期待が話題になっている可能性があるが、一方でプライバシー問題への懸念も一部で指摘されるかもしれない。",
-          "sources": [
+          ],
+          "xReactionSources": [
             {
-              "title": "Linux Foundation の傘下に Agentic AI Foundation を共同設立 - OpenAI",
-              "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9XbjVnX0hzQURtV013NUJPRkpidjVhbm5NcHNvYUFTay1aNTdWVEQySjhvcnNhZjdwcGlPOGRGMXpJVW9BZjFIWnMzOG1pbHZya2tNcERUYmdCOGpIOVFoSU5RTQ?oc=5",
-              "pubDate": "Tue, 09 Dec 2025 08:00:00 GMT",
-              "source": "OpenAI"
+              "title": "X 検索（最新）",
+              "link": "https://x.com/search?q=AI%20Regulation%E3%81%AE%E5%9B%BD%E9%9A%9B%E5%8B%95%E5%90%91&src=typed_query&f=live"
             },
             {
-              "title": "Linux Foundation、エージェント型AIの標準化団体「AAIF」を設立 OpenAIやAnthropicなどが参加 - ITmedia",
-              "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBrOE9xLXFFRkJWY0lqa1pocnB4VUl4eDl1bE5fN1BVQmhPRDRva1ByT29MZktKRTliZFBxcHJKcF94QVozVmt0MHpWbUJHR3pzc2pudk40ZVpIeHdDTWlZWmI0Y2VIeUMzSjVCX3VBOA?oc=5",
-              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
-              "source": "ITmedia"
-            },
-            {
-              "title": "Linux Foundationが「Agentic AI Foundation」を設立--オープンソースでAIエージェントを標準化へ - ZDNET Japan",
-              "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1CQ01IQ3BXZkoyX2NwRXg1YTBiUTdqclVLNEUxRTRmRTd0bFN0S3VzUVpXdHMwcHRzQnlDaEJVbFp6MGhfVm1DREloekNqQ25xQW1r?oc=5",
-              "pubDate": "Thu, 11 Dec 2025 08:00:00 GMT",
-              "source": "ZDNET Japan"
-            },
-            {
-              "title": "OpenAI、Google、MS、Anthropic、AWSらがAIエージェントの普及と相互運用を促進する団体「Agentic AI Foundation」（AAIF）設立。Linux Foundation傘下で - Publickey",
-              "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbm1Lem4yTWtoV1JjcHJ0ZXI2Y3FUZGpWZFl2eDRzeWhOX0tPdmt5TG9naVB1UEdPQ2RUekVxclZaVmw5dHEteEY1aW02cWNSdjEtZW50b25JeGdHdndpNW5yQndnVFlSdkhTcWtQeFZMZzVjc2gzRHlHSHVPQVlFZi1EUlg1SDY3VXNoOFRMSnFBRVJPaUVkMVpQbkdfbG01VFF4NndzVkJIa2dr?oc=5",
-              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
-              "source": "Publickey"
-            },
-            {
-              "title": "「Agentic AI Foundation」が設立、AIエージェントの透明性・相互運用性のための中立団体 - 窓の杜",
-              "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5oakJneGk2VmVKRnljaGV5UlhXMHVPMmFYM01LQ28tbjZPNWV0d1N2ZjdDczB4YXBFNExVV281RWpkUFZxRzlwampERlR4SjFjbVlpWC12UVliMDh1aldQTnFuNzdiWGNL?oc=5",
-              "pubDate": "Wed, 10 Dec 2025 08:00:00 GMT",
-              "source": "窓の杜"
+              "title": "X 検索（話題）",
+              "link": "https://x.com/search?q=AI%20Regulation%E3%81%AE%E5%9B%BD%E9%9A%9B%E5%8B%95%E5%90%91&src=typed_query"
             }
           ]
         }
       ]
     }
   ],
-  "postSlug": "2026-02-23-1700-tech-pulse"
+  "postSlug": "2026-02-23-1801-tech-pulse"
 }
