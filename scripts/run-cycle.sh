@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+export PATH="/home/claw/.npm-global/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
+OPENCLAW_BIN="/home/claw/.npm-global/bin/openclaw"
+
 ROOT="/home/claw/ghq/github.com/puppy-studio/news"
 LOG_DIR="/home/claw/.openclaw/logs"
 mkdir -p "$LOG_DIR"
@@ -28,4 +31,4 @@ if ! git diff --cached --quiet; then
   git push
 fi
 
-openclaw system event --text "news更新: ${URL}" --mode now
+"$OPENCLAW_BIN" system event --text "news更新: ${URL}" --mode now
