@@ -3,47 +3,152 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import latest from '../data/latest.json';
+
+const sections = latest.sections ?? [];
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
-		<Footer />
-	</body>
+<html lang="ja">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section class="hero">
+        <p class="eyebrow">NEWS.PUPPY.STUDIO</p>
+        <h1>セキュリティ・情シス・AIのホットトピックを6時間ごとに更新</h1>
+        <p class="lead">
+          直近の注目テーマを抽出し、一次情報を中心に日本語要約。業務影響とSNSの反応感もまとめてチェックできます。
+        </p>
+        <div class="meta">
+          <span>最終更新: {new Date(latest.generatedAt).toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })} JST</span>
+          <a href="/blog">記事アーカイブを見る →</a>
+        </div>
+      </section>
+
+      {sections.map((section: any) => (
+        <section class="section-block">
+          <h2>{section.label}</h2>
+          <div class="grid">
+            {section.topics?.map((topic: any) => (
+              <article class="card">
+                <h3>{topic.title}</h3>
+                <p class="summary">{topic.summary}</p>
+                <p><strong>業務影響:</strong> {topic.impact}</p>
+                <p><strong>SNS反応:</strong> {topic.socialReaction}</p>
+                <details>
+                  <summary>ソース一覧</summary>
+                  <ul>
+                    {topic.sources?.map((src: any) => (
+                      <li><a href={src.link} target="_blank" rel="noreferrer">{src.title}</a></li>
+                    ))}
+                  </ul>
+                </details>
+              </article>
+            ))}
+          </div>
+        </section>
+      ))}
+    </main>
+    <Footer />
+  </body>
 </html>
+
+<style>
+  main {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .hero {
+    margin: 2rem 0 3rem;
+    padding: 2rem;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #0f172a, #1e293b 60%, #111827);
+    color: #f8fafc;
+    box-shadow: 0 20px 40px rgba(2, 6, 23, 0.35);
+  }
+
+  .eyebrow {
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    opacity: 0.8;
+    margin: 0 0 0.6rem;
+  }
+
+  .hero h1 {
+    margin: 0 0 0.8rem;
+    line-height: 1.35;
+    font-size: clamp(1.5rem, 2.4vw, 2.2rem);
+  }
+
+  .lead {
+    opacity: 0.95;
+    margin: 0 0 1rem;
+    line-height: 1.7;
+  }
+
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+  }
+
+  .meta a {
+    color: #93c5fd;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .section-block {
+    margin-bottom: 2.4rem;
+  }
+
+  .section-block h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .card {
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  }
+
+  .card h3 {
+    margin-top: 0;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+    font-size: 1.05rem;
+  }
+
+  .summary {
+    color: #111827;
+    line-height: 1.6;
+  }
+
+  details {
+    margin-top: 0.8rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+  }
+
+  li {
+    margin: 0.35rem 0;
+  }
+</style>
