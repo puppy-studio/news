@@ -71,8 +71,7 @@ async function fetchNewsRss(query, locale) {
   const url = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&mkt=${encodeURIComponent(mkt)}`;
   const res = await fetch(url, { headers: { 'User-Agent': 'news-bot/1.0' } });
   if (!res.ok) throw new Error(`RSS fetch failed: ${res.status}`);
-  const xml = await res.text();
-  const parsed = parser.parse(xml);
+  const parsed = parser.parse(await res.text());
   const items = parsed?.rss?.channel?.item ?? [];
   const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
   return arr.slice(0, 14).map((item) => ({
@@ -84,11 +83,22 @@ async function fetchNewsRss(query, locale) {
   }));
 }
 
+async function fetchWebRss(query, locale) {
+  const mkt = locale?.mkt || 'en-US';
+  const url = `https://www.bing.com/search?q=${encodeURIComponent(query)}&format=rss&mkt=${encodeURIComponent(mkt)}`;
+  const res = await fetch(url, { headers: { 'User-Agent': 'news-bot/1.0' } });
+  if (!res.ok) return [];
+  const parsed = parser.parse(await res.text());
+  const items = parsed?.rss?.channel?.item ?? [];
+  const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
+  return arr.map((item) => ({ title: item.title || 'X post', link: decodeBingRedirect(item.link) }));
+}
+
 function uniqueByLink(items) {
   const seen = new Set();
   const out = [];
   for (const item of items) {
-    const k = item?.link || item?.viaAggregator;
+    const k = item?.link || item?.url || item?.viaAggregator;
     if (!k || seen.has(k)) continue;
     seen.add(k);
     out.push(item);
@@ -96,26 +106,81 @@ function uniqueByLink(items) {
   return out;
 }
 
-async function fetchXEvidence(topicTitle, topicQuery, langHint) {
-  const payload = await xaiChat(
-    'You are a social signal curator. Return strict JSON only. Only include plausible X post URLs with /status/.',
-    `対象トピック: ${topicTitle}\n検索ヒント: ${topicQuery}\n言語ヒント: ${langHint}\n\n次をJSONで返してください。\n1) トピック採用の根拠（短文）\n2) ホット投稿URLを2〜3件\n3) 対立軸がある場合は軸ごとに2〜3件\n4) 英語投稿には日本語1行要約\n\nJSON schema:\n{\n  "rationale": "...",\n  "hotPosts": [{"url":"https://x.com/.../status/...","label":"...","ja_summary":"..."}],\n  "axisBuckets": [{"name":"...","posts":[{"url":"https://x.com/.../status/...","label":"...","ja_summary":"..."}]}]\n}`
+async function verifyXStatusUrl(url) {
+  try {
+    if (!/x\.com\/.+\/status\/\d+/.test(url)) return false;
+    const endpoint = `https://publish.twitter.com/oembed?omit_script=true&url=${encodeURIComponent(url)}`;
+    const res = await fetch(endpoint, { headers: { 'User-Agent': 'news-bot/1.0' } });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+async function collectRealXPosts(topicTitle, topicQuery, locale) {
+  const grok = await xaiChat(
+    'Return strict JSON only. Suggest likely X post URLs for this topic.',
+    `トピック: ${topicTitle}\n検索ヒント: ${topicQuery}\nJSON: {"candidates":[{"url":"https://x.com/.../status/...","label":"..."}]}`
   );
 
-  const valid = (arr = []) => arr
-    .filter((x) => typeof x?.url === 'string' && /x\.com\/.+\/status\/\d+/.test(x.url))
-    .slice(0, 3)
-    .map((x) => ({ url: x.url, label: x.label || '投稿', ja_summary: x.ja_summary || '' }));
+  const q1 = `site:x.com/status ${topicQuery}`;
+  const q2 = `site:x.com/status ${topicTitle}`;
+  const webCandidates = uniqueByLink([...(await fetchWebRss(q1, locale)), ...(await fetchWebRss(q2, locale))])
+    .map((i) => ({ url: i.link, label: i.title || 'X投稿' }));
 
-  const hotPosts = valid(payload.hotPosts || []);
-  const axisBuckets = (payload.axisBuckets || [])
+  const candidates = uniqueByLink([
+    ...((grok.candidates || []).map((c) => ({ url: c.url, label: c.label || 'X投稿' }))),
+    ...webCandidates,
+  ])
+    .filter((i) => /x\.com\/.+\/status\/\d+/.test(i.url))
+    .slice(0, 18);
+
+  const verified = [];
+  for (const c of candidates) {
+    if (await verifyXStatusUrl(c.url)) verified.push(c);
+    if (verified.length >= 6) break;
+  }
+  return verified;
+}
+
+async function buildAxisFromPosts(topicTitle, posts) {
+  if (!posts.length) return [];
+  const payload = await xaiChat(
+    'You classify debate axes. Return strict JSON only.',
+    `次の投稿リストから、対立軸があれば最大2軸抽出してください。\nトピック:${topicTitle}\n投稿:${JSON.stringify(posts, null, 2)}\nJSON:{"axes":[{"name":"...","indexes":[0,1,2]}]}`
+  );
+  return (payload.axes || [])
     .slice(0, 2)
-    .map((a) => ({ name: a.name || '論点', posts: valid(a.posts || []) }))
-    .filter((a) => a.posts.length > 0);
+    .map((a) => ({ name: a.name || '論点', posts: (a.indexes || []).map((i) => posts[i]).filter(Boolean).slice(0, 3) }))
+    .filter((a) => a.posts.length);
+}
+
+async function addJaSummaries(posts, mustSummarize) {
+  if (!mustSummarize || !posts.length) return posts;
+  const payload = await xaiChat(
+    'You translate X post titles/snippets into Japanese. Return strict JSON only.',
+    `次を日本語1行で要約。\n${JSON.stringify(posts, null, 2)}\nJSON:{"items":[{"index":0,"ja":"..."}]}`
+  );
+  const map = new Map((payload.items || []).map((i) => [i.index, i.ja]));
+  return posts.map((p, idx) => ({ ...p, ja_summary: map.get(idx) || '' }));
+}
+
+async function fetchXEvidence(topicTitle, topicQuery, cat) {
+  const rawPosts = await collectRealXPosts(topicTitle, topicQuery, cat.locale);
+  const hotBase = rawPosts.slice(0, 3);
+  const hotPosts = await addJaSummaries(hotBase, cat.lang === 'en' || cat.lang === 'mix');
+  const axisBucketsBase = await buildAxisFromPosts(topicTitle, rawPosts.slice(0, 6));
+  const axisBuckets = [];
+  for (const ax of axisBucketsBase) {
+    axisBuckets.push({
+      name: ax.name,
+      posts: await addJaSummaries(ax.posts.slice(0, 3), cat.lang === 'en' || cat.lang === 'mix'),
+    });
+  }
 
   return {
-    method: 'grok-curated',
-    rationale: payload.rationale || 'X上での話題性が高い投稿を抽出',
+    method: 'bing+x-url-verification',
+    rationale: `X投稿URLを外部検索から抽出後、実URL検証して採用（有効件数: ${rawPosts.length}）`,
     hotPosts,
     axisBuckets,
   };
@@ -143,7 +208,7 @@ async function generate() {
 
     for (const topic of topics) {
       const sources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
-      const xEvidence = await fetchXEvidence(topic.title, topic.search_query || topic.title, cat.lang);
+      const xEvidence = await fetchXEvidence(topic.title, topic.search_query || topic.title, cat);
 
       const summary = await xaiChat(
         'You are a concise Japanese tech editor. Return strict JSON only.',
