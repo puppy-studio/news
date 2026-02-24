@@ -260,7 +260,7 @@ async function generate() {
 
   const mdLines = [
     '---',
-    `title: "Tech Pulse ${date} ${hour}:${minute} UTC"`,
+    `title: "ITニュースダイジェスト ${date} ${hour}:${minute} UTC"`,
     'description: "情報セキュリティ・エンタープライズIT・AIの注目トピックまとめ"',
     `pubDate: ${now.toISOString()}`,
     'heroImage: "../../assets/blog-placeholder-1.jpg"',
@@ -286,7 +286,7 @@ async function generate() {
   }
 
   await writeFile(mdPath, `${mdLines.join('\n')}\n`, 'utf8');
-  await writeFile(path.join(DATA_DIR, 'latest.json'), JSON.stringify({ generatedAt: now.toISOString(), title: `Tech Pulse ${date} ${hour}:${minute} UTC`, sections: allSections, postSlug }, null, 2), 'utf8');
+  await writeFile(path.join(DATA_DIR, 'latest.json'), JSON.stringify({ generatedAt: now.toISOString(), title: `ITニュースダイジェスト ${date} ${hour}:${minute} UTC`, sections: allSections, postSlug }, null, 2), 'utf8');
   console.log(`Generated: ${mdPath}`);
 }
 
