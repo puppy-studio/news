@@ -46,43 +46,12 @@ const sections = latest.sections ?? [];
                 <p class="summary">{topic.summary}</p>
                 <!-- 業務影響は非表示 -->
                 <p><strong>X反応:</strong> {topic.socialReaction}</p>
-                <details>
-                  <summary>ソース一覧</summary>
-                  <ul>
-                    {topic.sources?.map((src: any) => (
-                      <li><a href={src.link} target="_blank" rel="noreferrer">{src.title}</a></li>
-                    ))}
-                  </ul>
-
-                  <p class="subhead">Xホット投稿URL</p>
-                  <ul>
-                    {topic.xEvidence?.hotPosts?.map((p: any) => (
-                      <li>
-                        <a href={p.url} target="_blank" rel="noreferrer">{p.label ?? '投稿URL'}</a>
-                        {p.ja_summary && <div class="mini">日本語要約: {p.ja_summary}</div>}
-                      </li>
-                    ))}
-                  </ul>
-
-                  {topic.xEvidence?.axisBuckets?.length > 0 && (
-                    <>
-                      <p class="subhead">対立軸ごとの投稿</p>
-                      {topic.xEvidence.axisBuckets.map((ax: any) => (
-                        <div>
-                          <p class="mini"><strong>{ax.name}</strong></p>
-                          <ul>
-                            {ax.posts?.map((p: any) => (
-                              <li>
-                                <a href={p.url} target="_blank" rel="noreferrer">{p.label ?? '投稿URL'}</a>
-                                {p.ja_summary && <div class="mini">日本語要約: {p.ja_summary}</div>}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      ))}
-                    </>
-                  )}
-                </details>
+                <p class="subhead">ソース一覧</p>
+                <ul>
+                  {topic.sources?.map((src: any) => (
+                    <li><a href={src.link} target="_blank" rel="noreferrer">{src.title}</a></li>
+                  ))}
+                </ul>
               </article>
             ))}
           </div>

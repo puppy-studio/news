@@ -223,7 +223,7 @@ async function generate() {
   for (const cat of CATEGORIES) {
     const topicPayload = await xaiChat(
       'You are an editor. Return strict JSON only.',
-      `次のカテゴリでX上で話題のトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\n\n制約:\n- 出力は必ず日本語\n- 「直近6時間」「可能性」「かもしれない」など曖昧・説明的な語は不要\n\nJSON形式: {"topics":[{"title":"...","summary_ja":"何が起きたかを日本語で1-2文","x_reaction_ja":"Xでの反応を日本語で1文","search_query":"..."}]}`
+      `次のカテゴリでX上で話題のトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\n\n制約:\n- 出力は必ず日本語\n- タイトルも必ず日本語で書く（英語原文は使わない）\n- 「直近6時間」「可能性」「かもしれない」など曖昧・説明的な語は不要\n\nJSON形式: {"topics":[{"title_ja":"...","summary_ja":"何が起きたかを日本語で1-2文","x_reaction_ja":"Xでの反応を日本語で1文","search_query":"..."}]}`
     );
 
     const topics = (topicPayload.topics || []).slice(0, 2);
@@ -233,7 +233,7 @@ async function generate() {
       const sources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
 
       topicBlocks.push({
-        title: topic.title,
+        title: topic.title_ja || topic.title || '',
         whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
         summary: topic.summary_ja || topic.why_hot || '',
@@ -270,21 +270,7 @@ async function generate() {
       mdLines.push('- 参照URL:');
       for (const src of topic.sources) mdLines.push(`  - [${src.title}](${src.link})`);
       // X選定根拠は非表示
-      mdLines.push('- Xホット投稿URL:');
-      for (const p of topic.xEvidence.hotPosts || []) {
-        mdLines.push(`  - [${p.label}](${p.url})`);
-        if (p.ja_summary) mdLines.push(`    - 日本語要約: ${p.ja_summary}`);
-      }
-      if ((topic.xEvidence.axisBuckets || []).length) {
-        mdLines.push('- 対立軸ごとのホット投稿:');
-        for (const ax of topic.xEvidence.axisBuckets) {
-          mdLines.push(`  - ${ax.name}`);
-          for (const p of ax.posts) {
-            mdLines.push(`    - [${p.label}](${p.url})`);
-            if (p.ja_summary) mdLines.push(`      - 日本語要約: ${p.ja_summary}`);
-          }
-        }
-      }
+      // Xホット投稿URLは非表示
       mdLines.push('');
     }
   }
