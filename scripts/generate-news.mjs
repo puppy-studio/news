@@ -12,8 +12,8 @@ const CATEGORIES = [
   { key: 'security-en', label: '情報セキュリティ（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['CVE critical', 'CISA advisory', 'zero-day exploit', 'data breach disclosed'], lang: 'en' },
   { key: 'enterprise-jp', label: 'エンタープライズ情報システム（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['Microsoft 365 障害', 'AWS 障害', '基幹システム 移行', '情シス 障害'], lang: 'ja' },
   { key: 'enterprise-en', label: 'エンタープライズ情報システム（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['enterprise SaaS outage', 'Microsoft 365 incident', 'cloud migration enterprise', 'CIO strategy'], lang: 'en' },
-  { key: 'ai-jp', label: 'AI（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['GPT リリース', 'Claude update', 'Gemini 発表', 'AI規制 法案'], lang: 'ja' },
-  { key: 'ai-en', label: 'AI（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['GPT release', 'Claude update', 'Gemini announcement', 'foundation model release'], lang: 'en' },
+  { key: 'ai-jp', label: 'AI（日本語圏）', locale: { mkt: 'ja-JP' }, querySeeds: ['OpenAI 新機能', 'Claude 新機能', 'Gemini 新機能', 'Codex 新機能', 'Kimi 発表', 'GLM 発表'], lang: 'ja' },
+  { key: 'ai-en', label: 'AI（英語圏）', locale: { mkt: 'en-US' }, querySeeds: ['OpenAI feature release', 'Claude new feature', 'Gemini update', 'Codex update', 'Kimi AI release', 'GLM model update', 'DeepSeek update'], lang: 'en' },
 ];
 
 const parser = new XMLParser({ ignoreAttributes: false });
