@@ -21,9 +21,6 @@ DEPLOY_OUTPUT=$(npx wrangler pages deploy dist --project-name news --commit-dirt
 printf '%s\n' "$DEPLOY_OUTPUT" >> "$LOG_DIR/news-deploy.log"
 
 URL="https://it-news.puppy.studio"
-if [[ "$DEPLOY_OUTPUT" =~ https://[a-z0-9.-]+\.pages\.dev ]]; then
-  URL="${BASH_REMATCH[0]}"
-fi
 
 git add src/content/blog src/data/latest.json package-lock.json || true
 if ! git diff --cached --quiet; then
