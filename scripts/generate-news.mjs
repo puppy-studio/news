@@ -223,7 +223,7 @@ async function generate() {
   for (const cat of CATEGORIES) {
     const topicPayload = await xaiChat(
       'You are an editor. Return strict JSON only.',
-      `次のカテゴリで直近6時間のホットトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\nJSON形式: {"topics":[{"title":"...","why_hot":"...","search_query":"..."}]}`
+      `次のカテゴリでX上で話題のトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\n\n制約:\n- 出力は必ず日本語\n- 「直近6時間」「可能性」「かもしれない」など曖昧・説明的な語は不要\n\nJSON形式: {"topics":[{"title":"...","summary_ja":"何が起きたかを日本語で1-2文","x_reaction_ja":"Xでの反応を日本語で1文","search_query":"..."}]}`
     );
 
     const topics = (topicPayload.topics || []).slice(0, 2);
@@ -231,26 +231,15 @@ async function generate() {
 
     for (const topic of topics) {
       const sources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
-      const xEvidence = await fetchXEvidence(topic.title, topic.search_query || topic.title, cat);
-
-      // X上で実投稿が取れない話題は除外（X起点方針）
-      const xPostCount = (xEvidence.hotPosts?.length || 0) + (xEvidence.axisBuckets || []).reduce((n, b) => n + (b.posts?.length || 0), 0);
-      if (xPostCount === 0) continue;
-
-      const summary = await xaiChat(
-        'You are a concise Japanese tech editor. Return strict JSON only.',
-        `次のトピックを要約してください。\nトピック: ${topic.title}\n注目理由: ${topic.why_hot}\nソース: ${JSON.stringify(sources, null, 2)}\nXデータ: ${JSON.stringify(xEvidence, null, 2)}\n\n制約:\n- 「可能性があります」「かもしれません」などの曖昧表現は禁止\n- 観測情報ベースで簡潔に断定調で書く\n\nJSON: {"summary":"3-4文","impact":"業務影響を1-2文","social_reaction":"X上の反応傾向を1-2文（曖昧表現なし）"}`
-      );
 
       topicBlocks.push({
         title: topic.title,
-        whyHot: topic.why_hot,
+        whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
-        summary: summary.summary,
-        impact: summary.impact,
-        socialReaction: tightenReactionTone(summary.social_reaction),
+        summary: topic.summary_ja || topic.why_hot || '',
+        socialReaction: tightenReactionTone(topic.x_reaction_ja || topic.summary_ja || topic.why_hot || ''),
         sources,
-        xEvidence,
+        xEvidence: { hotPosts: [], axisBuckets: [] },
       });
     }
     if (topicBlocks.length > 0) allSections.push({ key: cat.key, label: cat.label, topics: topicBlocks });
@@ -276,7 +265,7 @@ async function generate() {
     for (const topic of section.topics) {
       mdLines.push(`### ${topic.title}`, '');
       mdLines.push(`- 何が起きたか: ${topic.summary}`);
-      mdLines.push(`- 業務影響: ${topic.impact}`);
+      // 業務影響セクションは非表示
       mdLines.push(`- Xの反応: ${topic.socialReaction}`);
       mdLines.push('- 参照URL:');
       for (const src of topic.sources) mdLines.push(`  - [${src.title}](${src.link})`);
