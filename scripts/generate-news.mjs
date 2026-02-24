@@ -67,6 +67,15 @@ function decodeBingRedirect(raw) {
   }
 }
 
+function isWithinDays(pubDate, days = 7) {
+  if (!pubDate) return false;
+  const ts = Date.parse(pubDate);
+  if (Number.isNaN(ts)) return false;
+  const now = Date.now();
+  const cutoff = now - days * 24 * 60 * 60 * 1000;
+  return ts >= cutoff && ts <= now + 10 * 60 * 1000;
+}
+
 async function fetchNewsRss(query, locale) {
   const mkt = locale?.mkt || 'en-US';
   const url = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&mkt=${encodeURIComponent(mkt)}`;
@@ -75,13 +84,17 @@ async function fetchNewsRss(query, locale) {
   const parsed = parser.parse(await res.text());
   const items = parsed?.rss?.channel?.item ?? [];
   const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
-  return arr.slice(0, 14).map((item) => ({
-    title: item.title,
-    link: decodeBingRedirect(item.link),
-    viaAggregator: item.link,
-    pubDate: item.pubDate,
-    source: item?.['News:Source'] || item.source || '',
-  }));
+  return arr
+    .slice(0, 30)
+    .map((item) => ({
+      title: item.title,
+      link: decodeBingRedirect(item.link),
+      viaAggregator: item.link,
+      pubDate: item.pubDate,
+      source: item?.['News:Source'] || item.source || '',
+    }))
+    .filter((item) => isWithinDays(item.pubDate, 7))
+    .slice(0, 14);
 }
 
 async function fetchWebRss(query, locale) {
