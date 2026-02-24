@@ -129,14 +129,17 @@ function tightenReactionTone(text = '') {
     .trim();
 }
 
-function enrichSummary(summary = '', sources = []) {
-  const s = String(summary).trim();
-  if (s.length >= 70) return s;
-  const srcNames = sources.map((x) => x?.source).filter(Boolean).slice(0, 2).join('・');
-  const suffix = srcNames
-    ? ` 主要ソースは${srcNames}。詳細は参照URLを確認。`
-    : ' 詳細は参照URLを確認。';
-  return (s || '関連トピックが継続的に話題化。') + suffix;
+function enrichSummary(topic = {}, sources = []) {
+  const base = String(topic.summary_ja || topic.why_hot || '').trim();
+  const titles = sources.map((x) => String(x?.title || '').trim()).filter(Boolean).slice(0, 2);
+  const srcNames = sources.map((x) => String(x?.source || '').trim()).filter(Boolean).slice(0, 2);
+
+  const detailA = titles[0] ? `関連報道では「${titles[0]}」` : '関連報道で追加情報が確認され';
+  const detailB = titles[1] ? `、さらに「${titles[1]}」` : '';
+  const sourceLine = srcNames.length ? `情報源は${srcNames.join('・')}。` : '';
+
+  const main = base || '関連トピックが継続的に話題化。';
+  return `${main} ${detailA}${detailB}が出ており、影響範囲の確認が進んでいる。${sourceLine}参照URLで一次情報を確認できる。`.replace(/\s+/g, ' ').trim();
 }
 
 async function verifyXStatusUrl(url) {
@@ -246,7 +249,7 @@ async function generate() {
         title: topic.title_ja || topic.title || '',
         whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
-        summary: enrichSummary(topic.summary_ja || topic.why_hot || '', sources),
+        summary: enrichSummary(topic, sources),
         socialReaction: tightenReactionTone(topic.x_reaction_ja || topic.summary_ja || topic.why_hot || ''),
         sources,
         xEvidence: { hotPosts: [], axisBuckets: [] },
