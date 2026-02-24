@@ -7,7 +7,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "news:generate": "node scripts/generate-news.mjs"
+    "news:generate": "node scripts/generate-news.mjs",
+    "news:collect": "node scripts/collect-hourly.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
