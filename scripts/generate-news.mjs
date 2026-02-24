@@ -76,6 +76,16 @@ function isWithinDays(pubDate, days = 7) {
   return ts >= cutoff && ts <= now + 10 * 60 * 1000;
 }
 
+async function localizeSourceTitles(sources = []) {
+  if (!sources.length) return sources;
+  const payload = await xaiChat(
+    'You are a translator. Return strict JSON only.',
+    `次のニュース見出しを自然な日本語に翻訳してください。固有名詞は維持。\n${JSON.stringify(sources.map((s, i) => ({ index: i, title: s.title })), null, 2)}\nJSON: {"items":[{"index":0,"title_ja":"..."}]}`
+  );
+  const map = new Map((payload.items || []).map((x) => [x.index, x.title_ja]));
+  return sources.map((s, i) => ({ ...s, title_ja: map.get(i) || s.title }));
+}
+
 async function fetchNewsRss(query, locale) {
   const mkt = locale?.mkt || 'en-US';
   const url = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&mkt=${encodeURIComponent(mkt)}`;
@@ -243,7 +253,8 @@ async function generate() {
     const topicBlocks = [];
 
     for (const topic of topics) {
-      const sources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
+      const rawSources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
+      const sources = await localizeSourceTitles(rawSources);
 
       topicBlocks.push({
         title: topic.title_ja || topic.title || '',
@@ -281,7 +292,7 @@ async function generate() {
       // 業務影響セクションは非表示
       mdLines.push(`- Xの反応: ${topic.socialReaction}`);
       mdLines.push('- 参照URL:');
-      for (const src of topic.sources) mdLines.push(`  - [${src.title}](${src.link})`);
+      for (const src of topic.sources) mdLines.push(`  - [${src.title_ja || src.title}](${src.link})`);
       // X選定根拠は非表示
       // Xホット投稿URLは非表示
       mdLines.push('');
