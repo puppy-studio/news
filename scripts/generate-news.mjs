@@ -233,6 +233,10 @@ async function generate() {
       const sources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
       const xEvidence = await fetchXEvidence(topic.title, topic.search_query || topic.title, cat);
 
+      // X上で実投稿が取れない話題は除外（X起点方針）
+      const xPostCount = (xEvidence.hotPosts?.length || 0) + (xEvidence.axisBuckets || []).reduce((n, b) => n + (b.posts?.length || 0), 0);
+      if (xPostCount === 0) continue;
+
       const summary = await xaiChat(
         'You are a concise Japanese tech editor. Return strict JSON only.',
         `次のトピックを要約してください。\nトピック: ${topic.title}\n注目理由: ${topic.why_hot}\nソース: ${JSON.stringify(sources, null, 2)}\nXデータ: ${JSON.stringify(xEvidence, null, 2)}\n\n制約:\n- 「可能性があります」「かもしれません」などの曖昧表現は禁止\n- 観測情報ベースで簡潔に断定調で書く\n\nJSON: {"summary":"3-4文","impact":"業務影響を1-2文","social_reaction":"X上の反応傾向を1-2文（曖昧表現なし）"}`
@@ -249,7 +253,7 @@ async function generate() {
         xEvidence,
       });
     }
-    allSections.push({ key: cat.key, label: cat.label, topics: topicBlocks });
+    if (topicBlocks.length > 0) allSections.push({ key: cat.key, label: cat.label, topics: topicBlocks });
   }
 
   const postSlug = slugify(`${date}-${hour}${minute}-tech-pulse`);
