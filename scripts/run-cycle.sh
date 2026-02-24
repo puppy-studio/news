@@ -28,4 +28,22 @@ if ! git diff --cached --quiet; then
   git push
 fi
 
-"$OPENCLAW_BIN" message send --channel telegram --target -1003803565030 --message "news更新: ${URL}"
+SUMMARY=$(node - <<'NODE'
+const fs = require('fs');
+const p = '/home/claw/ghq/github.com/puppy-studio/news/src/data/latest.json';
+const obj = JSON.parse(fs.readFileSync(p, 'utf8'));
+const lines = [];
+lines.push(`news更新: https://it-news.puppy.studio`);
+for (const section of (obj.sections || [])) {
+  const t = (section.topics || [])[0];
+  if (!t) continue;
+  lines.push(``);
+  lines.push(`■ ${section.label}`);
+  lines.push(`概要: ${(t.summary || '').replace(/\s+/g,' ').slice(0, 140)}`);
+  lines.push(`X反応: ${(t.socialReaction || '').replace(/\s+/g,' ').slice(0, 120)}`);
+}
+process.stdout.write(lines.join('\n'));
+NODE
+)
+
+"$OPENCLAW_BIN" message send --channel telegram --target -1003803565030 --message "$SUMMARY"
