@@ -28,7 +28,15 @@ const sections = latest.sections ?? [];
         </div>
       </section>
 
-      {sections.map((section: any) => (
+      {sections.length === 0 ? (
+        <section class="section-block">
+          <article class="card">
+            <h3>今回の更新では、表示条件を満たすトピックがありませんでした</h3>
+            <p class="summary">X起点の抽出条件で該当テーマが0件でした。次回更新で再抽出します。</p>
+            <p><a href="/blog">過去のアーカイブを見る →</a></p>
+          </article>
+        </section>
+      ) : sections.map((section: any) => (
         <section class="section-block">
           <h2>{section.label}</h2>
           <div class="grid">
@@ -38,7 +46,6 @@ const sections = latest.sections ?? [];
                 <p class="summary">{topic.summary}</p>
                 <p><strong>業務影響:</strong> {topic.impact}</p>
                 <p><strong>X反応:</strong> {topic.socialReaction}</p>
-                <!-- X根拠は表示しない -->
                 <details>
                   <summary>ソース一覧</summary>
                   <ul>
@@ -56,8 +63,6 @@ const sections = latest.sections ?? [];
                       </li>
                     ))}
                   </ul>
-
-                  {/* ja summaries are now embedded per-post */}
 
                   {topic.xEvidence?.axisBuckets?.length > 0 && (
                     <>
