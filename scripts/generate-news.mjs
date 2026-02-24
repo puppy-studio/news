@@ -86,6 +86,17 @@ async function localizeSourceTitles(sources = []) {
   return sources.map((s, i) => ({ ...s, title_ja: map.get(i) || s.title }));
 }
 
+async function localizeTitleJa(title = '') {
+  const t = String(title).trim();
+  if (!t) return '';
+  if (/[ぁ-んァ-ヶ一-龠]/.test(t)) return t;
+  const payload = await xaiChat(
+    'You are a translator. Return strict JSON only.',
+    `次のタイトルを自然な日本語に翻訳してください。\nタイトル: ${t}\nJSON:{"title_ja":"..."}`
+  );
+  return payload.title_ja || t;
+}
+
 async function fetchNewsRss(query, locale) {
   const mkt = locale?.mkt || 'en-US';
   const url = `https://www.bing.com/news/search?q=${encodeURIComponent(query)}&format=rss&mkt=${encodeURIComponent(mkt)}`;
@@ -254,10 +265,12 @@ async function generate() {
 
     for (const topic of topics) {
       const rawSources = uniqueByLink(await fetchNewsRss(topic.search_query || topic.title, cat.locale)).slice(0, 4);
+      if (rawSources.length === 0) continue;
       const sources = await localizeSourceTitles(rawSources);
+      const titleJa = await localizeTitleJa(topic.title_ja || topic.title || '');
 
       topicBlocks.push({
-        title: topic.title_ja || topic.title || '',
+        title: titleJa,
         whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
         summary: enrichSummary(topic, sources),
