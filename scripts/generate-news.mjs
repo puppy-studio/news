@@ -115,6 +115,7 @@ async function fetchNewsRss(query, locale) {
       source: item?.['News:Source'] || item.source || '',
     }))
     .filter((item) => isWithinDays(item.pubDate, 7))
+    .filter((item) => !/joomla/i.test(`${item.title} ${item.link}`))
     .slice(0, 14);
 }
 
