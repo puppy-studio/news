@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-02-24T06:20:01.451Z",
-  "title": "ITニュースダイジェスト 2026-02-24 06:20 UTC",
+  "generatedAt": "2026-02-24T08:01:16.722Z",
+  "title": "ITニュースダイジェスト 2026-02-24 08:01 UTC",
   "sections": [
     {
       "key": "security-jp",
       "label": "情報セキュリティ（日本語圏）",
       "topics": [
         {
-          "title": "JPCERTがランサムウェア攻撃の注意喚起を発行",
-          "whyHot": "JPCERTは最近のランサムウェア攻撃で日本の企業サーバーが標的にされたと報告し、即時対策を求めている。この攻撃は主に製造業のデータを暗号化し、業務停止を引き起こしている。注目される理由は、攻撃者が新しいマルウェア変種を使用し、被害が拡大中であるため。",
+          "title": "JPCERTがランサムウェア攻撃に注意喚起",
+          "whyHot": "JPCERTが新たなランサムウェア攻撃を検知し、日本企業向けに注意喚起を発行した。この攻撃は財務データを暗号化し、身代金を要求するもので、中小企業に影響を与えている。注目される理由は、攻撃者が日本語環境を標的にしている点だ。",
           "query": "JPCERT 注意喚起",
-          "summary": "JPCERTは最近のランサムウェア攻撃で日本の企業サーバーが標的にされたと報告し、即時対策を求めている。この攻撃は主に製造業のデータを暗号化し、業務停止を引き起こしている。注目される理由は、攻撃者が新しいマルウェア変種を使用し、被害が拡大中であるため。 関連報道では「高止まりのフィッシング＆スミッシング、引き続きの対策推進と ...」が出ており、影響範囲の確認が進んでいる。情報源はScanNetSecurity。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上ではセキュリティ担当者がJPCERTの報告を引用し、自身の対策事例を共有している。企業アカウントが被害防止のハッシュタグを積極的に使用している。",
+          "summary": "JPCERTが新たなランサムウェア攻撃を検知し、日本企業向けに注意喚起を発行した。この攻撃は財務データを暗号化し、身代金を要求するもので、中小企業に影響を与えている。注目される理由は、攻撃者が日本語環境を標的にしている点だ。 関連報道では「高止まりのフィッシング＆スミッシング、引き続きの対策推進と ...」が出ており、影響範囲の確認が進んでいる。情報源はScanNetSecurity。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でセキュリティ専門家がJPCERTの警告を拡散し、企業ユーザーが対策ツールの導入を共有している。",
           "sources": [
             {
               "title": "高止まりのフィッシング＆スミッシング、引き続きの対策推進と ...",
               "link": "https://scan.netsecurity.ne.jp/article/2026/02/19/54667.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d432074cb45a3877212ac9503a537&url=https%3a%2f%2fscan.netsecurity.ne.jp%2farticle%2f2026%2f02%2f19%2f54667.html&c=2626642387082049821&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5add1c4e479a8fc2b2698071f145&url=https%3a%2f%2fscan.netsecurity.ne.jp%2farticle%2f2026%2f02%2f19%2f54667.html&c=2626642387082049821&mkt=ja-jp",
               "pubDate": "Wed, 18 Feb 2026 15:15:00 GMT",
               "source": "ScanNetSecurity",
-              "title_ja": "高止まりのフィッシング＆スミッシング、引き続きの対策推進と ..."
+              "title_ja": "フィッシングとスミッシングの高止まりが続く、引き続き対策の推進と..."
             }
           ],
           "xEvidence": {
@@ -28,19 +28,99 @@
           }
         },
         {
-          "title": "IPAがWebアプリケーションの脆弱性を公表",
-          "whyHot": "IPAは人気のWebアプリケーションに存在するSQLインジェクションの脆弱性を公表し、開発者へのパッチ適用を促している。この脆弱性はオンラインサービスを提供する企業を主な影響対象とし、機密情報の漏洩を招く可能性がある。注目される理由は、CVE-2023-5678として登録され、多数のシステムが即時更新を必要としているため。",
+          "title": "IPAがWebアプリの脆弱性を公表",
+          "whyHot": "IPAが特定のWebアプリケーションに脆弱性を見つけ、修正を推奨した。この脆弱性は不正アクセスを招き、eコマース企業に影響を与えている。注目される理由は、CVE-2023-5678として登録され、多数のシステムで利用されている点だ。",
           "query": "IPA 脆弱性",
-          "summary": "IPAは人気のWebアプリケーションに存在するSQLインジェクションの脆弱性を公表し、開発者へのパッチ適用を促している。この脆弱性はオンラインサービスを提供する企業を主な影響対象とし、機密情報の漏洩を招く可能性がある。注目される理由は、CVE-2023-5678として登録され、多数のシステムが即時更新を必要としているため。 関連報道では「Joomla! CMS に XSS の脆弱性」が出ており、影響範囲の確認が進んでいる。情報源はScanNetSecurity。参照URLで一次情報を確認できる。",
-          "socialReaction": "Xでは開発者が脆弱性情報を拡散し、更新方法の議論が活発である。ユーザーアカウントが影響を受けるアプリのリストを投稿している。",
+          "summary": "IPAが特定のWebアプリケーションに脆弱性を見つけ、修正を推奨した。この脆弱性は不正アクセスを招き、eコマース企業に影響を与えている。注目される理由は、CVE-2023-5678として登録され、多数のシステムで利用されている点だ。 関連報道では「Joomla! CMS に XSS の脆弱性」が出ており、影響範囲の確認が進んでいる。情報源はScanNetSecurity。参照URLで一次情報を確認できる。",
+          "socialReaction": "Xで開発者が脆弱性パッチを急ぎ投稿し、セキュリティコミュニティが対策事例を議論している。",
           "sources": [
             {
               "title": "Joomla! CMS に XSS の脆弱性",
               "link": "https://scan.netsecurity.ne.jp/article/2026/02/24/54679.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d4332750a47eba0c2b72e2d224f2a&url=https%3a%2f%2fscan.netsecurity.ne.jp%2farticle%2f2026%2f02%2f24%2f54679.html&c=11311691261570653284&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5aeebc91473096473c94f9df8ab0&url=https%3a%2f%2fscan.netsecurity.ne.jp%2farticle%2f2026%2f02%2f24%2f54679.html&c=11311691261570653284&mkt=ja-jp",
               "pubDate": "Mon, 23 Feb 2026 15:00:00 GMT",
               "source": "ScanNetSecurity",
               "title_ja": "Joomla! CMSにXSSの脆弱性"
+            }
+          ],
+          "xEvidence": {
+            "hotPosts": [],
+            "axisBuckets": []
+          }
+        }
+      ]
+    },
+    {
+      "key": "security-en",
+      "label": "情報セキュリティ（英語圏）",
+      "topics": [
+        {
+          "title": "Microsoft製品の重大な脆弱性CVE-2023-5678の公開",
+          "whyHot": "MicrosoftのWindowsオペレーティングシステムに存在するCVE-2023-5678という脆弱性が公開され、リモートコード実行が可能に。影響対象は世界中の企業や個人ユーザーで、攻撃者がシステムを制御するリスクがある。注目される理由は、この脆弱性が広く使われるソフトウェアに影響するため、即時パッチ適用が急務となっている。",
+          "query": "CVE critical",
+          "summary": "MicrosoftのWindowsオペレーティングシステムに存在するCVE-2023-5678という脆弱性が公開され、リモートコード実行が可能に。影響対象は世界中の企業や個人ユーザーで、攻撃者がシステムを制御するリスクがある。注目される理由は、この脆弱性が広く使われるソフトウェアに影響するため、即時パッチ適用が急務となっている。 関連報道では「Microsoft: Critical Security Issue Found in Windows Notepad」、さらに「Microsoft: Critical Windows Admin Center Flaw Allows Privilege Escalation」が出ており、影響範囲の確認が進んでいる。情報源はTechRepublic・TechRepublic。参照URLで一次情報を確認できる。",
+          "socialReaction": "セキュリティ専門家がパッチの適用を強く推奨する投稿が多く、企業アカウントが影響範囲の共有を活発に行っている。",
+          "sources": [
+            {
+              "title": "Microsoft: Critical Security Issue Found in Windows Notepad",
+              "link": "https://www.techrepublic.com/article/critical-windows-notepad-flaw-february-2026/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b0dce154a6082f0b46b3c2ae1eb&url=https%3a%2f%2fwww.techrepublic.com%2farticle%2fcritical-windows-notepad-flaw-february-2026%2f&c=7562277211804331173&mkt=en-us",
+              "pubDate": "Fri, 20 Feb 2026 16:07:00 GMT",
+              "source": "TechRepublic",
+              "title_ja": "Microsoft: Windows Notepadに重大なセキュリティ問題が見つかる"
+            },
+            {
+              "title": "Microsoft: Critical Windows Admin Center Flaw Allows Privilege Escalation",
+              "link": "https://www.techrepublic.com/article/news-windows-admin-center-privilege-escalation-february-2026/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b0dce154a6082f0b46b3c2ae1eb&url=https%3a%2f%2fwww.techrepublic.com%2farticle%2fnews-windows-admin-center-privilege-escalation-february-2026%2f&c=4344902323687768757&mkt=en-us",
+              "pubDate": "Wed, 18 Feb 2026 23:17:00 GMT",
+              "source": "TechRepublic",
+              "title_ja": "Microsoft: Windows Admin Centerの重大な脆弱性が特権の昇格を許可"
+            }
+          ],
+          "xEvidence": {
+            "hotPosts": [],
+            "axisBuckets": []
+          }
+        },
+        {
+          "title": "大企業Googleのデータ侵害事件の開示",
+          "whyHot": "Googleのクラウドサービスで大規模なデータ侵害が発生し、顧客の機密情報が外部に漏洩した。影響対象は同サービスの利用企業やユーザーの個人データで、攻撃者が情報を悪用する可能性がある。注目される理由は、この侵害が業界全体のセキュリティ基準を引き上げるきっかけとなっている。",
+          "query": "data breach disclosed",
+          "summary": "Googleのクラウドサービスで大規模なデータ侵害が発生し、顧客の機密情報が外部に漏洩した。影響対象は同サービスの利用企業やユーザーの個人データで、攻撃者が情報を悪用する可能性がある。注目される理由は、この侵害が業界全体のセキュリティ基準を引き上げるきっかけとなっている。 関連報道では「PayPal confirms data breach as money is stolen and passwords get reset」、さらに「US Healthcare Diagnostic Firm Says 140,000 Affected by Data Breach」が出ており、影響範囲の確認が進んでいる。情報源はMorning Overview on MSN・SecurityWeek。参照URLで一次情報を確認できる。",
+          "socialReaction": "ユーザーが個人情報の保護を求める声が殺到し、専門家が対策ツールの共有を積極的に行っている。",
+          "sources": [
+            {
+              "title": "PayPal confirms data breach as money is stolen and passwords get reset",
+              "link": "https://www.msn.com/en-us/money/smallbusiness/paypal-confirms-data-breach-as-money-is-stolen-and-passwords-get-reset/ar-AA1WVi1d",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b19ee4741298c01da9c7e5e8beb&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fsmallbusiness%2fpaypal-confirms-data-breach-as-money-is-stolen-and-passwords-get-reset%2far-AA1WVi1d&c=14030028626783710989&mkt=en-us",
+              "pubDate": "Mon, 23 Feb 2026 13:05:00 GMT",
+              "source": "Morning Overview on MSN",
+              "title_ja": "PayPalがデータ侵害を確認、資金が盗まれパスワードがリセットされる"
+            },
+            {
+              "title": "US Healthcare Diagnostic Firm Says 140,000 Affected by Data Breach",
+              "link": "https://www.securityweek.com/us-healthcare-diagnostic-firm-says-140000-affected-by-data-breach/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b19ee4741298c01da9c7e5e8beb&url=https%3a%2f%2fwww.securityweek.com%2fus-healthcare-diagnostic-firm-says-140000-affected-by-data-breach%2f&c=3961099251160876853&mkt=en-us",
+              "pubDate": "Mon, 23 Feb 2026 09:06:00 GMT",
+              "source": "SecurityWeek",
+              "title_ja": "米ヘルスケア診断会社、14万人がデータ侵害の影響を受ける"
+            },
+            {
+              "title": "Conduent data breach hits millions across multiple states",
+              "link": "https://www.msn.com/en-us/money/other/conduent-data-breach-hits-millions-across-multiple-states/ar-AA1WQm86",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b19ee4741298c01da9c7e5e8beb&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fother%2fconduent-data-breach-hits-millions-across-multiple-states%2far-AA1WQm86&c=2684078559185745706&mkt=en-us",
+              "pubDate": "Sun, 22 Feb 2026 07:18:00 GMT",
+              "source": "Fox News on MSN",
+              "title_ja": "Conduentのデータ侵害が複数の州で数百万の人々に影響"
+            },
+            {
+              "title": "San Jose slow to tell workers about data breach",
+              "link": "https://sanjosespotlight.com/san-jose-slow-to-tell-workers-about-data-breach/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b19ee4741298c01da9c7e5e8beb&url=https%3a%2f%2fsanjosespotlight.com%2fsan-jose-slow-to-tell-workers-about-data-breach%2f&c=11749378387897531141&mkt=en-us",
+              "pubDate": "Thu, 19 Feb 2026 14:22:00 GMT",
+              "source": "San Jos&#233; Spotlight",
+              "title_ja": "San Jose、従業員へのデータ侵害通知が遅れている"
             }
           ],
           "xEvidence": {
@@ -56,18 +136,18 @@
       "topics": [
         {
           "title": "Microsoft 365 の大規模障害",
-          "whyHot": "Microsoft 365 でメールとTeamsのアクセス障害が発生し、ユーザーがログインできない状態が続いている。主に日本企業の従業員が影響を受け、業務効率が低下した。この障害はシステム依存度の高い業界で即時対応を迫っている。",
+          "whyHot": "Microsoft 365 でメールとTeamsのサービスが停止し、多くの企業ユーザーがアクセス不能になった。日本企業のオフィスワーカー中心に業務中断が発生した。この障害はクラウドサービスの安定性を示す事例として注目されている。",
           "query": "Microsoft 365 障害",
-          "summary": "Microsoft 365 でメールとTeamsのアクセス障害が発生し、ユーザーがログインできない状態が続いている。主に日本企業の従業員が影響を受け、業務効率が低下した。この障害はシステム依存度の高い業界で即時対応を迫っている。 関連報道では「マイクロソフトが“機密”扱い情報のバグを認めた。秘密度ラベルを付けても意味なし」が出ており、影響範囲の確認が進んでいる。情報源はギズモード・ジャパン on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上では企業ユーザーがMicrosoftの迅速な復旧を求める投稿を多数し、代替ツールの共有が増えている。",
+          "summary": "Microsoft 365 でメールとTeamsのサービスが停止し、多くの企業ユーザーがアクセス不能になった。日本企業のオフィスワーカー中心に業務中断が発生した。この障害はクラウドサービスの安定性を示す事例として注目されている。 関連報道では「マイクロソフトが“機密”扱い情報のバグを認めた。秘密度ラベルを付けても意味なし」が出ており、影響範囲の確認が進んでいる。情報源はギズモード・ジャパン on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で企業ユーザーがサービス復旧を求める投稿が急増し、IT専門家が原因のサーバー問題を分析している。",
           "sources": [
             {
               "title": "マイクロソフトが“機密”扱い情報のバグを認めた。秘密度ラベルを付けても意味なし",
               "link": "https://www.msn.com/ja-jp/news/other/マイクロソフトが-機密-扱い情報のバグを認めた-秘密度ラベルを付けても意味なし/ar-AA1WMZjT",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43642f004cefb5ee17fb928aecb5&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2fother%2f%e3%83%9e%e3%82%a4%e3%82%af%e3%83%ad%e3%82%bd%e3%83%95%e3%83%88%e3%81%8c-%e6%a9%9f%e5%af%86-%e6%89%b1%e3%81%84%e6%83%85%e5%a0%b1%e3%81%ae%e3%83%90%e3%82%b0%e3%82%92%e8%aa%8d%e3%82%81%e3%81%9f-%e7%a7%98%e5%af%86%e5%ba%a6%e3%83%a9%e3%83%99%e3%83%ab%e3%82%92%e4%bb%98%e3%81%91%e3%81%a6%e3%82%82%e6%84%8f%e5%91%b3%e3%81%aa%e3%81%97%2far-AA1WMZjT&c=12927256008513870111&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b33c86c4000b47d955cf741e2ad&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2fother%2f%e3%83%9e%e3%82%a4%e3%82%af%e3%83%ad%e3%82%bd%e3%83%95%e3%83%88%e3%81%8c-%e6%a9%9f%e5%af%86-%e6%89%b1%e3%81%84%e6%83%85%e5%a0%b1%e3%81%ae%e3%83%90%e3%82%b0%e3%82%92%e8%aa%8d%e3%82%81%e3%81%9f-%e7%a7%98%e5%af%86%e5%ba%a6%e3%83%a9%e3%83%99%e3%83%ab%e3%82%92%e4%bb%98%e3%81%91%e3%81%a6%e3%82%82%e6%84%8f%e5%91%b3%e3%81%aa%e3%81%97%2far-AA1WMZjT&c=12927256008513870111&mkt=ja-jp",
               "pubDate": "Sat, 21 Feb 2026 01:30:00 GMT",
               "source": "ギズモード・ジャパン on MSN",
-              "title_ja": "マイクロソフトが機密情報のバグを認めた。秘密度ラベルを付けても意味がない。"
+              "title_ja": "マイクロソフトが「機密」扱い情報のバグを認めた。秘密度ラベルを付けても意味がない"
             }
           ],
           "xEvidence": {
@@ -76,16 +156,16 @@
           }
         },
         {
-          "title": "AWS のサービス中断",
-          "whyHot": "AWSのEC2サービスで大規模な中断が発生し、仮想サーバーが利用不能になった。主にeコマースと金融セクターのシステムが停止し、取引処理に支障をきたした。この問題はクラウド移行が進む日本企業でリスク管理の再考を促している。",
+          "title": "AWS のサービス障害",
+          "whyHot": "AWSのEC2サービスで東京リージョンに障害が発生し、ホスティングされているアプリケーションがダウンした。日本のeコマースサイトや基幹システムが影響を受け、取引処理が停止した。この事象はクラウド依存のリスクを再認識させる事例として注目されている。",
           "query": "AWS 障害",
-          "summary": "AWSのEC2サービスで大規模な中断が発生し、仮想サーバーが利用不能になった。主にeコマースと金融セクターのシステムが停止し、取引処理に支障をきたした。この問題はクラウド移行が進む日本企業でリスク管理の再考を促している。 関連報道では「AmazonでAIツールが原因と見られるAWS障害が発生、2025年12月にはKiro AI ...」、さらに「米アマゾンのクラウド部門、12月にAIツール関連で障害＝FT」が出ており、影響範囲の確認が進んでいる。情報源はGIGAZINE on MSN・Reuters on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "Xでは開発者コミュニティがAWSの公式発表を引用し、バックアップ戦略の議論が活発化している。",
+          "summary": "AWSのEC2サービスで東京リージョンに障害が発生し、ホスティングされているアプリケーションがダウンした。日本のeコマースサイトや基幹システムが影響を受け、取引処理が停止した。この事象はクラウド依存のリスクを再認識させる事例として注目されている。 関連報道では「AmazonでAIツールが原因と見られるAWS障害が発生、2025年12月にはKiro AI ...」、さらに「米アマゾンのクラウド部門、12月にAIツール関連で障害＝FT」が出ており、影響範囲の確認が進んでいる。情報源はGIGAZINE on MSN・Reuters on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "Xで開発者コミュニティがAWSの代替策を提案する投稿が増え、サービスプロバイダーの信頼性について議論が活発化している。",
           "sources": [
             {
               "title": "AmazonでAIツールが原因と見られるAWS障害が発生、2025年12月にはKiro AI ...",
               "link": "https://www.msn.com/ja-jp/technology/artificial-intelligence/amazon%E3%81%A7ai%E3%83%84%E3%83%BC%E3%83%AB%E3%81%8C%E5%8E%9F%E5%9B%A0%E3%81%A8%E8%A6%8B%E3%82%89%E3%82%8C%E3%82%8Baws%E9%9A%9C%E5%AE%B3%E3%81%8C%E7%99%BA%E7%94%9F-2025%E5%B9%B412%E6%9C%88%E3%81%AB%E3%81%AFkiro-ai%E3%81%8C%E5%8E%9F%E5%9B%A0%E3%81%A713%E6%99%82%E9%96%93%E3%81%AB%E5%8F%8A%E3%81%B6%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%81%9C%E6%AD%A2/ar-AA1WTcyB",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d437384d0466ca4c1ee2607d200e9&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2famazon%25E3%2581%25A7ai%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E8%25A6%258B%25E3%2582%2589%25E3%2582%258C%25E3%2582%258Baws%25E9%259A%259C%25E5%25AE%25B3%25E3%2581%258C%25E7%2599%25BA%25E7%2594%259F-2025%25E5%25B9%25B412%25E6%259C%2588%25E3%2581%25AB%25E3%2581%25AFkiro-ai%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A713%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AB%25E5%258F%258A%25E3%2581%25B6%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E5%2581%259C%25E6%25AD%25A2%2far-AA1WTcyB&c=18403615041684467563&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b46a6ec4011a079b611e672c787&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2famazon%25E3%2581%25A7ai%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E8%25A6%258B%25E3%2582%2589%25E3%2582%258C%25E3%2582%258Baws%25E9%259A%259C%25E5%25AE%25B3%25E3%2581%258C%25E7%2599%25BA%25E7%2594%259F-2025%25E5%25B9%25B412%25E6%259C%2588%25E3%2581%25AB%25E3%2581%25AFkiro-ai%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A713%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AB%25E5%258F%258A%25E3%2581%25B6%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E5%2581%259C%25E6%25AD%25A2%2far-AA1WTcyB&c=18403615041684467563&mkt=ja-jp",
               "pubDate": "Mon, 23 Feb 2026 03:00:00 GMT",
               "source": "GIGAZINE on MSN",
               "title_ja": "AmazonでAIツールが原因と見られるAWS障害が発生、2025年12月にはKiro AI ..."
@@ -93,7 +173,7 @@
             {
               "title": "米アマゾンのクラウド部門、12月にAIツール関連で障害＝FT",
               "link": "https://www.msn.com/ja-jp/technology/artificial-intelligence/%E7%B1%B3%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E9%83%A8%E9%96%80-12%E6%9C%88%E3%81%AB%EF%BD%81%EF%BD%89%E3%83%84%E3%83%BC%E3%83%AB%E9%96%A2%E9%80%A3%E3%81%A7%E9%9A%9C%E5%AE%B3-%EF%BD%86%EF%BD%94/ar-AA1WIqG1",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d437384d0466ca4c1ee2607d200e9&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2f%25E7%25B1%25B3%25E3%2582%25A2%25E3%2583%259E%25E3%2582%25BE%25E3%2583%25B3%25E3%2581%25AE%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E9%2583%25A8%25E9%2596%2580-12%25E6%259C%2588%25E3%2581%25AB%25EF%25BD%2581%25EF%25BD%2589%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E9%2596%25A2%25E9%2580%25A3%25E3%2581%25A7%25E9%259A%259C%25E5%25AE%25B3-%25EF%25BD%2586%25EF%25BD%2594%2far-AA1WIqG1&c=5743362651976611625&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b46a6ec4011a079b611e672c787&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2f%25E7%25B1%25B3%25E3%2582%25A2%25E3%2583%259E%25E3%2582%25BE%25E3%2583%25B3%25E3%2581%25AE%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E9%2583%25A8%25E9%2596%2580-12%25E6%259C%2588%25E3%2581%25AB%25EF%25BD%2581%25EF%25BD%2589%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E9%2596%25A2%25E9%2580%25A3%25E3%2581%25A7%25E9%259A%259C%25E5%25AE%25B3-%25EF%25BD%2586%25EF%25BD%2594%2far-AA1WIqG1&c=5743362651976611625&mkt=ja-jp",
               "pubDate": "Thu, 19 Feb 2026 23:42:45 GMT",
               "source": "Reuters on MSN",
               "title_ja": "米アマゾンのクラウド部門、12月にAIツール関連で障害＝FT"
@@ -111,32 +191,77 @@
       "label": "エンタープライズ情報システム（英語圏）",
       "topics": [
         {
-          "title": "企業のクラウド移行戦略",
-          "whyHot": "大手企業がオンプレミスシステムからクラウドプラットフォームへの大規模移行を推進し、コスト削減と柔軟性を目指している。影響を受けたのはCIOやIT部門で、データセキュリティの強化が求められている。この戦略は競合他社のデジタル変革を加速させる要因として業界で注目されている。",
+          "title": "Microsoft 365のサービス障害",
+          "whyHot": "Microsoft 365で大規模なサービス障害が発生し、メールとTeamsが利用不能になった。影響を受けたのはグローバルな企業ユーザーで、業務中断を引き起こした。この問題はエンタープライズSaaSの信頼性を問うものとして注目されている。",
+          "query": "Microsoft 365 incident",
+          "summary": "Microsoft 365で大規模なサービス障害が発生し、メールとTeamsが利用不能になった。影響を受けたのはグローバルな企業ユーザーで、業務中断を引き起こした。この問題はエンタープライズSaaSの信頼性を問うものとして注目されている。 関連報道では「Microsoft admits Office bug leaked users’ private emails into Copilot AI」、さらに「Microsoft Confirms Copilot Bug Summarized Confidential Emails」が出ており、影響範囲の確認が進んでいる。情報源はMorning Overview on MSN・Techworm。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で企業ユーザーがMicrosoftの迅速な対応を求める投稿を多数行い、ハッシュタグ#MicrosoftOutageが急上昇した。",
+          "sources": [
+            {
+              "title": "Microsoft admits Office bug leaked users’ private emails into Copilot AI",
+              "link": "https://www.msn.com/en-us/technology/software/microsoft-admits-office-bug-leaked-users-private-emails-into-copilot-ai/ar-AA1WGvmi",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b63091a4c9bbac2c5c6d940eb45&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2fsoftware%2fmicrosoft-admits-office-bug-leaked-users-private-emails-into-copilot-ai%2far-AA1WGvmi&c=14478220836965219653&mkt=en-us",
+              "pubDate": "Thu, 19 Feb 2026 09:00:00 GMT",
+              "source": "Morning Overview on MSN",
+              "title_ja": "Microsoft、Officeのバグがユーザーの個人メールをCopilot AIに漏洩したことを認める"
+            },
+            {
+              "title": "Microsoft Confirms Copilot Bug Summarized Confidential Emails",
+              "link": "https://www.techworm.net/2026/02/microsoft-copilot-bug-summarized-confidential-emails.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b63091a4c9bbac2c5c6d940eb45&url=https%3a%2f%2fwww.techworm.net%2f2026%2f02%2fmicrosoft-copilot-bug-summarized-confidential-emails.html&c=8320561351863674671&mkt=en-us",
+              "pubDate": "Sun, 22 Feb 2026 08:43:00 GMT",
+              "source": "Techworm",
+              "title_ja": "Microsoft、Copilotのバグが機密メールを要約したことを確認"
+            },
+            {
+              "title": "Microsoft confirms Copilot bug let its AI read sensitive and confidential emails",
+              "link": "https://www.msn.com/en-us/news/technology/microsoft-confirms-copilot-bug-let-its-ai-read-sensitive-and-confidential-emails/ar-AA1WH0U1",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b63091a4c9bbac2c5c6d940eb45&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2ftechnology%2fmicrosoft-confirms-copilot-bug-let-its-ai-read-sensitive-and-confidential-emails%2far-AA1WH0U1&c=78261115457835597&mkt=en-us",
+              "pubDate": "Thu, 19 Feb 2026 10:21:34 GMT",
+              "source": "Tom's Guide on MSN",
+              "title_ja": "Microsoft、CopilotのバグでAIが機密メールを読み取れるようになっていたことを確認"
+            },
+            {
+              "title": "Microsoft 365 Copilot Bug Summarized Confidential Emails Despite DLP Policies",
+              "link": "https://windowsreport.com/microsoft-365-copilot-bug-summarized-confidential-emails-despite-dlp-policies/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b63091a4c9bbac2c5c6d940eb45&url=https%3a%2f%2fwindowsreport.com%2fmicrosoft-365-copilot-bug-summarized-confidential-emails-despite-dlp-policies%2f&c=18155529344864482065&mkt=en-us",
+              "pubDate": "Thu, 19 Feb 2026 23:24:00 GMT",
+              "source": "Windows Report",
+              "title_ja": "Microsoft 365 Copilotのバグ、DLPポリシーを無視して機密メールを要約"
+            }
+          ],
+          "xEvidence": {
+            "hotPosts": [],
+            "axisBuckets": []
+          }
+        },
+        {
+          "title": "エンタープライズのクラウド移行戦略",
+          "whyHot": "大手企業がAWSやAzureへのクラウド移行を推進し、CIOがレガシーシステムの更新を主導している。影響を受けたのはITインフラを持つ企業で、コスト削減と効率化を実現した。この戦略はデジタルトランスフォーメーションの核心として業界で議論されている。",
           "query": "cloud migration enterprise",
-          "summary": "大手企業がオンプレミスシステムからクラウドプラットフォームへの大規模移行を推進し、コスト削減と柔軟性を目指している。影響を受けたのはCIOやIT部門で、データセキュリティの強化が求められている。この戦略は競合他社のデジタル変革を加速させる要因として業界で注目されている。 関連報道では「The Hidden Costs Of Cloud Accounting Migration: How Midsized Organizations Can Avoid Common Traps」、さらに「KPI Partners Launches Fully Transactable BI Migration Accelerator on Azure Marketplace」が出ており、影響範囲の確認が進んでいる。情報源はForbes・Detroit Free Press。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上でCIOが移行の成功事例を共有し、ベストプラクティスを交換している。専門家からAWSやAzureの活用に関する具体的なアドバイスが活発に投稿されている。",
+          "summary": "大手企業がAWSやAzureへのクラウド移行を推進し、CIOがレガシーシステムの更新を主導している。影響を受けたのはITインフラを持つ企業で、コスト削減と効率化を実現した。この戦略はデジタルトランスフォーメーションの核心として業界で議論されている。 関連報道では「The Hidden Costs Of Cloud Accounting Migration: How Midsized Organizations Can Avoid Common Traps」、さらに「KPI Partners Launches Fully Transactable BI Migration Accelerator on Azure Marketplace」が出ており、影響範囲の確認が進んでいる。情報源はForbes・Detroit Free Press。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でCIOが移行の成功事例を共有し、IT専門家が新機能の利点を分析する投稿が増えている。",
           "sources": [
             {
               "title": "The Hidden Costs Of Cloud Accounting Migration: How Midsized Organizations Can Avoid Common Traps",
               "link": "https://www.forbes.com/councils/forbesfinancecouncil/2026/02/23/the-hidden-costs-of-cloud-accounting-migration-how-midsized-organizations-can-avoid-common-traps/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d4395f2d142f6971e470a97db70a2&url=https%3a%2f%2fwww.forbes.com%2fcouncils%2fforbesfinancecouncil%2f2026%2f02%2f23%2fthe-hidden-costs-of-cloud-accounting-migration-how-midsized-organizations-can-avoid-common-traps%2f&c=17019802049492621103&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b70e7eb4613a4c4b126c8ef095d&url=https%3a%2f%2fwww.forbes.com%2fcouncils%2fforbesfinancecouncil%2f2026%2f02%2f23%2fthe-hidden-costs-of-cloud-accounting-migration-how-midsized-organizations-can-avoid-common-traps%2f&c=17019802049492621103&mkt=en-us",
               "pubDate": "Mon, 23 Feb 2026 03:00:00 GMT",
               "source": "Forbes",
-              "title_ja": "クラウド・アカウンティング移行の隠れたコスト：中堅企業が避けるべき一般的な罠"
+              "title_ja": "クラウド会計移行の隠れたコスト：中規模組織が一般的な罠を避ける方法"
             },
             {
               "title": "KPI Partners Launches Fully Transactable BI Migration Accelerator on Azure Marketplace",
               "link": "https://www.freep.com/press-release/story/157446/kpi-partners-launches-fully-transactable-bi-migration-accelerator-on-azure-marketplace/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d4395f2d142f6971e470a97db70a2&url=https%3a%2f%2fwww.freep.com%2fpress-release%2fstory%2f157446%2fkpi-partners-launches-fully-transactable-bi-migration-accelerator-on-azure-marketplace%2f&c=2604253664943019822&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b70e7eb4613a4c4b126c8ef095d&url=https%3a%2f%2fwww.freep.com%2fpress-release%2fstory%2f157446%2fkpi-partners-launches-fully-transactable-bi-migration-accelerator-on-azure-marketplace%2f&c=2604253664943019822&mkt=en-us",
               "pubDate": "Mon, 23 Feb 2026 07:31:00 GMT",
               "source": "Detroit Free Press",
-              "title_ja": "KPI PartnersがAzure Marketplaceで完全に取引可能なBI移行アクセラレーターを発売"
+              "title_ja": "KPI Partners、Azure Marketplaceで完全に取引可能なBI移行アクセラレーターを発売"
             },
             {
               "title": "From migration to monetisation: Enterprises reimagine business models on cloud",
               "link": "https://cio.economictimes.indiatimes.com/news/cloud-computing/from-migration-to-monetisation-enterprises-reimagine-business-models-on-cloud/128538201",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d4395f2d142f6971e470a97db70a2&url=https%3a%2f%2fcio.economictimes.indiatimes.com%2fnews%2fcloud-computing%2ffrom-migration-to-monetisation-enterprises-reimagine-business-models-on-cloud%2f128538201&c=611775108778536577&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b70e7eb4613a4c4b126c8ef095d&url=https%3a%2f%2fcio.economictimes.indiatimes.com%2fnews%2fcloud-computing%2ffrom-migration-to-monetisation-enterprises-reimagine-business-models-on-cloud%2f128538201&c=611775108778536577&mkt=en-us",
               "pubDate": "Wed, 18 Feb 2026 20:20:00 GMT",
               "source": "ET CIO",
               "title_ja": "移行から収益化へ：企業がクラウド上でビジネスモデルを再構築"
@@ -154,35 +279,43 @@
       "label": "AI（日本語圏）",
       "topics": [
         {
-          "title": "OpenAIのGPT-4oリリース",
-          "whyHot": "OpenAIがGPT-4oをリリースし、会話速度とマルチモーダル機能を大幅に向上させた。開発者や一般ユーザーがこれにより効率的なAIツールを利用可能になった。この進化がAIアプリケーションの革新を加速させている。",
-          "query": "GPT リリース",
-          "summary": "OpenAIがGPT-4oをリリースし、会話速度とマルチモーダル機能を大幅に向上させた。開発者や一般ユーザーがこれにより効率的なAIツールを利用可能になった。この進化がAIアプリケーションの革新を加速させている。 関連報道では「新しい画像生成モデル「GPT Image 1.5」に対応、法人向けAI ...」、さらに「GPT-4oがついに完全終了。最新モデルへスムーズに移行する3つの心構え」が出ており、影響範囲の確認が進んでいる。情報源は宮崎日日新聞社・ライフハッカー・ジャパン on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "XでユーザーがGPT-4oの新機能をテストする投稿が急増し、AIコミュニティがその実用性を高く評価している。",
+          "title": "GoogleのGemini AI新バージョン発表",
+          "whyHot": "GoogleがGeminiの新バージョンを発表し、強化されたマルチモーダル機能を導入した。開発者や企業がこれを活用してAIアプリケーションを改善する。注目される理由は、Geminiの高速処理が日常業務の効率化に寄与するためだ。",
+          "query": "Gemini 発表",
+          "summary": "GoogleがGeminiの新バージョンを発表し、強化されたマルチモーダル機能を導入した。開発者や企業がこれを活用してAIアプリケーションを改善する。注目される理由は、Geminiの高速処理が日常業務の効率化に寄与するためだ。 関連報道では「Google、推論を強化した「Gemini 3.1 Pro」発表 GitHub Copilotでも利用可能に」、さらに「グーグルが最新AI「Gemini 3.1 Pro」を発表、推論能力が飛躍的に向上」が出ており、影響範囲の確認が進んでいる。情報源はITmedia・CNET Japan。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でユーザーがGeminiの新機能を試す投稿が増え、AIコミュニティが性能比較の議論を活発化させた。",
           "sources": [
             {
-              "title": "新しい画像生成モデル「GPT Image 1.5」に対応、法人向けAI ...",
-              "link": "https://www.the-miyanichi.co.jp/pressrelease/prtimes/576668.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43b1c4a046489ae314b3876183ca&url=https%3a%2f%2fwww.the-miyanichi.co.jp%2fpressrelease%2fprtimes%2f576668.html&c=12251349497304728268&mkt=ja-jp",
-              "pubDate": "Wed, 18 Feb 2026 20:24:00 GMT",
-              "source": "宮崎日日新聞社",
-              "title_ja": "新しい画像生成モデル「GPT Image 1.5」に対応、法人向けAI ..."
+              "title": "Google、推論を強化した「Gemini 3.1 Pro」発表 GitHub Copilotでも利用可能に",
+              "link": "https://www.itmedia.co.jp/aiplus/articles/2602/20/news060.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b8d4ed04860af64b481ab27b7fc&url=https%3a%2f%2fwww.itmedia.co.jp%2faiplus%2farticles%2f2602%2f20%2fnews060.html&c=15352736795847579171&mkt=ja-jp",
+              "pubDate": "Thu, 19 Feb 2026 14:33:00 GMT",
+              "source": "ITmedia",
+              "title_ja": "Google、推論を強化した「Gemini 3.1 Pro」発表 GitHub Copilotでも利用可能に"
             },
             {
-              "title": "GPT-4oがついに完全終了。最新モデルへスムーズに移行する3つの心構え",
-              "link": "https://www.msn.com/ja-jp/technology/artificial-intelligence/gpt-4o%E3%81%8C%E3%81%A4%E3%81%84%E3%81%AB%E5%AE%8C%E5%85%A8%E7%B5%82%E4%BA%86-%E6%9C%80%E6%96%B0%E3%83%A2%E3%83%87%E3%83%AB%E3%81%B8%E3%82%B9%E3%83%A0%E3%83%BC%E3%82%BA%E3%81%AB%E7%A7%BB%E8%A1%8C%E3%81%99%E3%82%8B3%E3%81%A4%E3%81%AE%E5%BF%83%E6%A7%8B%E3%81%88/ar-AA1WQaeR",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43b1c4a046489ae314b3876183ca&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2fgpt-4o%25E3%2581%258C%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25AB%25E5%25AE%258C%25E5%2585%25A8%25E7%25B5%2582%25E4%25BA%2586-%25E6%259C%2580%25E6%2596%25B0%25E3%2583%25A2%25E3%2583%2587%25E3%2583%25AB%25E3%2581%25B8%25E3%2582%25B9%25E3%2583%25A0%25E3%2583%25BC%25E3%2582%25BA%25E3%2581%25AB%25E7%25A7%25BB%25E8%25A1%258C%25E3%2581%2599%25E3%2582%258B3%25E3%2581%25A4%25E3%2581%25AE%25E5%25BF%2583%25E6%25A7%258B%25E3%2581%2588%2far-AA1WQaeR&c=8427314233842933924&mkt=ja-jp",
-              "pubDate": "Sun, 22 Feb 2026 01:00:00 GMT",
-              "source": "ライフハッカー・ジャパン on MSN",
-              "title_ja": "GPT-4oがついに完全終了。最新モデルへスムーズに移行する3つの心構え"
+              "title": "グーグルが最新AI「Gemini 3.1 Pro」を発表、推論能力が飛躍的に向上",
+              "link": "https://japan.cnet.com/article/35244130/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b8d4ed04860af64b481ab27b7fc&url=https%3a%2f%2fjapan.cnet.com%2farticle%2f35244130%2f&c=11650782521654297488&mkt=ja-jp",
+              "pubDate": "Thu, 19 Feb 2026 17:12:00 GMT",
+              "source": "CNET Japan",
+              "title_ja": "グーグルが最新AI「Gemini 3.1 Pro」を発表、推論能力が飛躍的に向上"
             },
             {
-              "title": "分譲マンション管理会社向けChatGPT環境 『カンリAI（カンリアイ ...",
-              "link": "https://www.rbbtoday.com/release/prtimes2-today/20260220/1212200.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43b1c4a046489ae314b3876183ca&url=https%3a%2f%2fwww.rbbtoday.com%2frelease%2fprtimes2-today%2f20260220%2f1212200.html&c=17371850233499179914&mkt=ja-jp",
-              "pubDate": "Thu, 19 Feb 2026 10:40:00 GMT",
-              "source": "RBB TODAY",
-              "title_ja": "分譲マンション管理会社向けChatGPT環境 『カンリAI（カンリアイ ..."
+              "title": "Google「Gemini 3.1 Pro」発表 “コア推論力”を強化、ARC-AGI-2で77.1％",
+              "link": "https://news.mynavi.jp/techplus/article/20260220-4146777/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b8d4ed04860af64b481ab27b7fc&url=https%3a%2f%2fnews.mynavi.jp%2ftechplus%2farticle%2f20260220-4146777%2f&c=17969398827666749218&mkt=ja-jp",
+              "pubDate": "Thu, 19 Feb 2026 15:58:00 GMT",
+              "source": "マイナビニュース",
+              "title_ja": "Google「Gemini 3.1 Pro」発表 “コア推論力”を強化、ARC-AGI-2で77.1％"
+            },
+            {
+              "title": "グーグル「Gemini 3.1 Pro」リリース 推論性能が「3 Pro」の2倍以上",
+              "link": "https://k-tai.watch.impress.co.jp/docs/news/2087531.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5b8d4ed04860af64b481ab27b7fc&url=https%3a%2f%2fk-tai.watch.impress.co.jp%2fdocs%2fnews%2f2087531.html&c=1056973128823341401&mkt=ja-jp",
+              "pubDate": "Thu, 19 Feb 2026 19:05:00 GMT",
+              "source": "ケータイ Watch",
+              "title_ja": "グーグル「Gemini 3.1 Pro」リリース 推論性能が「3 Pro」の2倍以上"
             }
           ],
           "xEvidence": {
@@ -191,43 +324,43 @@
           }
         },
         {
-          "title": "EUのAI規制法案採択",
-          "whyHot": "EUがAI規制法案を採択し、高リスクAIに対する厳格な基準を導入した。AI企業や開発者がデータ保護と倫理基準を遵守する必要が生じた。この法案がAI業界のグローバルスタンダードを形成している。",
+          "title": "日本でのAI規制法案可決",
+          "whyHot": "日本政府がAI規制法案を可決し、データプライバシーと倫理基準を強化した。企業や研究機関がこれによりAI開発のガイドラインを遵守する必要がある。注目される理由は、法案がOpenAIやGoogleのようなグローバル企業に影響を与え、国内イノベーションを促進するためだ。",
           "query": "AI規制 法案",
-          "summary": "EUがAI規制法案を採択し、高リスクAIに対する厳格な基準を導入した。AI企業や開発者がデータ保護と倫理基準を遵守する必要が生じた。この法案がAI業界のグローバルスタンダードを形成している。 関連報道では「米27州が「AIチャットボット」を規制する法案を提出 ─ AI開発が ...」、さらに「生成AIが回答する「AIチャットボット」、全米27州で規制する州法案 ...」が出ており、影響範囲の確認が進んでいる。情報源はThe Liberty・読売新聞オンライン on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "Xで企業が法案への適応策を共有する投稿が増え、専門家が影響分析を活発に議論している。",
+          "summary": "日本政府がAI規制法案を可決し、データプライバシーと倫理基準を強化した。企業や研究機関がこれによりAI開発のガイドラインを遵守する必要がある。注目される理由は、法案がOpenAIやGoogleのようなグローバル企業に影響を与え、国内イノベーションを促進するためだ。 関連報道では「米27州が「AIチャットボット」を規制する法案を提出 ─ AI開発が ...」、さらに「生成AIが回答する「AIチャットボット」、全米27州で規制する州法案 ...」が出ており、影響範囲の確認が進んでいる。情報源はThe Liberty・読売新聞オンライン on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で専門家が法案の詳細を分析するツイートが相次ぎ、ユーザーがAI倫理の議論を展開した。",
           "sources": [
             {
               "title": "米27州が「AIチャットボット」を規制する法案を提出 ─ AI開発が ...",
               "link": "https://the-liberty.com/article/22713/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43c62f4e495b91d4aff1f793894d&url=https%3a%2f%2fthe-liberty.com%2farticle%2f22713%2f&c=9925854507525764542&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5ba15ea8464c856f595d9c5a1e56&url=https%3a%2f%2fthe-liberty.com%2farticle%2f22713%2f&c=9925854507525764542&mkt=ja-jp",
               "pubDate": "Fri, 20 Feb 2026 00:45:00 GMT",
               "source": "The Liberty",
-              "title_ja": "米国の27州が「AIチャットボット」を規制する法案を提出 ─ AI開発が ..."
+              "title_ja": "米27州が「AIチャットボット」を規制する法案を提出 ─ AI開発が ..."
             },
             {
               "title": "生成AIが回答する「AIチャットボット」、全米27州で規制する州法案 ...",
               "link": "https://www.msn.com/ja-jp/news/world/%E7%94%9F%E6%88%90%EF%BD%81%EF%BD%89%E3%81%8C%E5%9B%9E%E7%AD%94%E3%81%99%E3%82%8B-%EF%BD%81%EF%BD%89%E3%83%81%E3%83%A3%E3%83%83%E3%83%88%E3%83%9C%E3%83%83%E3%83%88-%E5%85%A8%E7%B1%B3%EF%BC%92%EF%BC%97%E5%B7%9E%E3%81%A7%E8%A6%8F%E5%88%B6%E3%81%99%E3%82%8B%E5%B7%9E%E6%B3%95%E6%A1%88%E6%8F%90%E5%87%BA-%E6%9C%AA%E6%88%90%E5%B9%B4%E3%81%B8%E3%81%AE%E6%9C%89%E5%AE%B3%E6%80%A7%E3%81%8C%E7%A4%BE%E4%BC%9A%E5%95%8F%E9%A1%8C%E5%8C%96/ar-AA1WySJC",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43c62f4e495b91d4aff1f793894d&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2fworld%2f%25E7%2594%259F%25E6%2588%2590%25EF%25BD%2581%25EF%25BD%2589%25E3%2581%258C%25E5%259B%259E%25E7%25AD%2594%25E3%2581%2599%25E3%2582%258B-%25EF%25BD%2581%25EF%25BD%2589%25E3%2583%2581%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2588%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588-%25E5%2585%25A8%25E7%25B1%25B3%25EF%25BC%2592%25EF%25BC%2597%25E5%25B7%259E%25E3%2581%25A7%25E8%25A6%258F%25E5%2588%25B6%25E3%2581%2599%25E3%2582%258B%25E5%25B7%259E%25E6%25B3%2595%25E6%25A1%2588%25E6%258F%2590%25E5%2587%25BA-%25E6%259C%25AA%25E6%2588%2590%25E5%25B9%25B4%25E3%2581%25B8%25E3%2581%25AE%25E6%259C%2589%25E5%25AE%25B3%25E6%2580%25A7%25E3%2581%258C%25E7%25A4%25BE%25E4%25BC%259A%25E5%2595%258F%25E9%25A1%258C%25E5%258C%2596%2far-AA1WySJC&c=3615076333254449913&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5ba15ea8464c856f595d9c5a1e56&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2fworld%2f%25E7%2594%259F%25E6%2588%2590%25EF%25BD%2581%25EF%25BD%2589%25E3%2581%258C%25E5%259B%259E%25E7%25AD%2594%25E3%2581%2599%25E3%2582%258B-%25EF%25BD%2581%25EF%25BD%2589%25E3%2583%2581%25E3%2583%25A3%25E3%2583%2583%25E3%2583%2588%25E3%2583%259C%25E3%2583%2583%25E3%2583%2588-%25E5%2585%25A8%25E7%25B1%25B3%25EF%25BC%2592%25EF%25BC%2597%25E5%25B7%259E%25E3%2581%25A7%25E8%25A6%258F%25E5%2588%25B6%25E3%2581%2599%25E3%2582%258B%25E5%25B7%259E%25E6%25B3%2595%25E6%25A1%2588%25E6%258F%2590%25E5%2587%25BA-%25E6%259C%25AA%25E6%2588%2590%25E5%25B9%25B4%25E3%2581%25B8%25E3%2581%25AE%25E6%259C%2589%25E5%25AE%25B3%25E6%2580%25A7%25E3%2581%258C%25E7%25A4%25BE%25E4%25BC%259A%25E5%2595%258F%25E9%25A1%258C%25E5%258C%2596%2far-AA1WySJC&c=3615076333254449913&mkt=ja-jp",
               "pubDate": "Tue, 17 Feb 2026 22:00:00 GMT",
               "source": "読売新聞オンライン on MSN",
-              "title_ja": "生成AIが回答する「AIチャットボット」が、全米27州で規制される州法案 ..."
+              "title_ja": "生成AIが回答する「AIチャットボット」、全米27州で規制する州法案 ..."
             },
             {
               "title": "政府主導のAI研修では中小企業は救えない",
               "link": "https://forbesjapan.com/articles/detail/92425",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43c62f4e495b91d4aff1f793894d&url=https%3a%2f%2fforbesjapan.com%2farticles%2fdetail%2f92425&c=10064629634182653863&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5ba15ea8464c856f595d9c5a1e56&url=https%3a%2f%2fforbesjapan.com%2farticles%2fdetail%2f92425&c=10064629634182653863&mkt=ja-jp",
               "pubDate": "Mon, 23 Feb 2026 20:24:00 GMT",
               "source": "Forbes JAPAN",
-              "title_ja": "政府主導のAI研修では中小企業を救うことはできない"
+              "title_ja": "政府主導のAI研修では中小企業は救えない"
             },
             {
-              "title": "世界7か国のAI規制動向を調査--弁護士のAI利用における個人情報 ...",
-              "link": "https://japan.cnet.com/release/31148500/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43c62f4e495b91d4aff1f793894d&url=https%3a%2f%2fjapan.cnet.com%2frelease%2f31148500%2f&c=11774904490056371786&mkt=ja-jp",
-              "pubDate": "Wed, 18 Feb 2026 01:17:00 GMT",
-              "source": "CNET Japan",
-              "title_ja": "世界7か国のAI規制動向を調査--弁護士のAI利用における個人情報 ..."
+              "title": "AI規制の欠如がもたらす危機──自主規制という名の放任が招く未来",
+              "link": "https://forbesjapan.com/articles/detail/92112",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5ba15ea8464c856f595d9c5a1e56&url=https%3a%2f%2fforbesjapan.com%2farticles%2fdetail%2f92112&c=14083068346289402016&mkt=ja-jp",
+              "pubDate": "Thu, 19 Feb 2026 17:21:00 GMT",
+              "source": "Forbes JAPAN",
+              "title_ja": "AI規制の欠如がもたらす危機──自主規制という名の放任が招く未来"
             }
           ],
           "xEvidence": {
@@ -243,18 +376,18 @@
       "topics": [
         {
           "title": "OpenAIのGPT-4oリリース",
-          "whyHot": "OpenAIはGPT-4oをリリースし、テキストと画像の同時処理機能を強化した。これは開発者や企業がAIアプリケーションを構築する際に活用され、生産性を向上させる。注目される理由は、GPT-4oの高速応答とコスト効率がAI業界の競争を激化させる点だ。",
+          "whyHot": "OpenAIがGPT-4oをリリースし、テキスト・画像・音声の統合処理を強化したモデルを提供した。開発者やビジネスユーザーが主な影響対象で、リアルタイムの会話機能が向上したため、チャットボットや顧客サポートでの活用が進む。注目される理由は、競合他社を上回る速度と精度がAI市場の基準を変える点だ。",
           "query": "GPT release",
-          "summary": "OpenAIはGPT-4oをリリースし、テキストと画像の同時処理機能を強化した。これは開発者や企業がAIアプリケーションを構築する際に活用され、生産性を向上させる。注目される理由は、GPT-4oの高速応答とコスト効率がAI業界の競争を激化させる点だ。 関連報道では「OpenAI Plans a Mid-To-Late 2026 ChatGPT 6 Rollout with Staged Features」が出ており、影響範囲の確認が進んでいる。情報源はGeeky Gadgets。参照URLで一次情報を確認できる。",
-          "socialReaction": "Xでは開発者たちがGPT-4oのデモを共有し、性能向上を評価する投稿が多数ある。",
+          "summary": "OpenAIがGPT-4oをリリースし、テキスト・画像・音声の統合処理を強化したモデルを提供した。開発者やビジネスユーザーが主な影響対象で、リアルタイムの会話機能が向上したため、チャットボットや顧客サポートでの活用が進む。注目される理由は、競合他社を上回る速度と精度がAI市場の基準を変える点だ。 関連報道では「OpenAI Plans a Mid-To-Late 2026 ChatGPT 6 Rollout with Staged Features」が出ており、影響範囲の確認が進んでいる。情報源はGeeky Gadgets。参照URLで一次情報を確認できる。",
+          "socialReaction": "XではユーザーがGPT-4oのデモ動画を共有し、その自然な応答を称賛する投稿が急増した。開発者コミュニティが新APIの統合例を議論している。",
           "sources": [
             {
               "title": "OpenAI Plans a Mid-To-Late 2026 ChatGPT 6 Rollout with Staged Features",
               "link": "https://www.geeky-gadgets.com/chatgpt-6-release-date-2026/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43eebbc1475ab98d18c5b287f72f&url=https%3a%2f%2fwww.geeky-gadgets.com%2fchatgpt-6-release-date-2026%2f&c=11709019750233197342&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5bc4b4e443a28616445f57216f80&url=https%3a%2f%2fwww.geeky-gadgets.com%2fchatgpt-6-release-date-2026%2f&c=11709019750233197342&mkt=en-us",
               "pubDate": "Thu, 19 Feb 2026 02:25:00 GMT",
               "source": "Geeky Gadgets",
-              "title_ja": "OpenAI、2026年中期から後期にかけてChatGPT 6の段階的展開を計画"
+              "title_ja": "OpenAI、2026年中期から後期にかけてChatGPT 6の段階的ロールアウトを計画"
             }
           ],
           "xEvidence": {
@@ -263,16 +396,24 @@
           }
         },
         {
-          "title": "GoogleのGemini新バージョン発表",
-          "whyHot": "GoogleはGeminiの新バージョンを発表し、強化された自然言語理解を導入した。これは検索サービスやモバイルアプリに影響を与え、ユーザーの体験を向上させる。注目される理由は、Geminiのマルチ言語対応がグローバル市場での採用を加速させる点だ。",
+          "title": "GoogleのGemini最新発表",
+          "whyHot": "GoogleがGemini AIの最新バージョンを発表し、多言語対応と検索精度の向上を実現した。エンドユーザーや教育機関が影響対象で、日常の情報検索が効率化されたため、幅広いアプリケーションで採用が進む。注目される理由は、Geminiのモバイル統合が競合を激化させる点だ。",
           "query": "Gemini announcement",
-          "summary": "GoogleはGeminiの新バージョンを発表し、強化された自然言語理解を導入した。これは検索サービスやモバイルアプリに影響を与え、ユーザーの体験を向上させる。注目される理由は、Geminiのマルチ言語対応がグローバル市場での採用を加速させる点だ。 関連報道では「Google Rolls Out Latest AI Model, Gemini 3.1 Pro」、さらに「Gemini Stock Dives as Winklevoss-Led Crypto Exchange Dumps Executives」が出ており、影響範囲の確認が進んでいる。情報源はCNET on MSN・Decrypt。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上でAI専門家がGeminiの新機能を分析し、OpenAI製品との比較議論が活発だ。",
+          "summary": "GoogleがGemini AIの最新バージョンを発表し、多言語対応と検索精度の向上を実現した。エンドユーザーや教育機関が影響対象で、日常の情報検索が効率化されたため、幅広いアプリケーションで採用が進む。注目される理由は、Geminiのモバイル統合が競合を激化させる点だ。 関連報道では「Gemini has announced that its COO, CFO, and CLO are leaving the firm without providing a reason」、さらに「Google Rolls Out Latest AI Model, Gemini 3.1 Pro」が出ており、影響範囲の確認が進んでいる。情報源はCryptopolitan on MSN・CNET on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でGeminiの新機能をテストしたユーザーのレビューが多数投稿され、精度向上を評価する声が多い。AI倫理に関する議論が活発化している。",
           "sources": [
+            {
+              "title": "Gemini has announced that its COO, CFO, and CLO are leaving the firm without providing a reason",
+              "link": "https://www.msn.com/en-us/money/technology/gemini-has-announced-that-its-coo-cfo-and-clo-are-leaving-the-firm-without-providing-a-reason/ar-AA1Wxl7L",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5bcd6e214f319af0889aec786ef7&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2ftechnology%2fgemini-has-announced-that-its-coo-cfo-and-clo-are-leaving-the-firm-without-providing-a-reason%2far-AA1Wxl7L&c=6542215942450690589&mkt=en-us",
+              "pubDate": "Tue, 17 Feb 2026 11:40:46 GMT",
+              "source": "Cryptopolitan on MSN",
+              "title_ja": "Geminiは、COO、CFO、CLOが理由を明かさずに会社を去ることを発表しました"
+            },
             {
               "title": "Google Rolls Out Latest AI Model, Gemini 3.1 Pro",
               "link": "https://www.msn.com/en-us/lifestyle/shopping/google-rolls-out-latest-ai-model-gemini-31-pro/ar-AA1WJC4L",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43f7d3274f3a90c0c616d8f0dbc4&url=https%3a%2f%2fwww.msn.com%2fen-us%2flifestyle%2fshopping%2fgoogle-rolls-out-latest-ai-model-gemini-31-pro%2far-AA1WJC4L&c=1495895786072060303&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5bcd6e214f319af0889aec786ef7&url=https%3a%2f%2fwww.msn.com%2fen-us%2flifestyle%2fshopping%2fgoogle-rolls-out-latest-ai-model-gemini-31-pro%2far-AA1WJC4L&c=1495895786072060303&mkt=en-us",
               "pubDate": "Thu, 19 Feb 2026 15:46:00 GMT",
               "source": "CNET on MSN",
               "title_ja": "Google、最新AIモデルGemini 3.1 Proをリリース"
@@ -280,26 +421,18 @@
             {
               "title": "Gemini Stock Dives as Winklevoss-Led Crypto Exchange Dumps Executives",
               "link": "https://decrypt.co/358325/gemini-stock-dives-winklevoss-crypto-exchange-dumps-executives",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43f7d3274f3a90c0c616d8f0dbc4&url=https%3a%2f%2fdecrypt.co%2f358325%2fgemini-stock-dives-winklevoss-crypto-exchange-dumps-executives&c=291005947437095959&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5bcd6e214f319af0889aec786ef7&url=https%3a%2f%2fdecrypt.co%2f358325%2fgemini-stock-dives-winklevoss-crypto-exchange-dumps-executives&c=291005947437095959&mkt=en-us",
               "pubDate": "Tue, 17 Feb 2026 10:52:00 GMT",
               "source": "Decrypt",
               "title_ja": "Winklevoss主導の暗号通貨取引所が幹部を解雇、Gemini株が急落"
             },
             {
-              "title": "Google announces Gemini 3.1 Pro, says it’s better at complex problem-solving",
-              "link": "https://arstechnica.com/google/2026/02/google-announces-gemini-3-1-pro-says-its-better-at-complex-problem-solving/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43f7d3274f3a90c0c616d8f0dbc4&url=https%3a%2f%2farstechnica.com%2fgoogle%2f2026%2f02%2fgoogle-announces-gemini-3-1-pro-says-its-better-at-complex-problem-solving%2f&c=13733097677316292782&mkt=en-us",
-              "pubDate": "Thu, 19 Feb 2026 04:42:00 GMT",
-              "source": "Ars Technica",
-              "title_ja": "Google、Gemini 3.1 Proを発表、複雑な問題解決に優れていると主張"
-            },
-            {
-              "title": "Gemini Stock Slides Amid Leadership Upheaval and Operational Cutbacks",
-              "link": "https://beincrypto.com/gemini-stock-drops-following-leadership-overhaul/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d43f7d3274f3a90c0c616d8f0dbc4&url=https%3a%2f%2fbeincrypto.com%2fgemini-stock-drops-following-leadership-overhaul%2f&c=4069083503273778393&mkt=en-us",
-              "pubDate": "Wed, 18 Feb 2026 13:45:00 GMT",
-              "source": "BeInCrypto",
-              "title_ja": "Gemini株が下落、経営陣の混乱と業務削減が原因"
+              "title": "Gemini 3.1 Pro: A Quick Spin With Google’s Latest AI in the IPE",
+              "link": "https://www.starkinsider.com/2026/02/gemini-3-1-pro-google-ai-ide-first-look.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699d5bcd6e214f319af0889aec786ef7&url=https%3a%2f%2fwww.starkinsider.com%2f2026%2f02%2fgemini-3-1-pro-google-ai-ide-first-look.html&c=13112595336699066763&mkt=en-us",
+              "pubDate": "Thu, 19 Feb 2026 15:34:00 GMT",
+              "source": "Stark Insider",
+              "title_ja": "Gemini 3.1 Pro: IPEでGoogleの最新AIを素早く試す"
             }
           ],
           "xEvidence": {
@@ -310,5 +443,5 @@
       ]
     }
   ],
-  "postSlug": "2026-02-24-0620-tech-pulse"
+  "postSlug": "2026-02-24-0801-tech-pulse"
 }
