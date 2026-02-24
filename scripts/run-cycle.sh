@@ -10,6 +10,12 @@ mkdir -p "$LOG_DIR"
 
 cd "$ROOT"
 
+# one-time skip: 2026-02-24 19:00 JST (10:00 UTC)
+if [[ "$(date -u +%F)" == "2026-02-24" && "$(date -u +%H)" == "10" ]]; then
+  echo "skip one-time 19:00 JST run on 2026-02-24" >> "$LOG_DIR/news-cycle.log"
+  exit 0
+fi
+
 set -a
 source .env
 set +a
