@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "news:generate": "node scripts/generate-news.mjs",
-    "news:collect": "node scripts/collect-hourly.mjs"
+    "news:collect": "node scripts/collect-hourly.mjs",
+    "news:verify": "node scripts/verify-latest.mjs"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.13",
