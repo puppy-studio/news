@@ -39,8 +39,23 @@ const mdPath = path.join(root, 'src/content/blog', `${slug}.md`);
 let md = fs.readFileSync(mdPath, 'utf8');
 md = md.replace(/^---[\s\S]*?---\n?/, '').trim();
 
+const compact = md
+  .split('\n')
+  .map((line) => {
+    if (line.startsWith('- 何が起きたか:')) {
+      const s = line.replace('- 何が起きたか:', '').trim();
+      return `- 何が起きたか: ${s.slice(0, 140)}${s.length > 140 ? '…' : ''}`;
+    }
+    if (line.startsWith('- Xの反応:')) {
+      const s = line.replace('- Xの反応:', '').trim();
+      return `- Xの反応: ${s.slice(0, 90)}${s.length > 90 ? '…' : ''}`;
+    }
+    return line;
+  })
+  .join('\n');
+
 const header = `news更新: https://it-news.puppy.studio\n\n`;
-const full = `${header}${md}`;
+const full = `${header}${compact}`;
 
 const chunks = [];
 const limit = 3500; // Telegram safe margin
