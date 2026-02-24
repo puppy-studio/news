@@ -129,6 +129,16 @@ function tightenReactionTone(text = '') {
     .trim();
 }
 
+function enrichSummary(summary = '', sources = []) {
+  const s = String(summary).trim();
+  if (s.length >= 70) return s;
+  const srcNames = sources.map((x) => x?.source).filter(Boolean).slice(0, 2).join('・');
+  const suffix = srcNames
+    ? ` 主要ソースは${srcNames}。詳細は参照URLを確認。`
+    : ' 詳細は参照URLを確認。';
+  return (s || '関連トピックが継続的に話題化。') + suffix;
+}
+
 async function verifyXStatusUrl(url) {
   try {
     if (!/x\.com\/.+\/status\/\d+/.test(url)) return false;
@@ -223,7 +233,7 @@ async function generate() {
   for (const cat of CATEGORIES) {
     const topicPayload = await xaiChat(
       'You are an editor. Return strict JSON only.',
-      `次のカテゴリでX上で話題のトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\n\n制約:\n- 出力は必ず日本語\n- タイトルも必ず日本語で書く（英語原文は使わない）\n- 「直近6時間」「可能性」「かもしれない」など曖昧・説明的な語は不要\n\nJSON形式: {"topics":[{"title_ja":"...","summary_ja":"何が起きたかを日本語で1-2文","x_reaction_ja":"Xでの反応を日本語で1文","search_query":"..."}]}`
+      `次のカテゴリでX上で話題のトピックを2件返してください。\nカテゴリ: ${cat.label}\n検索キーワード候補: ${cat.querySeeds.join(', ')}\n\n制約:\n- 出力は必ず日本語\n- タイトルも必ず日本語で書く（英語原文は使わない）\n- 要約は薄くしない。2〜4文で「何が起きたか / 影響対象 / いま注目される理由」を具体化\n- 可能なら固有名詞（組織名・製品名・脆弱性識別子など）を入れる\n- 「直近6時間」「可能性」「かもしれない」など曖昧・説明的な語は不要\n\nJSON形式: {"topics":[{"title_ja":"...","summary_ja":"日本語で2-4文、具体的に","x_reaction_ja":"Xでの反応を日本語で1-2文、具体的に","search_query":"..."}]}`
     );
 
     const topics = (topicPayload.topics || []).slice(0, 2);
@@ -236,7 +246,7 @@ async function generate() {
         title: topic.title_ja || topic.title || '',
         whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
-        summary: topic.summary_ja || topic.why_hot || '',
+        summary: enrichSummary(topic.summary_ja || topic.why_hot || '', sources),
         socialReaction: tightenReactionTone(topic.x_reaction_ja || topic.summary_ja || topic.why_hot || ''),
         sources,
         xEvidence: { hotPosts: [], axisBuckets: [] },
