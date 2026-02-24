@@ -56,6 +56,6 @@ const payload = JSON.parse(process.argv.at(-1));
 for (const chunk of payload.chunks) {
   const msg = chunk.replace(/"/g, '\\"');
   execSync(`/home/claw/.npm-global/bin/openclaw message send --channel telegram --target -1003803565030 --message "${msg}"`, { stdio: 'inherit' });
-  execSync(`/home/claw/.npm-global/bin/openclaw message send --channel slack --target C03QCSC3S2J --message "${msg}"`, { stdio: 'inherit' });
+  execSync(`/home/claw/.npm-global/bin/openclaw message send --channel slack --target C0AH4KKBU0H --message "${msg}"`, { stdio: 'inherit' });
 }
 NODE
