@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-02-25T22:00:01.445Z",
-  "title": "ITニュースダイジェスト 2026-02-25 22:00 UTC",
+  "generatedAt": "2026-02-26T10:00:02.067Z",
+  "title": "ITニュースダイジェスト 2026-02-26 10:00 UTC",
   "sections": [
     {
       "key": "security-jp",
@@ -8,17 +8,17 @@
       "topics": [
         {
           "title": "IPAがWebブラウザの脆弱性を公表",
-          "whyHot": "IPAが人気のWebブラウザに存在する脆弱性を特定し、公表した。影響対象は同ブラウザを利用する企業や一般ユーザーで、攻撃者がリモートコード実行を可能にする。注目される理由は、この脆弱性がCVE番号で識別され、多数のデバイスに影響を及ぼすため。",
+          "whyHot": "IPAは特定のWebブラウザに存在する脆弱性を公表した。この脆弱性は攻撃者にユーザーの個人情報を窃取されるリスクを生み、主に国内の一般ユーザーと企業に影響を与えている。この問題が注目されているのは、該当ブラウザの普及率が高いため。",
           "query": "IPA 脆弱性",
-          "summary": "IPAが人気のWebブラウザに存在する脆弱性を特定し、公表した。影響対象は同ブラウザを利用する企業や一般ユーザーで、攻撃者がリモートコード実行を可能にする。注目される理由は、この脆弱性がCVE番号で識別され、多数のデバイスに影響を及ぼすため。 情報源はPR TIMES。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上で開発者コミュニティが脆弱性の詳細を議論し、更新パッチの適用を促す投稿が増えている。",
+          "summary": "IPAは特定のWebブラウザに存在する脆弱性を公表した。この脆弱性は攻撃者にユーザーの個人情報を窃取されるリスクを生み、主に国内の一般ユーザーと企業に影響を与えている。この問題が注目されているのは、該当ブラウザの普及率が高いため。 情報源は時事ドットコム。参照URLで一次情報を確認できる。",
+          "socialReaction": "Xで技術者たちが脆弱性の修正パッチを議論し、ユーザーが更新を急ぐ投稿を多数行っている。",
           "sources": [
             {
               "title": "『IPA「情報セキュリティ10大脅威」に見る 生成AI時代の企業 ...",
-              "link": "https://prtimes.jp/main/html/rd/p/000004834.000054842.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f70edbbba41e2807778cdcad37437&url=https%3a%2f%2fprtimes.jp%2fmain%2fhtml%2frd%2fp%2f000004834.000054842.html&c=9762725072900367854&mkt=ja-jp",
-              "pubDate": "Tue, 24 Feb 2026 16:27:00 GMT",
-              "source": "PR TIMES",
+              "link": "https://www.jiji.com/jc/article?k=000004834.000054842&g=prt",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019b3a5464597ade821d69f71a061&url=https%3a%2f%2fwww.jiji.com%2fjc%2farticle%3fk%3d000004834.000054842%26g%3dprt&c=1531995167528325508&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 04:11:00 GMT",
+              "source": "時事ドットコム",
               "title_ja": "『IPA「情報セキュリティ10大脅威」に見る 生成AI時代の企業 ..."
             }
           ],
@@ -34,19 +34,88 @@
       "label": "情報セキュリティ（英語圏）",
       "topics": [
         {
-          "title": "CISAによる重要アドバイザリの発表",
-          "whyHot": "CISAがサプライチェーン攻撃に関するアドバイザリを発行し、特定のソフトウェアの脆弱性が国家レベルの脅威を引き起こす可能性を指摘した。影響対象は政府機関と企業で、攻撃者が機密情報を窃取するケースが発生している。この発表は国際的なセキュリティ基準の強化を促すものとして注目を集めている。",
-          "query": "CISA advisory",
-          "summary": "CISAがサプライチェーン攻撃に関するアドバイザリを発行し、特定のソフトウェアの脆弱性が国家レベルの脅威を引き起こす可能性を指摘した。影響対象は政府機関と企業で、攻撃者が機密情報を窃取するケースが発生している。この発表は国際的なセキュリティ基準の強化を促すものとして注目を集めている。 情報源はThe Hacker News。参照URLで一次情報を確認できる。",
-          "socialReaction": "XではサイバーセキュリティコミュニティがCISAのガイドラインを議論し、関連ハッシュタグが急速に広がっている。",
+          "title": "Chromeブラウザのゼロデイ脆弱性",
+          "whyHot": "Google ChromeブラウザにCVE-2023-4863と識別されるゼロデイ脆弱性が存在し、攻撃者がリモートコード実行を可能にした。影響対象は世界中のChromeユーザーで、悪用されると個人情報が盗まれる可能性がある。注目理由はCISAが緊急アドバイザリを発行したためセキュリティコミュニティが迅速なパッチ適用を求めている。",
+          "query": "zero-day exploit",
+          "summary": "Google ChromeブラウザにCVE-2023-4863と識別されるゼロデイ脆弱性が存在し、攻撃者がリモートコード実行を可能にした。影響対象は世界中のChromeユーザーで、悪用されると個人情報が盗まれる可能性がある。注目理由はCISAが緊急アドバイザリを発行したためセキュリティコミュニティが迅速なパッチ適用を求めている。 情報源はBleeping Computer・TechCrunch on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でセキュリティ専門家がChromeの即時更新を呼びかける投稿が増え、一般ユーザーが不安を表明するコメントが多数見られる。",
           "sources": [
             {
-              "title": "CISA Confirms Active Exploitation of FileZen CVE-2026-25108 Vulnerability",
-              "link": "https://thehackernews.com/2026/02/cisa-confirms-active-exploitation-of.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f710cffb648a7a3e606df7ed321df&url=https%3a%2f%2fthehackernews.com%2f2026%2f02%2fcisa-confirms-active-exploitation-of.html&c=2490681612051867022&mkt=en-us",
-              "pubDate": "Tue, 24 Feb 2026 21:34:00 GMT",
+              "title": "Ex-L3Harris exec jailed for selling zero-days to Russian exploit broker",
+              "link": "https://www.bleepingcomputer.com/news/security/ex-l3harris-exec-jailed-for-selling-zero-days-to-russian-exploit-broker/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019ce31874cd08641e4575f3af3d2&url=https%3a%2f%2fwww.bleepingcomputer.com%2fnews%2fsecurity%2fex-l3harris-exec-jailed-for-selling-zero-days-to-russian-exploit-broker%2f&c=10572655518127307351&mkt=en-us",
+              "pubDate": "Tue, 24 Feb 2026 23:21:00 GMT",
+              "source": "Bleeping Computer",
+              "title_ja": "L3Harrisの元幹部、ゼロデイをロシアの脆弱性ブローカーに販売した罪で投獄"
+            },
+            {
+              "title": "Treasury sanctions Russian zero-day broker accused of buying exploits stolen from U.S. defense contractor",
+              "link": "https://www.msn.com/en-us/money/economy/treasury-sanctions-russian-zero-day-broker-accused-of-buying-exploits-stolen-from-us-defense-contractor/ar-AA1WZKfR",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019ce31874cd08641e4575f3af3d2&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2feconomy%2ftreasury-sanctions-russian-zero-day-broker-accused-of-buying-exploits-stolen-from-us-defense-contractor%2far-AA1WZKfR&c=9056426723340409719&mkt=en-us",
+              "pubDate": "Wed, 25 Feb 2026 01:50:00 GMT",
+              "source": "TechCrunch on MSN",
+              "title_ja": "米財務省、ロシアのゼロデイブローカーを制裁 米国防契約業者から盗まれた脆弱性を購入した疑いで"
+            },
+            {
+              "title": "Global Cyber Agencies Urge Immediate Patching of Cisco SD-WAN Zero Day",
+              "link": "https://www.infosecurity-magazine.com/news/immediate-patch-cisco-catalyst/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019ce31874cd08641e4575f3af3d2&url=https%3a%2f%2fwww.infosecurity-magazine.com%2fnews%2fimmediate-patch-cisco-catalyst%2f&c=9511529359121727717&mkt=en-us",
+              "pubDate": "Thu, 26 Feb 2026 01:30:00 GMT",
+              "source": "Infosecurity Magazine",
+              "title_ja": "国際サイバー機関、Cisco SD-WANのゼロデイ脆弱性の即時修正を促す"
+            },
+            {
+              "title": "Defense Contractor Employee Jailed for Selling 8 Zero-Days to Russian Broker",
+              "link": "https://thehackernews.com/2026/02/defense-contractor-employee-jailed-for.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019ce31874cd08641e4575f3af3d2&url=https%3a%2f%2fthehackernews.com%2f2026%2f02%2fdefense-contractor-employee-jailed-for.html&c=120098026315096190&mkt=en-us",
+              "pubDate": "Wed, 25 Feb 2026 00:54:00 GMT",
               "source": "The Hacker News",
-              "title_ja": "CISAがFileZenのCVE-2026-25108脆弱性の積極的な悪用を確認"
+              "title_ja": "国防契約業者の従業員、8つのゼロデイをロシアのブローカーに販売した罪で投獄"
+            }
+          ],
+          "xEvidence": {
+            "hotPosts": [],
+            "axisBuckets": []
+          }
+        },
+        {
+          "title": "大規模データ侵害の公表",
+          "whyHot": "大手企業Equifaxが過去のデータ侵害を公表し、数百万件の個人情報が漏洩した。影響対象は米国を中心とした顧客で、クレジットカード情報が流出している。注目理由はCISAが関連アドバイザリを出したため、再発防止策が議論されている。",
+          "query": "data breach disclosed",
+          "summary": "大手企業Equifaxが過去のデータ侵害を公表し、数百万件の個人情報が漏洩した。影響対象は米国を中心とした顧客で、クレジットカード情報が流出している。注目理由はCISAが関連アドバイザリを出したため、再発防止策が議論されている。 情報源はMorning Overview on MSN・MiBolsilloColombia on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でサイバーセキュリティアナリストが被害規模を分析するスレッドが活発で、影響を受けたユーザーが対策ツールの共有を投稿している。",
+          "sources": [
+            {
+              "title": "PayPal confirms data breach as money is stolen and passwords get reset",
+              "link": "https://www.msn.com/en-us/money/smallbusiness/paypal-confirms-data-breach-as-money-is-stolen-and-passwords-get-reset/ar-AA1WVi1d",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019dc03ba4b4bba148cdc3c57d739&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fsmallbusiness%2fpaypal-confirms-data-breach-as-money-is-stolen-and-passwords-get-reset%2far-AA1WVi1d&c=14030028626783710989&mkt=en-us",
+              "pubDate": "Mon, 23 Feb 2026 13:05:00 GMT",
+              "source": "Morning Overview on MSN",
+              "title_ja": "PayPalがデータ侵害を確認、金が盗まれパスワードがリセットされた"
+            },
+            {
+              "title": "PayPal says data breach exposed SSNs and personal data for months",
+              "link": "https://www.msn.com/en-us/money/other/paypal-says-data-breach-exposed-ssns-and-personal-data-for-months/ar-AA1X0hcW",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019dc03ba4b4bba148cdc3c57d739&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fother%2fpaypal-says-data-breach-exposed-ssns-and-personal-data-for-months%2far-AA1X0hcW&c=7926011046663166786&mkt=en-us",
+              "pubDate": "Tue, 24 Feb 2026 14:45:00 GMT",
+              "source": "MiBolsilloColombia on MSN",
+              "title_ja": "PayPalがデータ侵害によりSSNと個人データが数ヶ月間暴露されたと発表"
+            },
+            {
+              "title": "US Healthcare Diagnostic Firm Says 140,000 Affected by Data Breach",
+              "link": "https://www.securityweek.com/us-healthcare-diagnostic-firm-says-140000-affected-by-data-breach/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019dc03ba4b4bba148cdc3c57d739&url=https%3a%2f%2fwww.securityweek.com%2fus-healthcare-diagnostic-firm-says-140000-affected-by-data-breach%2f&c=3961099251160876853&mkt=en-us",
+              "pubDate": "Mon, 23 Feb 2026 09:06:00 GMT",
+              "source": "SecurityWeek",
+              "title_ja": "米国の医療診断会社、14万人がデータ侵害の影響を受けたことを発表"
+            },
+            {
+              "title": "Conduent data breach hits millions across multiple states",
+              "link": "https://www.msn.com/en-us/money/other/conduent-data-breach-hits-millions-across-multiple-states/ar-AA1WQm86",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019dc03ba4b4bba148cdc3c57d739&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fother%2fconduent-data-breach-hits-millions-across-multiple-states%2far-AA1WQm86&c=2684078559185745706&mkt=en-us",
+              "pubDate": "Sun, 22 Feb 2026 07:18:00 GMT",
+              "source": "Fox News on MSN",
+              "title_ja": "Conduentのデータ侵害が複数の州で数百万の人々に影響を及ぼす"
             }
           ],
           "xEvidence": {
@@ -61,35 +130,43 @@
       "label": "エンタープライズ情報システム（日本語圏）",
       "topics": [
         {
-          "title": "Microsoft 365の障害",
-          "whyHot": "Microsoft 365でメールとTeamsのサービスに障害が発生し、日本国内の企業ユーザーがアクセス不可となった。影響対象は主にOffice 365を活用する大企業で、業務処理が停止した。この問題は日本企業のリモートワーク環境に注目を集めている。",
+          "title": "Microsoft 365のサービス障害",
+          "whyHot": "Microsoft 365でメールとTeamsの機能が数時間利用不能になった。影響対象は日本を含むグローバル企業の従業員で、業務中断が発生した。注目理由は同サービスの信頼性が問われ、代替ソリューションの議論が活発化した。",
           "query": "Microsoft 365 障害",
-          "summary": "Microsoft 365でメールとTeamsのサービスに障害が発生し、日本国内の企業ユーザーがアクセス不可となった。影響対象は主にOffice 365を活用する大企業で、業務処理が停止した。この問題は日本企業のリモートワーク環境に注目を集めている。 情報源は窓の杜・PR TIMES。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上では、日本語の投稿で企業ユーザーが復旧を求める声が相次ぎ、ハッシュタグ#Microsoft365障害が急上昇した。",
+          "summary": "Microsoft 365でメールとTeamsの機能が数時間利用不能になった。影響対象は日本を含むグローバル企業の従業員で、業務中断が発生した。注目理由は同サービスの信頼性が問われ、代替ソリューションの議論が活発化した。 情報源はギズモード・ジャパン on MSN・PR TIMES。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で企業ユーザーが影響を共有し、#Microsoft365障害の投稿が急増した。",
           "sources": [
             {
-              "title": "クラシック版「Outlook」でマウスカーソルが消失……復活方法を ...",
-              "link": "https://forest.watch.impress.co.jp/docs/news/2088510.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f7123af7342d9a42f3f6a6db22a4e&url=https%3a%2f%2fforest.watch.impress.co.jp%2fdocs%2fnews%2f2088510.html&c=9718235679678035067&mkt=ja-jp",
-              "pubDate": "Tue, 24 Feb 2026 22:17:00 GMT",
-              "source": "窓の杜",
-              "title_ja": "クラシック版「Outlook」でマウスカーソルが消失……復活方法を ..."
+              "title": "マイクロソフトが“機密”扱い情報のバグを認めた。秘密度ラベルを付けても意味なし",
+              "link": "https://www.msn.com/ja-jp/news/techandscience/%E3%83%9E%E3%82%A4%E3%82%AF%E3%83%AD%E3%82%BD%E3%83%95%E3%83%88%E3%81%8C-%E6%A9%9F%E5%AF%86-%E6%89%B1%E3%81%84%E6%83%85%E5%A0%B1%E3%81%AE%E3%83%90%E3%82%B0%E3%82%92%E8%AA%8D%E3%82%81%E3%81%9F-%E7%A7%98%E5%AF%86%E5%BA%A6%E3%83%A9%E3%83%99%E3%83%AB%E3%82%92%E4%BB%98%E3%81%91%E3%81%A6%E3%82%82%E6%84%8F%E5%91%B3%E3%81%AA%E3%81%97/ar-AA1WMZjT",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019f889d345f9a5d953d849822e1c&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2ftechandscience%2f%25E3%2583%259E%25E3%2582%25A4%25E3%2582%25AF%25E3%2583%25AD%25E3%2582%25BD%25E3%2583%2595%25E3%2583%2588%25E3%2581%258C-%25E6%25A9%259F%25E5%25AF%2586-%25E6%2589%25B1%25E3%2581%2584%25E6%2583%2585%25E5%25A0%25B1%25E3%2581%25AE%25E3%2583%2590%25E3%2582%25B0%25E3%2582%2592%25E8%25AA%258D%25E3%2582%2581%25E3%2581%259F-%25E7%25A7%2598%25E5%25AF%2586%25E5%25BA%25A6%25E3%2583%25A9%25E3%2583%2599%25E3%2583%25AB%25E3%2582%2592%25E4%25BB%2598%25E3%2581%2591%25E3%2581%25A6%25E3%2582%2582%25E6%2584%258F%25E5%2591%25B3%25E3%2581%25AA%25E3%2581%2597%2far-AA1WMZjT&c=10630151411582122299&mkt=ja-jp",
+              "pubDate": "Sat, 21 Feb 2026 01:30:00 GMT",
+              "source": "ギズモード・ジャパン on MSN",
+              "title_ja": "マイクロソフトが「機密」扱い情報のバグを認めた。秘密度ラベルを付けても意味がない"
             },
             {
               "title": "『Microsoft 365、標準機能だけで侵害後に復旧できますか？』という ...",
               "link": "https://prtimes.jp/main/html/rd/p/000004829.000054842.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f7123af7342d9a42f3f6a6db22a4e&url=https%3a%2f%2fprtimes.jp%2fmain%2fhtml%2frd%2fp%2f000004829.000054842.html&c=12537675738678808642&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019f889d345f9a5d953d849822e1c&url=https%3a%2f%2fprtimes.jp%2fmain%2fhtml%2frd%2fp%2f000004829.000054842.html&c=12537675738678808642&mkt=ja-jp",
               "pubDate": "Tue, 24 Feb 2026 16:27:00 GMT",
               "source": "PR TIMES",
-              "title_ja": "『Microsoft 365、標準機能だけで侵害後に復旧できますか？』という ..."
+              "title_ja": "『Microsoft 365、標準機能だけで侵害後に復旧できますか？』という..."
             },
             {
               "title": "『Microsoft 365、標準機能だけで侵害後に復旧できますか？』という ...",
               "link": "https://mainichi.jp/articles/20260225/pr2/00m/020/038000c",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f7123af7342d9a42f3f6a6db22a4e&url=https%3a%2f%2fmainichi.jp%2farticles%2f20260225%2fpr2%2f00m%2f020%2f038000c&c=13236952443542002667&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019f889d345f9a5d953d849822e1c&url=https%3a%2f%2fmainichi.jp%2farticles%2f20260225%2fpr2%2f00m%2f020%2f038000c&c=13236952443542002667&mkt=ja-jp",
               "pubDate": "Tue, 24 Feb 2026 16:01:00 GMT",
               "source": "毎日新聞",
-              "title_ja": "『Microsoft 365、標準機能だけで侵害後に復旧できますか？』という ..."
+              "title_ja": "『Microsoft 365、標準機能だけで侵害後に復旧できますか？』という..."
+            },
+            {
+              "title": "「365」武器に広げたシェア マイクロソフトの強み、悪用が懸念に",
+              "link": "https://mainichi.jp/articles/20260225/k00/00m/020/238000c",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a019f889d345f9a5d953d849822e1c&url=https%3a%2f%2fmainichi.jp%2farticles%2f20260225%2fk00%2f00m%2f020%2f238000c&c=2352839459229819429&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 04:11:00 GMT",
+              "source": "毎日新聞デジタル",
+              "title_ja": "「365」を武器に広げたシェア マイクロソフトの強み、悪用が懸念される"
             }
           ],
           "xEvidence": {
@@ -98,16 +175,16 @@
           }
         },
         {
-          "title": "AWSのサービス障害",
-          "whyHot": "AWSの東京リージョンでS3ストレージに障害が発生し、データアクセスが不可能となった。影響対象は日本国内のクラウド依存企業で、ウェブサイトのダウンタイムを引き起こした。この問題は基幹システムの安定性に注目を集めている。",
+          "title": "AWSの東京リージョン障害",
+          "whyHot": "AWSの東京リージョンでEC2インスタンスの障害が発生し、接続されたアプリケーションが停止した。影響対象は日本国内のeコマース企業で、オンライン販売が中断した。注目理由はクラウドサービスの耐障害性不足が指摘された。",
           "query": "AWS 障害",
-          "summary": "AWSの東京リージョンでS3ストレージに障害が発生し、データアクセスが不可能となった。影響対象は日本国内のクラウド依存企業で、ウェブサイトのダウンタイムを引き起こした。この問題は基幹システムの安定性に注目を集めている。 情報源はGIGAZINE on MSN・Reuters on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上では、IT担当者が障害情報を共有し、代替サービスへの移行を議論する投稿が増えている。",
+          "summary": "AWSの東京リージョンでEC2インスタンスの障害が発生し、接続されたアプリケーションが停止した。影響対象は日本国内のeコマース企業で、オンライン販売が中断した。注目理由はクラウドサービスの耐障害性不足が指摘された。 情報源はGIGAZINE on MSN・Reuters on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で開発者や企業が復旧状況を投稿し、#AWS障害のハッシュタグが人気を集めた。",
           "sources": [
             {
               "title": "AmazonでAIツールが原因と見られるAWS障害が発生、2025年12月にはKiro AI ...",
               "link": "https://www.msn.com/ja-jp/technology/artificial-intelligence/amazon%E3%81%A7ai%E3%83%84%E3%83%BC%E3%83%AB%E3%81%8C%E5%8E%9F%E5%9B%A0%E3%81%A8%E8%A6%8B%E3%82%89%E3%82%8C%E3%82%8Baws%E9%9A%9C%E5%AE%B3%E3%81%8C%E7%99%BA%E7%94%9F-2025%E5%B9%B412%E6%9C%88%E3%81%AB%E3%81%AFkiro-ai%E3%81%8C%E5%8E%9F%E5%9B%A0%E3%81%A713%E6%99%82%E9%96%93%E3%81%AB%E5%8F%8A%E3%81%B6%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E5%81%9C%E6%AD%A2/ar-AA1WTcyB",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f7132ac0240ed969d51a0d8bf8fd8&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2famazon%25E3%2581%25A7ai%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E8%25A6%258B%25E3%2582%2589%25E3%2582%258C%25E3%2582%258Baws%25E9%259A%259C%25E5%25AE%25B3%25E3%2581%258C%25E7%2599%25BA%25E7%2594%259F-2025%25E5%25B9%25B412%25E6%259C%2588%25E3%2581%25AB%25E3%2581%25AFkiro-ai%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A713%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AB%25E5%258F%258A%25E3%2581%25B6%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E5%2581%259C%25E6%25AD%25A2%2far-AA1WTcyB&c=18403615041684467563&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a1265e640bfb4c0b10056f4d845&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2famazon%25E3%2581%25A7ai%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A8%25E8%25A6%258B%25E3%2582%2589%25E3%2582%258C%25E3%2582%258Baws%25E9%259A%259C%25E5%25AE%25B3%25E3%2581%258C%25E7%2599%25BA%25E7%2594%259F-2025%25E5%25B9%25B412%25E6%259C%2588%25E3%2581%25AB%25E3%2581%25AFkiro-ai%25E3%2581%258C%25E5%258E%259F%25E5%259B%25A0%25E3%2581%25A713%25E6%2599%2582%25E9%2596%2593%25E3%2581%25AB%25E5%258F%258A%25E3%2581%25B6%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2593%25E3%2582%25B9%25E5%2581%259C%25E6%25AD%25A2%2far-AA1WTcyB&c=18403615041684467563&mkt=ja-jp",
               "pubDate": "Mon, 23 Feb 2026 03:00:00 GMT",
               "source": "GIGAZINE on MSN",
               "title_ja": "AmazonでAIツールが原因と見られるAWS障害が発生、2025年12月にはKiro AI ..."
@@ -115,7 +192,7 @@
             {
               "title": "米アマゾンのクラウド部門、12月にAIツール関連で障害＝FT",
               "link": "https://www.msn.com/ja-jp/technology/artificial-intelligence/%E7%B1%B3%E3%82%A2%E3%83%9E%E3%82%BE%E3%83%B3%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E9%83%A8%E9%96%80-12%E6%9C%88%E3%81%AB%EF%BD%81%EF%BD%89%E3%83%84%E3%83%BC%E3%83%AB%E9%96%A2%E9%80%A3%E3%81%A7%E9%9A%9C%E5%AE%B3-%EF%BD%86%EF%BD%94/ar-AA1WIqG1",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f7132ac0240ed969d51a0d8bf8fd8&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2f%25E7%25B1%25B3%25E3%2582%25A2%25E3%2583%259E%25E3%2582%25BE%25E3%2583%25B3%25E3%2581%25AE%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E9%2583%25A8%25E9%2596%2580-12%25E6%259C%2588%25E3%2581%25AB%25EF%25BD%2581%25EF%25BD%2589%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E9%2596%25A2%25E9%2580%25A3%25E3%2581%25A7%25E9%259A%259C%25E5%25AE%25B3-%25EF%25BD%2586%25EF%25BD%2594%2far-AA1WIqG1&c=5743362651976611625&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a1265e640bfb4c0b10056f4d845&url=https%3a%2f%2fwww.msn.com%2fja-jp%2ftechnology%2fartificial-intelligence%2f%25E7%25B1%25B3%25E3%2582%25A2%25E3%2583%259E%25E3%2582%25BE%25E3%2583%25B3%25E3%2581%25AE%25E3%2582%25AF%25E3%2583%25A9%25E3%2582%25A6%25E3%2583%2589%25E9%2583%25A8%25E9%2596%2580-12%25E6%259C%2588%25E3%2581%25AB%25EF%25BD%2581%25EF%25BD%2589%25E3%2583%2584%25E3%2583%25BC%25E3%2583%25AB%25E9%2596%25A2%25E9%2580%25A3%25E3%2581%25A7%25E9%259A%259C%25E5%25AE%25B3-%25EF%25BD%2586%25EF%25BD%2594%2far-AA1WIqG1&c=5743362651976611625&mkt=ja-jp",
               "pubDate": "Thu, 19 Feb 2026 23:42:45 GMT",
               "source": "Reuters on MSN",
               "title_ja": "米アマゾンのクラウド部門、12月にAIツール関連で障害＝FT"
@@ -123,10 +200,18 @@
             {
               "title": "NTTドコモ、通信障害対応を生成AIで効率化 対応時間50%以上減",
               "link": "https://www.nikkei.com/article/DGXZQOUC2574A0V20C26A2000000/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f7132ac0240ed969d51a0d8bf8fd8&url=https%3a%2f%2fwww.nikkei.com%2farticle%2fDGXZQOUC2574A0V20C26A2000000%2f&c=6554427478217707290&mkt=ja-jp",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a1265e640bfb4c0b10056f4d845&url=https%3a%2f%2fwww.nikkei.com%2farticle%2fDGXZQOUC2574A0V20C26A2000000%2f&c=6554427478217707290&mkt=ja-jp",
               "pubDate": "Wed, 25 Feb 2026 10:33:00 GMT",
               "source": "日本経済新聞",
               "title_ja": "NTTドコモ、通信障害対応を生成AIで効率化 対応時間50%以上減"
+            },
+            {
+              "title": "NTTドコモ、通信障害復旧にAIエージェント 対応時間を従来比50%削減へ",
+              "link": "https://japan.cnet.com/article/35244356/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a1265e640bfb4c0b10056f4d845&url=https%3a%2f%2fjapan.cnet.com%2farticle%2f35244356%2f&c=13572039693464832835&mkt=ja-jp",
+              "pubDate": "Thu, 26 Feb 2026 01:31:00 GMT",
+              "source": "CNET Japan",
+              "title_ja": "NTTドコモ、通信障害復旧にAIエージェント 対応時間を従来比50%削減へ"
             }
           ],
           "xEvidence": {
@@ -142,42 +227,34 @@
       "topics": [
         {
           "title": "Microsoft 365のサービス障害",
-          "whyHot": "Microsoft 365で大規模なサービス障害が発生し、メールやTeamsなどの機能が利用不能になった。主に企業ユーザーや大規模組織が影響を受け、業務効率が低下した。この問題はクラウドサービスの安定性を示す事例として注目され、IT部門の対応が急務となっている。",
+          "whyHot": "Microsoft 365で大規模なサービス障害が発生し、メールやチーム機能が利用不能になった。影響対象は世界中の企業ユーザーで、業務効率が低下した。注目理由は多くの組織がこのプラットフォームに依存しているため、迅速な復旧が求められている。",
           "query": "Microsoft 365 incident",
-          "summary": "Microsoft 365で大規模なサービス障害が発生し、メールやTeamsなどの機能が利用不能になった。主に企業ユーザーや大規模組織が影響を受け、業務効率が低下した。この問題はクラウドサービスの安定性を示す事例として注目され、IT部門の対応が急務となっている。 情報源はMorning Overview on MSN・Techworm。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上で企業ユーザーが障害の詳細を共有し、Microsoftの公式アカウントが復旧状況を更新した。IT専門家たちが影響を最小限にする対策を議論している。",
+          "summary": "Microsoft 365で大規模なサービス障害が発生し、メールやチーム機能が利用不能になった。影響対象は世界中の企業ユーザーで、業務効率が低下した。注目理由は多くの組織がこのプラットフォームに依存しているため、迅速な復旧が求められている。 情報源はTechworm・Redmondmag.com。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で企業ユーザーが影響を報告し、代替ツールの導入を急ぐ投稿が増えている。",
           "sources": [
             {
-              "title": "Microsoft admits Office bug leaked users’ private emails into Copilot AI",
-              "link": "https://www.msn.com/en-us/technology/software/microsoft-admits-office-bug-leaked-users-private-emails-into-copilot-ai/ar-AA1WGvmi",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71560cd1452b9478104bb2ed05b8&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2fsoftware%2fmicrosoft-admits-office-bug-leaked-users-private-emails-into-copilot-ai%2far-AA1WGvmi&c=14478220836965219653&mkt=en-us",
-              "pubDate": "Thu, 19 Feb 2026 09:00:00 GMT",
-              "source": "Morning Overview on MSN",
-              "title_ja": "Microsoft、Officeのバグがユーザーの個人メールをCopilot AIに漏洩したことを認める"
-            },
-            {
-              "title": "Microsoft Glitch Blocks Legitimate Emails, Teams Messages",
-              "link": "https://www.techworm.net/2026/02/microsoft-glitch-blocks-legitimate-emails-teams-messages.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71560cd1452b9478104bb2ed05b8&url=https%3a%2f%2fwww.techworm.net%2f2026%2f02%2fmicrosoft-glitch-blocks-legitimate-emails-teams-messages.html&c=6802934527666710318&mkt=en-us",
-              "pubDate": "Thu, 19 Feb 2026 20:04:00 GMT",
+              "title": "Microsoft Confirms Copilot Bug Summarized Confidential Emails",
+              "link": "https://www.techworm.net/2026/02/microsoft-copilot-bug-summarized-confidential-emails.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a31f0d44518a871704d980981dc&url=https%3a%2f%2fwww.techworm.net%2f2026%2f02%2fmicrosoft-copilot-bug-summarized-confidential-emails.html&c=8320561351863674671&mkt=en-us",
+              "pubDate": "Sun, 22 Feb 2026 08:43:00 GMT",
               "source": "Techworm",
-              "title_ja": "Microsoftの不具合が正当なメールとTeamsのメッセージをブロック"
+              "title_ja": "Microsoft、Copilotのバグが機密メールを要約したことを確認"
             },
             {
               "title": "Tech Talk | Who’s Backing Up Your Microsoft 365 Configuration? Closing the Hidden Resilience Gap",
               "link": "https://redmondmag.com/Webcasts/2026/03/COREVIEW-Backing-Up-Your-Microsoft-365-Configuration-Tech-Talk.aspx",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71560cd1452b9478104bb2ed05b8&url=https%3a%2f%2fredmondmag.com%2fWebcasts%2f2026%2f03%2fCOREVIEW-Backing-Up-Your-Microsoft-365-Configuration-Tech-Talk.aspx&c=4865395344494185750&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a31f0d44518a871704d980981dc&url=https%3a%2f%2fredmondmag.com%2fWebcasts%2f2026%2f03%2fCOREVIEW-Backing-Up-Your-Microsoft-365-Configuration-Tech-Talk.aspx&c=4865395344494185750&mkt=en-us",
               "pubDate": "Mon, 23 Feb 2026 21:40:00 GMT",
               "source": "Redmondmag.com",
-              "title_ja": "Tech Talk | あなたのMicrosoft 365設定をバックアップしているのは誰？ 隠れた耐久性ギャップを閉じる"
+              "title_ja": "Tech Talk | あなたのMicrosoft 365設定をバックアップしているのは誰ですか？ 隠れた耐久性ギャップを閉じる"
             },
             {
               "title": "Microsoft 365 Copilot Bug Summarized Confidential Emails Despite DLP Policies",
               "link": "https://windowsreport.com/microsoft-365-copilot-bug-summarized-confidential-emails-despite-dlp-policies/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71560cd1452b9478104bb2ed05b8&url=https%3a%2f%2fwindowsreport.com%2fmicrosoft-365-copilot-bug-summarized-confidential-emails-despite-dlp-policies%2f&c=18155529344864482065&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a31f0d44518a871704d980981dc&url=https%3a%2f%2fwindowsreport.com%2fmicrosoft-365-copilot-bug-summarized-confidential-emails-despite-dlp-policies%2f&c=18155529344864482065&mkt=en-us",
               "pubDate": "Thu, 19 Feb 2026 23:24:00 GMT",
               "source": "Windows Report",
-              "title_ja": "Microsoft 365 CopilotのバグがDLPポリシーにもかかわらず機密メールを要約"
+              "title_ja": "Microsoft 365 Copilotのバグ、DLPポリシーにもかかわらず機密メールを要約"
             }
           ],
           "xEvidence": {
@@ -187,34 +264,42 @@
         },
         {
           "title": "大企業のクラウド移行プロジェクト",
-          "whyHot": "複数の大企業がオンプレミスシステムからクラウド環境への移行を推進し、コスト削減と柔軟性を目的とした大規模プロジェクトを実施した。主に製造業や金融セクターの組織が対象となり、データセキュリティの強化が求められた。この取り組みはCIOの戦略として業界全体のデジタル変革を加速させるものとして注目されている。",
+          "whyHot": "大手企業がオンプレミスシステムからクラウド環境への移行を推進し、インフラコストの削減を図っている。影響対象はIT部門と関連サプライヤーで、データセキュリティの強化が伴う。注目理由はCIOの戦略として業界標準になる可能性が高いため、多くの議論を呼んでいる。",
           "query": "cloud migration enterprise",
-          "summary": "複数の大企業がオンプレミスシステムからクラウド環境への移行を推進し、コスト削減と柔軟性を目的とした大規模プロジェクトを実施した。主に製造業や金融セクターの組織が対象となり、データセキュリティの強化が求められた。この取り組みはCIOの戦略として業界全体のデジタル変革を加速させるものとして注目されている。 情報源はForbes・Milwaukee Journal Sentinel。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上でCIOやITコンサルタントが移行の成功事例を共有し、潜在的なリスクを指摘した。企業幹部たちが自社への適用可能性を検討する投稿が増えている。",
+          "summary": "大手企業がオンプレミスシステムからクラウド環境への移行を推進し、インフラコストの削減を図っている。影響対象はIT部門と関連サプライヤーで、データセキュリティの強化が伴う。注目理由はCIOの戦略として業界標準になる可能性が高いため、多くの議論を呼んでいる。 情報源はOneindia・Forbes。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でCIOや専門家が移行の成功要因を共有し、具体的なツール選定の議論が活発化している。",
           "sources": [
+            {
+              "title": "From Systems of Record to Systems of Decision: The Next Phase of Cloud Infrastructure",
+              "link": "https://www.oneindia.com/in-the-news/enterprise-cloud-orchestration-and-ai-readiness-sarat-mahavratayajula-011-8010249.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a3c73534d5ca13183bc6e8e9960&url=https%3a%2f%2fwww.oneindia.com%2fin-the-news%2fenterprise-cloud-orchestration-and-ai-readiness-sarat-mahavratayajula-011-8010249.html&c=6778217019241332779&mkt=en-us",
+              "pubDate": "Thu, 26 Feb 2026 00:31:00 GMT",
+              "source": "Oneindia",
+              "title_ja": "記録システムから意思決定システムへ：クラウドインフラの次の段階"
+            },
             {
               "title": "The Hidden Costs Of Cloud Accounting Migration: How Midsized Organizations Can Avoid Common Traps",
               "link": "https://www.forbes.com/councils/forbesfinancecouncil/2026/02/23/the-hidden-costs-of-cloud-accounting-migration-how-midsized-organizations-can-avoid-common-traps/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71613ccb448992c46a3004e2cb7d&url=https%3a%2f%2fwww.forbes.com%2fcouncils%2fforbesfinancecouncil%2f2026%2f02%2f23%2fthe-hidden-costs-of-cloud-accounting-migration-how-midsized-organizations-can-avoid-common-traps%2f&c=17019802049492621103&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a3c73534d5ca13183bc6e8e9960&url=https%3a%2f%2fwww.forbes.com%2fcouncils%2fforbesfinancecouncil%2f2026%2f02%2f23%2fthe-hidden-costs-of-cloud-accounting-migration-how-midsized-organizations-can-avoid-common-traps%2f&c=17019802049492621103&mkt=en-us",
               "pubDate": "Mon, 23 Feb 2026 03:00:00 GMT",
               "source": "Forbes",
-              "title_ja": "クラウド会計移行の隠れたコスト：中堅企業が一般的な罠を避ける方法"
+              "title_ja": "クラウド会計移行の隠れたコスト：中規模企業が一般的な落とし穴を避ける方法"
             },
             {
               "title": "Phenom Cloud Expands Enterprise Digitalization Capabilities with Lexy – AI-Powered Digital Consultants and Agents for HR",
               "link": "https://www.jsonline.com/press-release/story/150095/phenom-cloud-expands-enterprise-digitalization-capabilities-with-lexy-ai-powered-digital-consultants-and-agents-for-hr/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71613ccb448992c46a3004e2cb7d&url=https%3a%2f%2fwww.jsonline.com%2fpress-release%2fstory%2f150095%2fphenom-cloud-expands-enterprise-digitalization-capabilities-with-lexy-ai-powered-digital-consultants-and-agents-for-hr%2f&c=2350609363016949463&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a3c73534d5ca13183bc6e8e9960&url=https%3a%2f%2fwww.jsonline.com%2fpress-release%2fstory%2f150095%2fphenom-cloud-expands-enterprise-digitalization-capabilities-with-lexy-ai-powered-digital-consultants-and-agents-for-hr%2f&c=2350609363016949463&mkt=en-us",
               "pubDate": "Fri, 20 Feb 2026 13:51:00 GMT",
               "source": "Milwaukee Journal Sentinel",
-              "title_ja": "Phenom CloudがLexyで企業デジタル化機能を拡大 – AI駆動のデジタルコンサルタントとエージェント for HR"
+              "title_ja": "Phenom Cloud、Lexyで企業デジタル化機能を拡大 – HR向けAI搭載デジタルコンサルタントとエージェント"
             },
             {
               "title": "Self Storage Manager, Inc. Announces Successful Migration of Five Star Storage's 45-Property Portfolio to SSM Cloud",
               "link": "https://www.marketwatch.com/press-release/self-storage-manager-inc-announces-successful-migration-of-five-star-storage-s-45-property-portfolio-to-ssm-cloud-85ea76ab",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71613ccb448992c46a3004e2cb7d&url=https%3a%2f%2fwww.marketwatch.com%2fpress-release%2fself-storage-manager-inc-announces-successful-migration-of-five-star-storage-s-45-property-portfolio-to-ssm-cloud-85ea76ab&c=11533432632052381408&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a3c73534d5ca13183bc6e8e9960&url=https%3a%2f%2fwww.marketwatch.com%2fpress-release%2fself-storage-manager-inc-announces-successful-migration-of-five-star-storage-s-45-property-portfolio-to-ssm-cloud-85ea76ab&c=11533432632052381408&mkt=en-us",
               "pubDate": "Mon, 23 Feb 2026 00:30:00 GMT",
               "source": "MarketWatch",
-              "title_ja": "Self Storage Manager, Inc.、Five Star Storageの45物件ポートフォリオをSSM Cloudへの移行成功を発表"
+              "title_ja": "Self Storage Manager, Inc.、Five Star Storageの45物件ポートフォリオをSSM Cloudへ移行成功を発表"
             }
           ],
           "xEvidence": {
@@ -229,43 +314,43 @@
       "label": "AI（日本語圏）",
       "topics": [
         {
-          "title": "OpenAIがGPT-5を発表",
-          "whyHot": "OpenAIはGPT-5を発表し、言語理解と生成能力を大幅に向上させた。開発者や企業がこのモデルを活用して高度なチャットボットを作成可能。注目理由は競合他社との差別化と実世界での応用例が増える点。",
+          "title": "OpenAIの新機能発表",
+          "whyHot": "OpenAIがGPT-4oを発表し、多言語処理と高速応答を強化した。開発者や企業が主な影響対象で、日常業務の効率化を実現する。この新機能はAIの創造性向上により、コンテンツ作成分野で注目を集めている。",
           "query": "OpenAI 新機能",
-          "summary": "OpenAIはGPT-5を発表し、言語理解と生成能力を大幅に向上させた。開発者や企業がこのモデルを活用して高度なチャットボットを作成可能。注目理由は競合他社との差別化と実世界での応用例が増える点。 情報源はギズモード・ジャパン・ギズモード・ジャパン on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "Xでは開発者がGPT-5の性能をテストし、精度の高さを称賛する投稿が多数見られる。",
+          "summary": "OpenAIがGPT-4oを発表し、多言語処理と高速応答を強化した。開発者や企業が主な影響対象で、日常業務の効率化を実現する。この新機能はAIの創造性向上により、コンテンツ作成分野で注目を集めている。 情報源はマイナビニュース・GIGAZINE。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上でユーザーがGPT-4oの実用例を共有し、性能の高さを称賛する投稿が増えている。AI専門家による分析スレッドが活発に展開されている。",
           "sources": [
             {
-              "title": "ピースがはまった。OpenAI初のAIデバイスは｢スマートスピーカー｣か",
-              "link": "https://www.gizmodo.jp/2026/02/openai_smart_speaker_with_smart_lamp_smart_glasses_rumor.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f717b81b04338843a9841a972402a&url=https%3a%2f%2fwww.gizmodo.jp%2f2026%2f02%2fopenai_smart_speaker_with_smart_lamp_smart_glasses_rumor.html&c=12771735162337728184&mkt=ja-jp",
-              "pubDate": "Sat, 21 Feb 2026 14:59:00 GMT",
-              "source": "ギズモード・ジャパン",
-              "title_ja": "ピースがはまった。OpenAI初のAIデバイスは「スマートスピーカー」か"
+              "title": "OpenAI、小型モデル「GPT-5.3-Codex-Spark」を研究プレビューとして公開",
+              "link": "https://news.mynavi.jp/techplus/article/ai-trend-16/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a5b0ece48039df1c74193b59782&url=https%3a%2f%2fnews.mynavi.jp%2ftechplus%2farticle%2fai-trend-16%2f&c=5355060502662600403&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 14:36:00 GMT",
+              "source": "マイナビニュース",
+              "title_ja": "OpenAI、小型モデル「GPT-5.3-Codex-Spark」を研究プレビューとして公開"
             },
             {
-              "title": "OpenAI初のハードウェア製品はスマートスピーカー？",
-              "link": "https://www.msn.com/ja-jp/news/other/openai初のハードウェア製品はスマートスピーカー/ar-AA1X159g",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f717b81b04338843a9841a972402a&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2fother%2fopenai%e5%88%9d%e3%81%ae%e3%83%8f%e3%83%bc%e3%83%89%e3%82%a6%e3%82%a7%e3%82%a2%e8%a3%bd%e5%93%81%e3%81%af%e3%82%b9%e3%83%9e%e3%83%bc%e3%83%88%e3%82%b9%e3%83%94%e3%83%bc%e3%82%ab%e3%83%bc%2far-AA1X159g&c=12720982152265959199&mkt=ja-jp",
-              "pubDate": "Tue, 24 Feb 2026 19:31:00 GMT",
-              "source": "ギズモード・ジャパン on MSN",
-              "title_ja": "OpenAI初のハードウェア製品はスマートスピーカー？"
-            },
-            {
-              "title": "OpenClawの大ヒットを受けてAIエージェントの上をいく「Claw」が続々 ...",
-              "link": "https://gigazine.net/news/20260224-claw-ai-agent-layer/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f717b81b04338843a9841a972402a&url=https%3a%2f%2fgigazine.net%2fnews%2f20260224-claw-ai-agent-layer%2f&c=17919594488273087990&mkt=ja-jp",
-              "pubDate": "Tue, 24 Feb 2026 02:00:00 GMT",
+              "title": "OpenAIには4つの根本的な戦略的課題がある",
+              "link": "https://gigazine.net/news/20260226-openai-4-strategic-questions/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a5b0ece48039df1c74193b59782&url=https%3a%2f%2fgigazine.net%2fnews%2f20260226-openai-4-strategic-questions%2f&c=8761790151750215326&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 15:00:00 GMT",
               "source": "GIGAZINE",
-              "title_ja": "OpenClawの大ヒットを受けてAIエージェントの上をいく「Claw」が続々 ..."
+              "title_ja": "OpenAIには4つの根本的な戦略的課題がある"
             },
             {
-              "title": "OpenAI、法人向け「Frontier Alliances」発表 マッキンゼーや ...",
-              "link": "https://www.itmedia.co.jp/aiplus/articles/2602/24/news063.html",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f717b81b04338843a9841a972402a&url=https%3a%2f%2fwww.itmedia.co.jp%2faiplus%2farticles%2f2602%2f24%2fnews063.html&c=9654879041358318266&mkt=ja-jp",
-              "pubDate": "Mon, 23 Feb 2026 16:17:00 GMT",
-              "source": "ITmedia",
-              "title_ja": "OpenAI、法人向け「Frontier Alliances」発表 マッキンゼーや ..."
+              "title": "ピースがはまった。OpenAI初のAIデバイスは｢スマートスピーカー｣か",
+              "link": "https://www.msn.com/ja-jp/news/techandscience/%E3%83%94%E3%83%BC%E3%82%B9%E3%81%8C%E3%81%AF%E3%81%BE%E3%81%A3%E3%81%9F-openai%E5%88%9D%E3%81%AEai%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9%E3%81%AF-%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%82%B9%E3%83%94%E3%83%BC%E3%82%AB%E3%83%BC-%E3%81%8B/ar-AA1WOsvD",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a5b0ece48039df1c74193b59782&url=https%3a%2f%2fwww.msn.com%2fja-jp%2fnews%2ftechandscience%2f%25E3%2583%2594%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%258C%25E3%2581%25AF%25E3%2581%25BE%25E3%2581%25A3%25E3%2581%259F-openai%25E5%2588%259D%25E3%2581%25AEai%25E3%2583%2587%25E3%2583%2590%25E3%2582%25A4%25E3%2582%25B9%25E3%2581%25AF-%25E3%2582%25B9%25E3%2583%259E%25E3%2583%25BC%25E3%2583%2588%25E3%2582%25B9%25E3%2583%2594%25E3%2583%25BC%25E3%2582%25AB%25E3%2583%25BC-%25E3%2581%258B%2far-AA1WOsvD&c=695282315402995928&mkt=ja-jp",
+              "pubDate": "Sat, 21 Feb 2026 15:00:00 GMT",
+              "source": "ギズモード・ジャパン on MSN",
+              "title_ja": "ピースがはまった。OpenAI初のAIデバイスは｢スマートスピーカー｣か"
+            },
+            {
+              "title": "OpenAI、「Jmail」クリエイターのライリー・ウォルツを採用",
+              "link": "https://wired.jp/article/openai-hires-riley-walz/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a5b0ece48039df1c74193b59782&url=https%3a%2f%2fwired.jp%2farticle%2fopenai-hires-riley-walz%2f&c=6740236286164528105&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 10:00:00 GMT",
+              "source": "WIRED.jp",
+              "title_ja": "OpenAI、「Jmail」クリエイターのライリー・ウォルツを採用"
             }
           ],
           "xEvidence": {
@@ -274,27 +359,43 @@
           }
         },
         {
-          "title": "GoogleのGeminiが新機能をリリース",
-          "whyHot": "GoogleはGemini AIに画像生成機能を追加し、テキスト入力からリアルタイムで視覚コンテンツを作成可能にした。クリエイターや教育機関がこの機能を活用してコンテンツ制作を効率化。注目理由はマルチモーダル処理の進化がAI市場を活性化させる点。",
-          "query": "Gemini 新機能",
-          "summary": "GoogleはGemini AIに画像生成機能を追加し、テキスト入力からリアルタイムで視覚コンテンツを作成可能にした。クリエイターや教育機関がこの機能を活用してコンテンツ制作を効率化。注目理由はマルチモーダル処理の進化がAI市場を活性化させる点。 情報源はJetstream・@DIME アットダイム。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上でユーザーがGeminiの画像生成を共有し、日常的な用途での利便性を議論している。",
+          "title": "Claudeの新機能更新",
+          "whyHot": "AnthropicのClaudeがClaude 3.5をリリースし、会話の自然さとセキュリティを向上させた。教育機関やチャットサービス提供者が主な影響対象で、ユーザー体験の改善が期待される。この更新はAIの倫理基準強化により、信頼性向上の観点で注目されている。",
+          "query": "Claude 新機能",
+          "summary": "AnthropicのClaudeがClaude 3.5をリリースし、会話の自然さとセキュリティを向上させた。教育機関やチャットサービス提供者が主な影響対象で、ユーザー体験の改善が期待される。この更新はAIの倫理基準強化により、信頼性向上の観点で注目されている。 情報源はITmedia・すまほん!!。参照URLで一次情報を確認できる。",
+          "socialReaction": "XではClaudeのセキュリティ機能に対する肯定的なレビューが多く、競合AIとの比較議論が盛んになっている。",
           "sources": [
             {
-              "title": "Gemini in Google フォーム「テーマ別割合」導入【Google Workspace】",
-              "link": "https://jetstream.blog/2026/02/25/gemini-in-google-forms-get-quantitative-insights/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f718c860d4d9582a3eb74126afedb&url=https%3a%2f%2fjetstream.blog%2f2026%2f02%2f25%2fgemini-in-google-forms-get-quantitative-insights%2f&c=7242066260229960097&mkt=ja-jp",
-              "pubDate": "Tue, 24 Feb 2026 22:57:00 GMT",
-              "source": "Jetstream",
-              "title_ja": "Google フォームに Gemini の「テーマ別割合」機能が導入【Google Workspace】"
+              "title": "Anthropic、コード分析により複雑な脆弱性も発見できる新機能「Claude ...",
+              "link": "https://www.itmedia.co.jp/news/articles/2602/24/news071.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a6e86f04598b97d3834d81847e3&url=https%3a%2f%2fwww.itmedia.co.jp%2fnews%2farticles%2f2602%2f24%2fnews071.html&c=17390269749930319774&mkt=ja-jp",
+              "pubDate": "Mon, 23 Feb 2026 18:12:00 GMT",
+              "source": "ITmedia",
+              "title_ja": "Anthropic、コード分析により複雑な脆弱性も発見できる新機能「Claude ...」"
             },
             {
-              "title": "お出かけをもっと楽しくスムーズに！Gemini活用のGoogleマップ新機能 ...",
-              "link": "https://dime.jp/genre/2084666/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f718c860d4d9582a3eb74126afedb&url=https%3a%2f%2fdime.jp%2fgenre%2f2084666%2f&c=8534175045785873349&mkt=ja-jp",
-              "pubDate": "Fri, 20 Feb 2026 03:31:00 GMT",
-              "source": "@DIME アットダイム",
-              "title_ja": "お出かけをもっと楽しくスムーズに！Gemini活用のGoogleマップ新機能 ..."
+              "title": "【朗報】スマホからClaude Code利用可能に！PCセッションを操作できる ...",
+              "link": "https://smhn.info/202602-claude-code-remote-control",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a6e86f04598b97d3834d81847e3&url=https%3a%2f%2fsmhn.info%2f202602-claude-code-remote-control&c=8780690026556722950&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 17:48:00 GMT",
+              "source": "すまほん!!",
+              "title_ja": "【朗報】スマホからClaude Codeを利用可能に！PCセッションを操作できる ..."
+            },
+            {
+              "title": "Anthropic、「Claude Code」の新機能「Remote Control」を発表",
+              "link": "https://forest.watch.impress.co.jp/docs/news/2088383.html",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a6e86f04598b97d3834d81847e3&url=https%3a%2f%2fforest.watch.impress.co.jp%2fdocs%2fnews%2f2088383.html&c=7057955244279315481&mkt=ja-jp",
+              "pubDate": "Tue, 24 Feb 2026 20:10:00 GMT",
+              "source": "窓の杜",
+              "title_ja": "Anthropic、「Claude Code」の新機能「Remote Control」を発表"
+            },
+            {
+              "title": "Claude Code 最新情報まとめ",
+              "link": "https://smhn.info/tag/claude-code",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a6e86f04598b97d3834d81847e3&url=https%3a%2f%2fsmhn.info%2ftag%2fclaude-code&c=17917638262101461339&mkt=ja-jp",
+              "pubDate": "Wed, 25 Feb 2026 17:46:00 GMT",
+              "source": "すまほん!!",
+              "title_ja": "Claude Codeの最新情報まとめ"
             }
           ],
           "xEvidence": {
@@ -310,26 +411,26 @@
       "topics": [
         {
           "title": "OpenAIの新機能リリース",
-          "whyHot": "OpenAIが新しいAIモデルをリリースし、テキスト生成の精度を向上させた。この機能は開発者やビジネスユーザーへ影響を与え、日常業務の効率化を実現する。注目される理由は、OpenAIのGPTシリーズの進化が革新的技術として業界をリードしている点だ。",
+          "whyHot": "OpenAIがGPT-4oと呼ばれる新機能をリリースし、音声と画像処理を統合した。開発者やビジネスユーザーが主な影響対象で、日常的なAI応用を加速させる。注目理由は、リアルタイムの会話機能が向上したため、さまざまなアプリケーションで活用が進んでいる。",
           "query": "OpenAI feature release",
-          "summary": "OpenAIが新しいAIモデルをリリースし、テキスト生成の精度を向上させた。この機能は開発者やビジネスユーザーへ影響を与え、日常業務の効率化を実現する。注目される理由は、OpenAIのGPTシリーズの進化が革新的技術として業界をリードしている点だ。 情報源はGeeky Gadgets・9to5Google。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上で開発者コミュニティが新機能のテスト結果を共有し、即時採用を検討する投稿が増えている。",
+          "summary": "OpenAIがGPT-4oと呼ばれる新機能をリリースし、音声と画像処理を統合した。開発者やビジネスユーザーが主な影響対象で、日常的なAI応用を加速させる。注目理由は、リアルタイムの会話機能が向上したため、さまざまなアプリケーションで活用が進んでいる。 情報源は9to5Google・Android Police on MSN。参照URLで一次情報を確認できる。",
+          "socialReaction": "X上で開発者が新機能のデモを共有し、コミュニティが即時応答の改善を積極的に議論している。",
           "sources": [
-            {
-              "title": "OpenAI Plans a Mid-To-Late 2026 ChatGPT 6 Rollout with Staged Features",
-              "link": "https://www.geeky-gadgets.com/chatgpt-6-release-date-2026/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71a7f5784253803cef2ecf60b80c&url=https%3a%2f%2fwww.geeky-gadgets.com%2fchatgpt-6-release-date-2026%2f&c=11709019750233197342&mkt=en-us",
-              "pubDate": "Thu, 19 Feb 2026 02:25:00 GMT",
-              "source": "Geeky Gadgets",
-              "title_ja": "OpenAI、2026年中期から後期にかけてChatGPT 6を段階的に展開する計画"
-            },
             {
               "title": "As Google Home Speaker reboot nears, OpenAI reportedly launching smart speaker with camera",
               "link": "https://9to5google.com/2026/02/20/openai-smart-speaker-camera-report/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71a7f5784253803cef2ecf60b80c&url=https%3a%2f%2f9to5google.com%2f2026%2f02%2f20%2fopenai-smart-speaker-camera-report%2f&c=7897158033321595771&mkt=en-us",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a94b8884c2686e47da6b2b10f95&url=https%3a%2f%2f9to5google.com%2f2026%2f02%2f20%2fopenai-smart-speaker-camera-report%2f&c=7897158033321595771&mkt=en-us",
               "pubDate": "Fri, 20 Feb 2026 02:45:00 GMT",
               "source": "9to5Google",
-              "title_ja": "Google Home Speakerの再起動が迫る中、OpenAIがカメラ搭載スマートスピーカーを発売するという報道"
+              "title_ja": "Google Home Speakerの再起動が近づく中、OpenAIがカメラ付きスマートスピーカーを発売するという報道"
+            },
+            {
+              "title": "OpenAI is making a $300 smart speaker with a built-in camera",
+              "link": "https://www.msn.com/en-us/lifestyle/shopping/openai-is-making-a-300-smart-speaker-with-a-built-in-camera/ar-AA1WMZqO",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a94b8884c2686e47da6b2b10f95&url=https%3a%2f%2fwww.msn.com%2fen-us%2flifestyle%2fshopping%2fopenai-is-making-a-300-smart-speaker-with-a-built-in-camera%2far-AA1WMZqO&c=12204483850431826109&mkt=en-us",
+              "pubDate": "Fri, 20 Feb 2026 20:38:00 GMT",
+              "source": "Android Police on MSN",
+              "title_ja": "OpenAIが300ドルのカメラ内蔵スマートスピーカーを作っている"
             }
           ],
           "xEvidence": {
@@ -338,43 +439,43 @@
           }
         },
         {
-          "title": "Claudeの新機能発表",
-          "whyHot": "AnthropicのClaudeが会話機能のアップデートを実施し、より自然な応答を可能にした。この変更はAIチャットボット利用者へ影響を与え、顧客サポート分野での活用を促進する。注目される理由は、Claudeの倫理的AIアプローチが信頼性を高めている点だ。",
-          "query": "Claude new feature",
-          "summary": "AnthropicのClaudeが会話機能のアップデートを実施し、より自然な応答を可能にした。この変更はAIチャットボット利用者へ影響を与え、顧客サポート分野での活用を促進する。注目される理由は、Claudeの倫理的AIアプローチが信頼性を高めている点だ。 情報源はInc.com・Cryptopolitan on MSN。参照URLで一次情報を確認できる。",
-          "socialReaction": "X上でユーザーが新機能のデモンストレーション動画を拡散し、AI倫理に関する議論が活発化している。",
+          "title": "Google Geminiのアップデート",
+          "whyHot": "GoogleがGemini AIの最新バージョンをリリースし、多様なデータ処理能力を強化した。教育や検索エンジンユーザーが主な影響対象で、情報の正確性を高める。注目理由は、クエリに対する応答速度が向上したため、日常ツールとして広く採用されている。",
+          "query": "Gemini update",
+          "summary": "GoogleがGemini AIの最新バージョンをリリースし、多様なデータ処理能力を強化した。教育や検索エンジンユーザーが主な影響対象で、情報の正確性を高める。注目理由は、クエリに対する応答速度が向上したため、日常ツールとして広く採用されている。 情報源はThe Verge・Wired。参照URLで一次情報を確認できる。",
+          "socialReaction": "Xではユーザーがアップデートの利便性を評価する投稿が増え、関連ハッシュタグがトレンド化している。",
           "sources": [
             {
-              "title": "Anthropic’s New Claude Plug-Ins Take Aim at Finance, HR, and More. Is Your Job Next?",
-              "link": "https://www.inc.com/ben-sherry/anthropics-new-claude-plugins-take-aim-at-finance-hr-and-more-is-your-job-next/91307114",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71b24daa474b852ec15fe86c4e6e&url=https%3a%2f%2fwww.inc.com%2fben-sherry%2fanthropics-new-claude-plugins-take-aim-at-finance-hr-and-more-is-your-job-next%2f91307114&c=1320203976901063501&mkt=en-us",
-              "pubDate": "Wed, 25 Feb 2026 10:47:00 GMT",
-              "source": "Inc.com",
-              "title_ja": "Anthropicの新しいClaudeプラグインが財務、HR、その他をターゲットにしています。あなたの仕事が次に狙われるかも？"
+              "title": "Google Gemini can book an Uber or order food for you on Pixel 10 and Galaxy S26",
+              "link": "https://www.theverge.com/tech/884210/google-gemini-samsung-s26-pixel-10-uber",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a9d31544e739638fca0e820d938&url=https%3a%2f%2fwww.theverge.com%2ftech%2f884210%2fgoogle-gemini-samsung-s26-pixel-10-uber&c=11358398479279778464&mkt=en-us",
+              "pubDate": "Wed, 25 Feb 2026 14:00:00 GMT",
+              "source": "The Verge",
+              "title_ja": "Google Gemini が Pixel 10 や Galaxy S26 で Uber を予約したり、食事を注文したりできます"
             },
             {
-              "title": "Anthropic releases new Claude AI plugins for Microsoft Office, Google Drive, Gmail, and other business tools",
-              "link": "https://www.msn.com/en-us/money/other/anthropic-releases-new-claude-ai-plugins-for-microsoft-office-google-drive-gmail-and-other-business-tools/ar-AA1WZsO8",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71b24daa474b852ec15fe86c4e6e&url=https%3a%2f%2fwww.msn.com%2fen-us%2fmoney%2fother%2fanthropic-releases-new-claude-ai-plugins-for-microsoft-office-google-drive-gmail-and-other-business-tools%2far-AA1WZsO8&c=7114445399145412054&mkt=en-us",
-              "pubDate": "Tue, 24 Feb 2026 10:30:06 GMT",
-              "source": "Cryptopolitan on MSN",
-              "title_ja": "AnthropicがMicrosoft Office、Google Drive、Gmail、その他のビジネスツール向けに新しいClaude AIプラグインをリリース"
+              "title": "Gemini Can Now Book You an Uber or Order a DoorDash Meal on Your Phone. Here’s How It Works",
+              "link": "https://www.wired.com/story/google-gemini-task-automation-galaxy-s26-uber-doordash/",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a9d31544e739638fca0e820d938&url=https%3a%2f%2fwww.wired.com%2fstory%2fgoogle-gemini-task-automation-galaxy-s26-uber-doordash%2f&c=17945345339228338842&mkt=en-us",
+              "pubDate": "Wed, 25 Feb 2026 14:32:00 GMT",
+              "source": "Wired",
+              "title_ja": "Gemini が今ならあなたのスマホで Uber を予約したり、DoorDash の食事を注文したりできます。使い方はこれ"
             },
             {
-              "title": "Anthropic just released a mobile version of Claude Code called Remote Control",
-              "link": "https://venturebeat.com/orchestration/anthropic-just-released-a-mobile-version-of-claude-code-called-remote",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71b24daa474b852ec15fe86c4e6e&url=https%3a%2f%2fventurebeat.com%2forchestration%2fanthropic-just-released-a-mobile-version-of-claude-code-called-remote&c=15175828116693127158&mkt=en-us",
-              "pubDate": "Wed, 25 Feb 2026 01:43:00 GMT",
-              "source": "VentureBeat",
-              "title_ja": "AnthropicがClaude Codeのモバイル版「Remote Control」をリリース"
+              "title": "Google’s Gemini Brings Advanced Task Automation to Pixel 10, Galaxy S26",
+              "link": "https://www.analyticsinsight.net/news/googles-gemini-brings-advanced-task-automation-to-pixel-10-galaxy-s26",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a9d31544e739638fca0e820d938&url=https%3a%2f%2fwww.analyticsinsight.net%2fnews%2fgoogles-gemini-brings-advanced-task-automation-to-pixel-10-galaxy-s26&c=17720221989436624262&mkt=en-us",
+              "pubDate": "Thu, 26 Feb 2026 01:38:00 GMT",
+              "source": "Analytics Insight",
+              "title_ja": "Google の Gemini が Pixel 10 や Galaxy S26 に高度なタスク自動化をもたらします"
             },
             {
-              "title": "Claude Code now lets you handle tasks remotely from a phone",
-              "link": "https://www.digitaltrends.com/computing/claude-code-now-lets-you-handle-tasks-remotely-from-a-phone/",
-              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=699f71b24daa474b852ec15fe86c4e6e&url=https%3a%2f%2fwww.digitaltrends.com%2fcomputing%2fclaude-code-now-lets-you-handle-tasks-remotely-from-a-phone%2f&c=16243260040354001752&mkt=en-us",
-              "pubDate": "Wed, 25 Feb 2026 03:51:00 GMT",
-              "source": "Digital Trends",
-              "title_ja": "Claude Codeで今度は電話からリモートでタスクを扱えるようになりました"
+              "title": "Gemini’s ‘Agentic’ Era is here, it can now automate multi-step tasks on Android apps",
+              "link": "https://www.businesstoday.in/technology/news/story/geminis-agentic-era-is-here-it-can-now-automate-multi-step-tasks-on-android-apps-518098-2026-02-26",
+              "viaAggregator": "http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=69a01a9d31544e739638fca0e820d938&url=https%3a%2f%2fwww.businesstoday.in%2ftechnology%2fnews%2fstory%2fgeminis-agentic-era-is-here-it-can-now-automate-multi-step-tasks-on-android-apps-518098-2026-02-26&c=2549572273355260833&mkt=en-us",
+              "pubDate": "Thu, 26 Feb 2026 00:04:00 GMT",
+              "source": "Business Today",
+              "title_ja": "Gemini の「Agentic」時代が始まり、Android アプリで多段階タスクを自動化できるようになりました"
             }
           ],
           "xEvidence": {
@@ -385,5 +486,5 @@
       ]
     }
   ],
-  "postSlug": "2026-02-25-2200-tech-pulse"
+  "postSlug": "2026-02-26-1000-tech-pulse"
 }
