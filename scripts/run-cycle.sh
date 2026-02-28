@@ -10,12 +10,6 @@ mkdir -p "$LOG_DIR"
 
 cd "$ROOT"
 
-# one-time skip: 2026-02-24 19:00 JST (10:00 UTC)
-if [[ "$(date -u +%F)" == "2026-02-24" && "$(date -u +%H)" == "10" ]]; then
-  echo "skip one-time 19:00 JST run on 2026-02-24" >> "$LOG_DIR/news-cycle.log"
-  exit 0
-fi
-
 set -a
 source .env
 set +a
@@ -70,14 +64,20 @@ for (const section of (latest.sections || [])) {
     const react = (t.socialReaction || '').replace(/\s+/g, ' ').slice(0, 140);
     const trend = t.trendSource?.url ? `はてブ${t.trendSource.rank}位: ${t.trendSource.url}` : 'はてブ: 該当なし';
     const facts = (t.sources || []).slice(0,2).map(s=>`- ${s.link}`).join('\n');
-    posts.push([
-      `[${id}] ${section.label} ${t.title}`,
-      `概要: ${summary}`,
-      `X反応: ${react}`,
-      `トレンド検知ソース: ${trend}`,
-      `裏取りソース（一次・信頼）:\n${facts}`,
-      `URL: https://it-news.puppy.studio`
-    ].join('\n'));
+    posts.push({
+      id,
+      section: section.label,
+      title: t.title,
+      body: [
+        `[${id}] ${section.label} ${t.title}`,
+        `概要: ${summary}`,
+        `X反応: ${react}`,
+        `トレンド検知ソース: ${trend}`,
+        `裏取りソース（一次・信頼）:\n${facts}`,
+        `URL: https://it-news.puppy.studio`,
+        `\nこの投稿に返信でフィードバック可（例: 重複/誤り/コメント）`
+      ].join('\n')
+    });
     idx += 1;
   }
 }
@@ -86,10 +86,25 @@ NODE
 )
 
 node - <<'NODE' "$PAYLOAD_JSON"
+const fs = require('fs');
 const { execSync } = require('child_process');
 const payload = JSON.parse(process.argv.at(-1));
+const mapPath = '/home/claw/ghq/github.com/puppy-studio/news/src/data/feedback-map.jsonl';
 for (const post of payload.posts) {
-  const msg = post.replace(/"/g, '\\"');
-  execSync(`/home/claw/.npm-global/bin/openclaw message send --channel telegram --target -1003803565030 --message "${msg}"`, { stdio: 'inherit' });
+  const msg = post.body.replace(/"/g, '\\"');
+  const out = execSync(`/home/claw/.npm-global/bin/openclaw message send --channel telegram --target -1003803565030 --message "${msg}" --json`, { encoding: 'utf8' });
+  let messageId = null;
+  try {
+    const parsed = JSON.parse(out);
+    messageId = parsed?.payload?.result?.messageId ?? parsed?.result?.messageId ?? null;
+  } catch {}
+  const row = {
+    sentAt: new Date().toISOString(),
+    messageId,
+    topicId: post.id,
+    section: post.section,
+    title: post.title,
+  };
+  fs.appendFileSync(mapPath, JSON.stringify(row) + '\n');
 }
 NODE
