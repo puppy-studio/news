@@ -95,7 +95,8 @@ for (const post of payload.posts) {
   const out = execSync(`/home/claw/.npm-global/bin/openclaw message send --channel telegram --target -1003803565030 --message "${msg}" --json`, { encoding: 'utf8' });
   let messageId = null;
   try {
-    const parsed = JSON.parse(out);
+    const m = out.match(/\{[\s\S]*\}$/);
+    const parsed = JSON.parse(m ? m[0] : out);
     messageId = parsed?.payload?.result?.messageId ?? parsed?.result?.messageId ?? null;
   } catch {}
   const row = {
