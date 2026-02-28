@@ -116,15 +116,30 @@ async function localizeSourceTitles(sources = []) {
   return sources.map((s, i) => ({ ...s, title_ja: map.get(i) || s.title }));
 }
 
+function hasJa(text = '') {
+  return /[ぁ-んァ-ヶ一-龠]/.test(String(text));
+}
+
 async function localizeTitleJa(title = '') {
   const t = String(title).trim();
   if (!t) return '';
-  if (/[ぁ-んァ-ヶ一-龠]/.test(t)) return t;
+  if (hasJa(t)) return t;
   const payload = await xaiChat(
     'You are a translator. Return strict JSON only.',
     `次のタイトルを自然な日本語に翻訳してください。\nタイトル: ${t}\nJSON:{"title_ja":"..."}`
   );
   return payload.title_ja || t;
+}
+
+async function ensureJapaneseText(text = '') {
+  const t = String(text).trim();
+  if (!t) return '';
+  if (hasJa(t)) return t;
+  const payload = await xaiChat(
+    'You are a translator. Return strict JSON only.',
+    `次の文章を意味を保って自然な日本語に翻訳してください。\n文章: ${t}\nJSON:{"ja":"..."}`
+  );
+  return payload.ja || t;
 }
 
 async function fetchNewsRss(query, locale) {
@@ -297,12 +312,14 @@ async function generate() {
       const titleJa = await localizeTitleJa(topic.title_ja || topic.title || '');
 
       const trend = pickHatenaTrend(topic, topic.search_query, hatenaHot);
+      const summaryJa = await ensureJapaneseText(enrichSummary(topic, sources));
+      const reactionJa = await ensureJapaneseText(tightenReactionTone(topic.x_reaction_ja || topic.summary_ja || topic.why_hot || ''));
       topicBlocks.push({
         title: titleJa,
         whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
-        summary: enrichSummary(topic, sources),
-        socialReaction: tightenReactionTone(topic.x_reaction_ja || topic.summary_ja || topic.why_hot || ''),
+        summary: summaryJa,
+        socialReaction: reactionJa,
         trendSource: trend ? { rank: trend.rank, url: trend.link, title: trend.title } : null,
         sources,
         xEvidence: { hotPosts: [], axisBuckets: [] },
