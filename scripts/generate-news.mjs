@@ -18,6 +18,36 @@ const CATEGORIES = [
 
 const parser = new XMLParser({ ignoreAttributes: false });
 
+async function fetchHatenaHotentries() {
+  try {
+    const res = await fetch('https://b.hatena.ne.jp/hotentry/it.rss', { headers: { 'User-Agent': 'news-bot/1.0' } });
+    if (!res.ok) return [];
+    const parsed = parser.parse(await res.text());
+    const items = parsed?.rss?.channel?.item ?? [];
+    const arr = (Array.isArray(items) ? items : [items]).filter(Boolean);
+    return arr.slice(0, 50).map((item, idx) => ({
+      rank: idx + 1,
+      title: item.title || '',
+      link: item.link || '',
+      text: `${item.title || ''} ${item.description || ''}`.toLowerCase(),
+    }));
+  } catch {
+    return [];
+  }
+}
+
+function pickHatenaTrend(topic = {}, query = '', hotentries = []) {
+  const keys = `${topic.title_ja || topic.title || ''} ${topic.summary_ja || ''} ${query || ''}`
+    .toLowerCase()
+    .split(/\s+/)
+    .filter((k) => k.length >= 2)
+    .slice(0, 8);
+  for (const h of hotentries) {
+    if (keys.some((k) => h.text.includes(k))) return h;
+  }
+  return hotentries[0] || null;
+}
+
 function slugify(s) {
   return s.toLowerCase().normalize('NFKD').replace(/[^a-z0-9\s-]/g, '').trim().replace(/\s+/g, '-').replace(/-+/g, '-').slice(0, 80) || `topic-${Date.now()}`;
 }
@@ -249,6 +279,7 @@ async function generate() {
   const hour = now.toISOString().slice(11, 13);
   const minute = now.toISOString().slice(14, 16);
   const allSections = [];
+  const hatenaHot = await fetchHatenaHotentries();
 
   for (const cat of CATEGORIES) {
     const topicPayload = await xaiChat(
@@ -265,12 +296,14 @@ async function generate() {
       const sources = await localizeSourceTitles(rawSources);
       const titleJa = await localizeTitleJa(topic.title_ja || topic.title || '');
 
+      const trend = pickHatenaTrend(topic, topic.search_query, hatenaHot);
       topicBlocks.push({
         title: titleJa,
         whyHot: topic.summary_ja || topic.why_hot || '',
         query: topic.search_query,
         summary: enrichSummary(topic, sources),
         socialReaction: tightenReactionTone(topic.x_reaction_ja || topic.summary_ja || topic.why_hot || ''),
+        trendSource: trend ? { rank: trend.rank, url: trend.link, title: trend.title } : null,
         sources,
         xEvidence: { hotPosts: [], axisBuckets: [] },
       });
@@ -298,9 +331,12 @@ async function generate() {
     for (const topic of section.topics) {
       mdLines.push(`### ${topic.title}`, '');
       mdLines.push(`- 何が起きたか: ${topic.summary}`);
-      // 業務影響セクションは非表示
       mdLines.push(`- Xの反応: ${topic.socialReaction}`);
-      mdLines.push('- 参照URL:');
+      if (topic.trendSource?.url) {
+        mdLines.push('- トレンド検知ソース:');
+        mdLines.push(`  - はてブ${topic.trendSource.rank}位: [${topic.trendSource.title}](${topic.trendSource.url})`);
+      }
+      mdLines.push('- 裏取りソース（一次・信頼）:');
       for (const src of topic.sources) mdLines.push(`  - [${src.title_ja || src.title}](${src.link})`);
       // X選定根拠は非表示
       // Xホット投稿URLは非表示

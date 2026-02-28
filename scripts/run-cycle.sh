@@ -21,6 +21,30 @@ source .env
 set +a
 
 npm run news:generate
+
+FINGERPRINT=$(node - <<'NODE'
+const fs = require('fs');
+const p = '/home/claw/ghq/github.com/puppy-studio/news/src/data/latest.json';
+const latest = JSON.parse(fs.readFileSync(p, 'utf8'));
+const keys = [];
+for (const s of (latest.sections || [])) {
+  for (const t of (s.topics || [])) {
+    const src = (t.sources || []).slice(0,2).map(x=>x.link).join('|');
+    keys.push(`${s.key}::${t.title}::${src}`);
+  }
+}
+process.stdout.write(require('crypto').createHash('sha1').update(keys.join('\n')).digest('hex'));
+NODE
+)
+
+LAST_FP_FILE="$LOG_DIR/news-last-fingerprint.txt"
+if [[ -f "$LAST_FP_FILE" && "$(cat "$LAST_FP_FILE")" == "$FINGERPRINT" ]]; then
+  echo "skip notify/deploy: no meaningful topic change" >> "$LOG_DIR/news-cycle.log"
+  exit 0
+fi
+
+echo "$FINGERPRINT" > "$LAST_FP_FILE"
+
 npm run build
 
 DEPLOY_OUTPUT=$(npx wrangler pages deploy dist --project-name news --commit-dirty=true)
@@ -36,50 +60,36 @@ fi
 
 PAYLOAD_JSON=$(node - <<'NODE'
 const fs = require('fs');
-const path = require('path');
-
-const root = '/home/claw/ghq/github.com/puppy-studio/news';
-const latest = JSON.parse(fs.readFileSync(path.join(root, 'src/data/latest.json'), 'utf8'));
-const slug = latest.postSlug;
-const mdPath = path.join(root, 'src/content/blog', `${slug}.md`);
-let md = fs.readFileSync(mdPath, 'utf8');
-md = md.replace(/^---[\s\S]*?---\n?/, '').trim();
-
-const compact = md
-  .split('\n')
-  .map((line) => {
-    if (line.startsWith('- 何が起きたか:')) {
-      const s = line.replace('- 何が起きたか:', '').trim();
-      return `- 何が起きたか: ${s.slice(0, 140)}${s.length > 140 ? '…' : ''}`;
-    }
-    if (line.startsWith('- Xの反応:')) {
-      const s = line.replace('- Xの反応:', '').trim();
-      return `- Xの反応: ${s.slice(0, 90)}${s.length > 90 ? '…' : ''}`;
-    }
-    return line;
-  })
-  .join('\n');
-
-const header = `news更新: https://it-news.puppy.studio\n\n`;
-const full = `${header}${compact}`;
-
-const chunks = [];
-const limit = 3500; // Telegram safe margin
-for (let i = 0; i < full.length; i += limit) chunks.push(full.slice(i, i + limit));
-
-process.stdout.write(JSON.stringify({ chunks }));
+const latest = JSON.parse(fs.readFileSync('/home/claw/ghq/github.com/puppy-studio/news/src/data/latest.json', 'utf8'));
+const posts = [];
+let idx = 1;
+for (const section of (latest.sections || [])) {
+  for (const t of (section.topics || []).slice(0, 1)) {
+    const id = `${section.key.toUpperCase()}-${idx}`;
+    const summary = (t.summary || '').replace(/\s+/g, ' ').slice(0, 320);
+    const react = (t.socialReaction || '').replace(/\s+/g, ' ').slice(0, 140);
+    const trend = t.trendSource?.url ? `はてブ${t.trendSource.rank}位: ${t.trendSource.url}` : 'はてブ: 該当なし';
+    const facts = (t.sources || []).slice(0,2).map(s=>`- ${s.link}`).join('\n');
+    posts.push([
+      `[${id}] ${section.label} ${t.title}`,
+      `概要: ${summary}`,
+      `X反応: ${react}`,
+      `トレンド検知ソース: ${trend}`,
+      `裏取りソース（一次・信頼）:\n${facts}`,
+      `URL: https://it-news.puppy.studio`
+    ].join('\n'));
+    idx += 1;
+  }
+}
+process.stdout.write(JSON.stringify({ posts }));
 NODE
 )
 
 node - <<'NODE' "$PAYLOAD_JSON"
 const { execSync } = require('child_process');
 const payload = JSON.parse(process.argv.at(-1));
-const slackEnabled = process.env.SLACK_NOTIFY === '1';
-for (const chunk of payload.chunks) {
-  const msg = chunk.replace(/"/g, '\\"');
+for (const post of payload.posts) {
+  const msg = post.replace(/"/g, '\\"');
   execSync(`/home/claw/.npm-global/bin/openclaw message send --channel telegram --target -1003803565030 --message "${msg}"`, { stdio: 'inherit' });
-  if (slackEnabled) {
-    execSync(`/home/claw/.npm-global/bin/openclaw message send --channel slack --target C0AH4KKBU0H --message "${msg}"`, { stdio: 'inherit' });
-  }
 }
 NODE
